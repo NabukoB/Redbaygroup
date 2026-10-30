@@ -1,26 +1,75 @@
 @import "tailwindcss";
+@import "@fontsource-variable/hanken-grotesk/wght.css";
 
+/* Palette: charcoal and white carry the page; red is an accent only
+   (logo mark, primary buttons, roof and flag in the illustrations). */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white: #ffffff;
+  --mist: #f3f3f2;
+  --line: #e2e2df;
+  --charcoal: #2a2c2f;
+  --charcoal-deep: #1c1d1f;
+  --slate: #66696e;
+  --red: #d7141a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-white: var(--white);
+  --color-mist: var(--mist);
+  --color-line: var(--line);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-deep: var(--charcoal-deep);
+  --color-slate: var(--slate);
+  --color-red: var(--red);
+  --font-sans: "Hanken Grotesk Variable", system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.heading {
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+/* Phones: the hero scene is 900px wide and pans between the school and the home */
+@media (max-width: 767px) {
+  .scene-pan {
+    transform: translateX(-70px);
+    animation: scene-pan 9s ease-in-out 3.2s infinite alternate;
+  }
+}
+@keyframes scene-pan {
+  from {
+    transform: translateX(-70px);
+  }
+  to {
+    transform: translateX(calc(100vw - 24px - 900px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .scene-pan {
+    animation: none !important;
+    transform: none !important;
+    width: 100% !important;
+  }
 }
