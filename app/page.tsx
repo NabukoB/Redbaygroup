@@ -1,12 +1,21 @@
 import Link from "next/link";
-import { House, School, Sofa, Sun, type LucideIcon } from "lucide-react";
+import { ArrowUpRight, House, School, Sofa, Sun, type LucideIcon } from "lucide-react";
 import { BuildScene } from "@/components/build-scene";
 import { BuildSteps } from "@/components/build-steps";
-import { Badge, Footer, Nav, SectionHead, wrap } from "@/components/chrome";
+import { Badge, CtaPanel, Footer, Nav, SectionHead, wrap } from "@/components/chrome";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
+import { pageMeta } from "@/lib/seo";
 import { approach, companies, projects, site } from "@/lib/site";
+
+export const metadata = pageMeta({
+  title: "Redbay Group | Building Contractors for Homes and Schools in Kenya",
+  description:
+    "Redbay Group builds homes, schools and the infrastructure for better living and learning in Kenya. NCA Category 7 contractor in Ruaraka, Nairobi.",
+  path: "/",
+  absoluteTitle: true,
+});
 
 const icons: Record<string, LucideIcon> = { Homes: House, Schools: School, Interiors: Sofa, Energy: Sun };
 
@@ -36,10 +45,10 @@ function Hero() {
         <Reveal delay={0.2}>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Button asChild variant="charcoal">
-              <Link href="/projects">Explore our work</Link>
+              <Link href="/projects/">Explore our work</Link>
             </Button>
             <Button asChild>
-              <Link href="#contact">Start a project</Link>
+              <Link href="/contact/">Start a project</Link>
             </Button>
           </div>
         </Reveal>
@@ -103,16 +112,24 @@ function Companies() {
             const Icon = icons[c.division];
             return (
               <Reveal key={c.name} delay={(i % 2) * 0.08}>
-                <li className="flex h-full flex-col rounded-3xl bg-mist p-8 md:p-10">
+                <li className="h-full">
+                  <Link
+                    href={`/companies/${c.slug}/`}
+                    className="group flex h-full flex-col rounded-3xl bg-mist p-8 transition-colors hover:bg-[#ebebe9] md:p-10"
+                  >
                   <div className="flex items-center justify-between">
                     <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-charcoal-deep">
                       <Icon className="h-5 w-5 text-white" strokeWidth={1.7} aria-hidden="true" />
                     </span>
-                    <span className="text-sm text-slate">{c.division}</span>
+                    <span className="flex items-center gap-1.5 text-sm text-slate">
+                      {c.division}
+                      <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+                    </span>
                   </div>
                   <h3 className="heading mt-10 text-[28px] md:text-[32px]">{c.name}</h3>
                   <p className="mt-2 text-lg font-semibold text-charcoal-deep">{c.line}</p>
                   <p className="mt-3 max-w-md text-[15px] leading-relaxed text-slate">{c.text}</p>
+                  </Link>
                 </li>
               </Reveal>
             );
@@ -143,7 +160,7 @@ function Projects() {
         </ul>
         <Reveal className="mt-12 text-center">
           <Button asChild variant="charcoal">
-            <Link href="/projects">View projects</Link>
+            <Link href="/projects/">View projects</Link>
           </Button>
         </Reveal>
       </div>
@@ -166,37 +183,6 @@ function Approach() {
   );
 }
 
-function Contact() {
-  const wa = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hello Redbay Group, I would like to start a project.")}`;
-  return (
-    <section id="contact" className="scroll-mt-16 pb-24 md:pb-32">
-      <div className={wrap}>
-        <Reveal>
-          <div className="rounded-[28px] bg-charcoal-deep px-6 py-16 text-center text-white md:px-16 md:py-24">
-            <h2 className="heading mx-auto max-w-3xl text-[clamp(2.4rem,5.4vw,4.2rem)]">Let’s build something that matters.</h2>
-            <p className="mx-auto mt-6 max-w-lg text-lg leading-relaxed text-white/65">
-              Planning a home? Developing a school? Transforming a space? Let’s bring your vision to life.
-            </p>
-            <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-              <Button asChild>
-                <a href={wa} target="_blank" rel="noopener noreferrer">Start a project</a>
-              </Button>
-              <Button asChild variant="outlineLight">
-                <a href={`mailto:${site.email}`}>Email us</a>
-              </Button>
-            </div>
-            <p className="mt-10 flex flex-col items-center gap-2 text-[15px] text-white/60 sm:flex-row sm:justify-center sm:gap-8">
-              <a className="hover:text-white" href={`tel:${site.phone.replace(/\s/g, "")}`}>{site.phone}</a>
-              <a className="hover:text-white" href={`mailto:${site.email}`}>{site.email}</a>
-              <span>{site.location}</span>
-            </p>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
 export default function Home() {
   return (
     <>
@@ -207,7 +193,7 @@ export default function Home() {
         <Companies />
         <Projects />
         <Approach />
-        <Contact />
+        <CtaPanel />
       </main>
       <Footer />
     </>
