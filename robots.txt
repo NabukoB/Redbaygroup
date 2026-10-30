@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://redbaygroup.co.ke
+Sitemap: https://redbaygroup.co.ke/sitemap.xml
