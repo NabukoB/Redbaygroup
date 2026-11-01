@@ -49,7 +49,7 @@ export function organizationLd() {
     name: site.name,
     legalName: site.legal,
     alternateName: [site.googleProfileName, "Redbay Construction"],
-    sameAs: [site.googleProfile],
+    sameAs: [site.googleProfile, site.facebook],
     url: `${site.url}/`,
     logo: `${site.url}/logo.png`,
     image: `${site.url}/og.png`,

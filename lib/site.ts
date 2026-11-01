@@ -14,6 +14,7 @@ export const site = {
   // Google Business Profile, listed as "Redbay Construction LTD"
   googleProfile: "https://share.google/jXxjlTGROMj5VwUtr",
   googleProfileName: "Redbay Construction LTD",
+  facebook: "https://www.facebook.com/share/1NiTdxiXXz/",
   emailIsReal: true,
 };
 

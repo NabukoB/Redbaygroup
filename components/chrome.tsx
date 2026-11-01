@@ -161,6 +161,11 @@ export function Footer() {
                 Find us on Google
               </a>
             </li>
+            <li>
+              <a className="hover:text-charcoal-deep" href={site.facebook} target="_blank" rel="noopener noreferrer">
+                Facebook
+              </a>
+            </li>
           </ul>
         </div>
       </div>

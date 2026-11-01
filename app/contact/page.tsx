@@ -1,4 +1,4 @@
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone, ThumbsUp } from "lucide-react";
 import { Footer, Nav, PageHero, SectionHead, whatsappLink, wrap } from "@/components/chrome";
 import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/reveal";
@@ -21,8 +21,20 @@ export default function ContactPage() {
   const channels = [
     { icon: MessageCircle, label: "WhatsApp", value: "Send plans and photos", href: whatsappLink(), primary: true },
     { icon: Phone, label: "Call us", value: site.phone, href: `tel:${site.phone.replace(/\s/g, "")}` },
-    { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
+    {
+      icon: Mail,
+      label: "Email",
+      // Let the address wrap after the @, never mid-word
+      value: (
+        <>
+          {site.email.split("@")[0]}@<wbr />
+          {site.email.split("@")[1]}
+        </>
+      ),
+      href: `mailto:${site.email}`,
+    },
     { icon: MapPin, label: "Find us on Google", value: site.location, href: site.googleProfile },
+    { icon: ThumbsUp, label: "Facebook", value: "Follow our work", href: site.facebook },
   ];
   return (
     <>
@@ -38,7 +50,7 @@ export default function ContactPage() {
 
         <section className="pb-24">
           <div className={wrap}>
-            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
               {channels.map((c, i) => {
                 const inner = (
                   <>
@@ -46,7 +58,7 @@ export default function ContactPage() {
                       <c.icon className="h-5 w-5 text-white" strokeWidth={1.8} aria-hidden="true" />
                     </span>
                     <span className="mt-8 block text-sm text-slate">{c.label}</span>
-                    <span className="mt-1 block break-words text-lg font-semibold tracking-tight">{c.value}</span>
+                    <span className="mt-1 block text-lg font-semibold tracking-tight">{c.value}</span>
                   </>
                 );
                 return (
@@ -56,7 +68,7 @@ export default function ContactPage() {
                         <a
                           href={c.href}
                           {...(c.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                          className="block h-full rounded-3xl bg-mist p-7 transition-colors hover:bg-[#ebebe9]"
+                          className="block h-full rounded-3xl bg-mist p-6 transition-colors hover:bg-[#ebebe9]"
                         >
                           {inner}
                         </a>
