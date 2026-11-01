@@ -3,4 +3,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"energy","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"companies","h":131168,"c":"$Q2"}]]
-0:{"b":"bVl6PBf2IS7fWthkaWucB","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"ow2ZtRZc4ZX54bJ3TE7gN","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
