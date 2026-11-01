@@ -18,7 +18,7 @@ export function generateStaticParams() {
 }
 
 const titleFor = (p: (typeof projects)[number]) =>
-  p.division === "Interiors" ? `Interior Finishes for a Home in ${p.place}` : `${p.name} in ${p.place}`;
+  p.division === "Interiors" ? `Interior Finishes for a Home in ${p.place}` : `${p.name}, ${p.place}`;
 
 export async function generateMetadata({ params }: PageProps<"/projects/[slug]">): Promise<Metadata> {
   const { slug } = await params;
@@ -100,9 +100,14 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
         </section>
 
         <CtaPanel
-          title="Want a finish like this?"
-          text="Send us photos of your space and tell us what you have in mind. We will advise and give you a clear quote."
-          message={`Hello Redbay Group, I saw the ${p.place} interiors project and would like a quote.`}
+          title={p.cta?.title ?? (p.division === "Interiors" ? "Want a finish like this?" : "Planning a home like this?")}
+          text={
+            p.cta?.text ??
+            (p.division === "Interiors"
+              ? "Send us photos of your space and tell us what you have in mind. We will advise and give you a clear quote."
+              : "Send us your drawings and we will return an itemised bill of quantities and a fixed quote.")
+          }
+          message={`Hello Redbay Group, I saw your ${p.place} project and would like a quote.`}
         />
       </main>
       <Footer />

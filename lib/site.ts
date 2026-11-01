@@ -19,7 +19,7 @@ export const site = {
 };
 
 // Towns where Redbay has built (from the project list)
-export const areas = ["Nairobi", "Isinya", "Lukenya", "Nanyuki", "Nyahururu", "Kakamega", "Diani"];
+export const areas = ["Nairobi", "Kikuyu", "Isinya", "Lukenya", "Nanyuki", "Nyahururu", "Kakamega", "Diani", "Ukunda"];
 
 export type Division = "Homes" | "Schools" | "Interiors" | "Energy";
 
@@ -123,6 +123,8 @@ export type Project = {
   summary?: string;
   scope?: string[];
   photos?: ProjectPhoto[];
+  // Closing call to action on the project page
+  cta?: { title: string; text: string };
 };
 
 // Image helpers: every image exists at -1600.webp and -800.webp in /public/<base>
@@ -159,6 +161,59 @@ export const projects: Project[] = [
       { file: "archway-view", alt: "View through a painted archway into a bright room with sliding windows and a tray ceiling" },
     ],
   },
+  {
+    name: "Two-storey family home",
+    place: "Kikuyu, Kiambu",
+    division: "Homes",
+    note: "Shell works",
+    slug: "kikuyu-house",
+    summary:
+      "Shell works for a two-storey family home in Kikuyu: concrete frame, walls, flat roof slabs, a stair tower and wide balconies with steel balustrades.",
+    // TODO: confirm scope with Redbay
+    scope: [
+      "Reinforced concrete frame, columns and floor slabs",
+      "Walling and flat roof slabs with deep overhangs",
+      "Stair tower with tall vertical windows and a raised water tank",
+      "Balconies with decorative steel balustrades",
+      "Steel windows and doors fitted, external render under way",
+    ],
+    photos: [
+      { file: "front", alt: "Two-storey house in Kikuyu at shell stage with balconies, steel balustrades and timber scaffolding" },
+      { file: "front-corner", alt: "Corner view of the Kikuyu house showing the balcony, steel windows and rendered walls" },
+      { file: "rear", alt: "Rear of the house with the stair tower, tall windows and a long upper balcony" },
+      { file: "rear-balcony", alt: "Upper balcony with decorative steel balustrade above the ground-floor veranda" },
+      { file: "stair-tower", alt: "Stair tower with tall vertical windows and a water tank on the roof" },
+    ],
+  },
+  {
+    name: "Perimeter wall",
+    place: "Kikuyu, Kiambu",
+    division: "Homes",
+    note: "Perimeter wall",
+    slug: "kikuyu-perimeter-wall",
+    cta: {
+      title: "Need a perimeter wall?",
+      text: "Tell us the length of your boundary and the site location. We will measure it and give you a fixed quote.",
+    },
+    summary:
+      "A machine-cut stone perimeter wall for a home in Kikuyu, built on trench foundations with a stone base, a damp-proof layer and concrete columns.",
+    // TODO: confirm scope and wall length with Redbay
+    scope: [
+      "Trench excavation set out with string lines",
+      "Concrete strip footing in the trench",
+      "Hardcore stone foundation courses",
+      "Damp-proof membrane above the foundation",
+      "Machine-cut stone walling with concrete columns",
+    ],
+    photos: [
+      { file: "wall-length", alt: "Finished section of machine-cut stone perimeter wall beside the house in Kikuyu" },
+      { file: "wall-corner", alt: "Long run of the stone perimeter wall with concrete columns and the neighbouring wall" },
+      { file: "stone-foundation", alt: "Stone foundation courses laid in the trench along the boundary line" },
+      { file: "foundation-courses", alt: "Mortared stone foundation courses rising out of the trench" },
+      { file: "trench-concrete", alt: "Concrete strip footing in the excavated trench with string lines for alignment" },
+      { file: "trench-excavation", alt: "Site team excavating the foundation trench for the perimeter wall" },
+    ],
+  },
   { name: "Merishaw School", place: "Isinya, Kajiado", division: "Schools", note: "School buildings" },
   { name: "Five-bedroom villa", place: "Diani, Kwale", division: "Homes", note: "Private residence" },
   { name: "Maisonettes", place: "Nanyuki", division: "Homes", note: "Residential development" },
@@ -187,7 +242,7 @@ export const steps = [
 export const faqs = [
   {
     q: "Where in Kenya do you work?",
-    a: "We are based in Ruaraka, Nairobi, and have built in Isinya, Lukenya, Nanyuki, Nyahururu, Kakamega and Diani. Tell us where your site is and we will confirm.",
+    a: "We are based in Ruaraka, Nairobi, and have worked in Kikuyu, Isinya, Lukenya, Nanyuki, Nyahururu, Kakamega, Diani and Ukunda. Tell us where your site is and we will confirm.",
   },
   {
     q: "Are you a licensed contractor?",
