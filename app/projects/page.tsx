@@ -9,7 +9,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "Projects: Homes and Schools Built Across Kenya",
   description:
-    "See Redbay Group projects across Kenya: Merishaw School in Isinya, a five-bedroom villa in Diani, and homes in Nanyuki, Lukenya, Nyahururu and Kakamega.",
+    "Redbay Group projects across Kenya: home interiors in Ukunda, Merishaw School in Isinya, a villa in Diani, and homes in Nanyuki, Lukenya and more.",
   path: "/projects/",
 });
 

@@ -111,8 +111,53 @@ export const companies: Company[] = [
   },
 ];
 
+export type ProjectPhoto = { file: string; alt: string };
+
+export type Project = {
+  name: string;
+  place: string;
+  division: Division;
+  note: string;
+  // Projects with photos get their own page at /projects/<slug>/
+  slug?: string;
+  summary?: string;
+  scope?: string[];
+  photos?: ProjectPhoto[];
+};
+
+// Photo helper: every photo exists at -1600.webp and -800.webp in /public
+export const photoSrc = (slug: string, file: string, w: 800 | 1600) => `/projects/${slug}/${file}-${w}.webp`;
+
 // Real projects only. Add interiors and energy jobs here as they are documented.
-export const projects: { name: string; place: string; division: Division; note: string }[] = [
+// Projects with photos are listed first.
+export const projects: Project[] = [
+  {
+    name: "Home interiors",
+    place: "Ukunda, Kwale",
+    division: "Interiors",
+    note: "Interior finishes",
+    slug: "ukunda-interiors",
+    summary:
+      "Interior finishes for an open-plan family home in Ukunda: a feature TV wall, tray ceilings with concealed lighting, and polished floor tiling throughout.",
+    // TODO: confirm with Redbay that this scope matches the job
+    scope: [
+      "Feature TV wall with marble-effect panels, fluted slat panels and lit display shelves",
+      "Tray ceilings with concealed LED strip lighting and downlights",
+      "Large-format polished floor tiles with matching skirting",
+      "Wall painting throughout the living and dining areas",
+    ],
+    photos: [
+      { file: "living-room", alt: "Open-plan living room in Ukunda with a fluted wood and marble-effect feature TV wall, tray ceiling and polished tiles" },
+      { file: "feature-wall", alt: "Feature TV wall with marble-effect panels, fluted slat panels and lit display shelves" },
+      { file: "feature-wall-side", alt: "Side view of the feature wall beside painted walls, artwork and sliding windows" },
+      { file: "living-to-kitchen", alt: "Living area opening onto the staircase with step lights and the kitchen beyond" },
+      { file: "open-plan", alt: "Open-plan room with a column, tray ceiling with downlights and polished floor tiles" },
+      { file: "entrance-detail", alt: "Painted wall, timber double doors and artwork in the living area" },
+      { file: "dining-curtains", alt: "Dining area framed by a painted archway, with full-height curtains, downlights and the feature wall" },
+      { file: "dining-to-kitchen", alt: "Dining area with a round column, artwork and a view through to the kitchen" },
+      { file: "archway-view", alt: "View through a painted archway into a bright room with sliding windows and a tray ceiling" },
+    ],
+  },
   { name: "Merishaw School", place: "Isinya, Kajiado", division: "Schools", note: "School buildings" },
   { name: "Five-bedroom villa", place: "Diani, Kwale", division: "Homes", note: "Private residence" },
   { name: "Maisonettes", place: "Nanyuki", division: "Homes", note: "Residential development" },

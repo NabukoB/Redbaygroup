@@ -36,7 +36,11 @@ export function ProjectsFor({ division, title }: { division?: Division; title: s
       <div className={wrap}>
         <SectionHead label="Projects" title={title} />
         {list.length > 0 ? (
-          <ul className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <ul
+            className={`mt-14 grid gap-4 ${
+              list.length === 1 ? "mx-auto max-w-md" : list.length === 2 ? "mx-auto max-w-4xl md:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-3"
+            }`}
+          >
             {list.map((p, i) => (
               <Reveal key={`${p.name}-${p.place}`} delay={(i % 3) * 0.05}>
                 <li className="h-full">
