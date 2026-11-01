@@ -24,6 +24,7 @@ function Logo() {
 const links = [
   { href: "/about/", label: "About" },
   { href: "/projects/", label: "Projects" },
+  { href: "/designs/", label: "Designs" },
   { href: "/insights/", label: "Insights" },
   { href: "/contact/", label: "Contact" },
 ];

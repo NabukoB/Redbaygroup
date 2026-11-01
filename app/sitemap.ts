@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { designs } from "@/lib/designs";
 import { insights } from "@/lib/insights";
 import { companies, projects, site } from "@/lib/site";
 
@@ -18,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...companies.map((c) => page(`/companies/${c.slug}/`, 0.9)),
     page("/projects/", 0.8),
     ...projects.filter((p) => p.slug).map((p) => page(`/projects/${p.slug}/`, 0.7)),
+    page("/designs/", 0.8),
+    ...designs.map((d) => page(`/designs/${d.slug}/`, 0.6)),
     page("/insights/", 0.6),
     ...insights.map((i) => page(`/insights/${i.slug}/`, 0.5, "yearly")),
     page("/contact/", 0.8),

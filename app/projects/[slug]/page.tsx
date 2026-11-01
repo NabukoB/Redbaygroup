@@ -95,7 +95,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
         <section className="pb-24">
           <div className={wrap}>
             <h2 className="sr-only">Photos</h2>
-            <Gallery slug={p.slug!} photos={p.photos!} />
+            <Gallery base={`/projects/${p.slug}`} photos={p.photos!} />
           </div>
         </section>
 

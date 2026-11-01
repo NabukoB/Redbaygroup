@@ -144,6 +144,7 @@ export function Footer() {
             <ul className="mt-3 space-y-2 text-slate">
               <li><Link className="hover:text-charcoal-deep" href="/about/">About</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/projects/">Projects</Link></li>
+              <li><Link className="hover:text-charcoal-deep" href="/designs/">Home designs</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/insights/">Insights</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/contact/">Contact</Link></li>
             </ul>

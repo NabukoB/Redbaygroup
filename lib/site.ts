@@ -125,8 +125,9 @@ export type Project = {
   photos?: ProjectPhoto[];
 };
 
-// Photo helper: every photo exists at -1600.webp and -800.webp in /public
-export const photoSrc = (slug: string, file: string, w: 800 | 1600) => `/projects/${slug}/${file}-${w}.webp`;
+// Image helpers: every image exists at -1600.webp and -800.webp in /public/<base>
+export const imgSrc = (base: string, file: string, w: 800 | 1600) => `${base}/${file}-${w}.webp`;
+export const photoSrc = (slug: string, file: string, w: 800 | 1600) => imgSrc(`/projects/${slug}`, file, w);
 
 // Real projects only. Add interiors and energy jobs here as they are documented.
 // Projects with photos are listed first.

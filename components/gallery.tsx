@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import { photoSrc, type ProjectPhoto } from "@/lib/site";
+import { imgSrc, type ProjectPhoto } from "@/lib/site";
 
 // Photo grid; tapping a photo opens it full screen with next/previous.
-export function Gallery({ slug, photos }: { slug: string; photos: ProjectPhoto[] }) {
+export function Gallery({ base, photos }: { base: string; photos: ProjectPhoto[] }) {
   const [open, setOpen] = useState<number | null>(null);
   const n = photos.length;
   const go = (d: number) => setOpen((i) => (i === null ? i : (i + d + n) % n));
@@ -40,8 +40,8 @@ export function Gallery({ slug, photos }: { slug: string; photos: ProjectPhoto[]
             >
               {/* eslint-disable-next-line @next/next/no-img-element -- static export: images are pre-sized WebP */}
               <img
-                src={photoSrc(slug, ph.file, i === 0 ? 1600 : 800)}
-                srcSet={`${photoSrc(slug, ph.file, 800)} 800w, ${photoSrc(slug, ph.file, 1600)} 1600w`}
+                src={imgSrc(base, ph.file, i === 0 ? 1600 : 800)}
+                srcSet={`${imgSrc(base, ph.file, 800)} 800w, ${imgSrc(base, ph.file, 1600)} 1600w`}
                 sizes={i === 0 ? "(min-width: 768px) 66vw, 100vw" : "(min-width: 768px) 33vw, 50vw"}
                 alt={ph.alt}
                 width={800}
@@ -79,7 +79,7 @@ export function Gallery({ slug, photos }: { slug: string; photos: ProjectPhoto[]
               <AnimatePresence mode="wait">
                 <motion.img
                   key={open}
-                  src={photoSrc(slug, photos[open].file, 1600)}
+                  src={imgSrc(base, photos[open].file, 1600)}
                   alt={photos[open].alt}
                   className="max-h-[80vh] max-w-full rounded-xl object-contain"
                   initial={{ opacity: 0, scale: 0.98 }}

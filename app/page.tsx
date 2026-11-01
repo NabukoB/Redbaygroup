@@ -2,10 +2,12 @@ import Link from "next/link";
 import { ArrowUpRight, House, School, Sofa, Sun, type LucideIcon } from "lucide-react";
 import { BuildScene } from "@/components/build-scene";
 import { BuildSteps } from "@/components/build-steps";
+import { DesignCard } from "@/components/design-card";
 import { Badge, CtaPanel, Footer, Nav, SectionHead, wrap } from "@/components/chrome";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
+import { designs } from "@/lib/designs";
 import { pageMeta } from "@/lib/seo";
 import { approach, companies, projects, site } from "@/lib/site";
 
@@ -168,6 +170,34 @@ function Projects() {
   );
 }
 
+function Designs() {
+  return (
+    <section id="designs" className="scroll-mt-16 py-24 md:py-32">
+      <div className={wrap}>
+        <SectionHead
+          label="Home designs"
+          title="Find a design you love. We will build it."
+          text="Concept designs we have developed with our clients, from hillside villas to a stone cottage with a solar roof."
+        />
+        <ul className="mt-14 grid gap-4 md:grid-cols-3">
+          {designs.slice(0, 3).map((d, i) => (
+            <Reveal key={d.slug} delay={i * 0.06}>
+              <li className="h-full">
+                <DesignCard d={d} />
+              </li>
+            </Reveal>
+          ))}
+        </ul>
+        <Reveal className="mt-12 text-center">
+          <Button asChild variant="charcoal">
+            <Link href="/designs/">See all {designs.length} designs</Link>
+          </Button>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 function Approach() {
   return (
     <section id="approach" className="scroll-mt-16 py-24 md:py-32">
@@ -192,6 +222,7 @@ export default function Home() {
         <About />
         <Companies />
         <Projects />
+        <Designs />
         <Approach />
         <CtaPanel />
       </main>
