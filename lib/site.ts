@@ -135,6 +135,42 @@ export const photoSrc = (slug: string, file: string, w: 800 | 1600) => imgSrc(`/
 // Projects with photos are listed first.
 export const projects: Project[] = [
   {
+    name: "Two-storey family home",
+    place: "Baraka Estate, Nanyuki",
+    division: "Homes",
+    note: "Full build",
+    slug: "nanyuki-baraka-home",
+    summary:
+      "A two-storey family home in Baraka Estate, Nanyuki, built from walling to the final coat of paint, with tiled floors and a cabro driveway.",
+    // TODO: confirm scope and year with Redbay
+    scope: [
+      "Machine-cut stone walling with a reinforced concrete frame",
+      "Ground-floor and roof slabs, columned balconies and parapet detailing",
+      "Steel windows, doors and black steel balustrades",
+      "Internal and external plaster, cornices and painting",
+      "Marble-effect floor tiles, tiled entrance steps and cabro driveway",
+    ],
+    photos: [
+      { file: "finished-balconies", alt: "The finished house with columned balconies, black steel balustrades and decorative parapet detailing" },
+      { file: "finished-front", alt: "Finished two-storey home in Baraka Estate, Nanyuki, with white and grey walls, balconies and a cabro driveway" },
+      { file: "finished-driveway", alt: "Side view of the finished home along the cabro-paved driveway and boundary wall" },
+      { file: "interior-balcony-room", alt: "Upper-floor room with a full-height steel door opening onto the balcony and marble-effect floor tiles" },
+      { file: "interior-tiled-room", alt: "Bright upper-floor room with marble-effect tiles, cornice and painted walls" },
+      { file: "interior-living", alt: "Ground-floor living room with full-height steel windows and a ceiling with a recessed border" },
+      { file: "walling", alt: "Machine-cut stone walling at ground floor with the slab formwork in place" },
+      { file: "walling-openings", alt: "Close view of the stone walling, window openings and beam formwork" },
+      { file: "walling-window", alt: "Stone walling around a window opening, with the boundary wall behind" },
+      { file: "first-floor-walls", alt: "Ground-floor slab complete and first-floor walls rising" },
+      { file: "roof-slab-formwork", alt: "Roof slab formwork and props in place, seen through the gate" },
+      { file: "roof-slab-gate-view", alt: "Structure complete to roof level, with the formwork still up" },
+      { file: "plastering", alt: "Plasterers rendering the walls between the balcony columns" },
+      { file: "plastered-corner", alt: "Plastered corner with balconies, steel balustrades and full-height windows" },
+      { file: "plastered-street-view", alt: "The plastered house seen from the road, behind the boundary wall and gate" },
+      { file: "painting-start", alt: "Painting under way on the ground floor, with scaffolding still up" },
+      { file: "painting-scaffold", alt: "Exterior painting in progress on the balconies and parapets" },
+    ],
+  },
+  {
     name: "Home interiors",
     place: "Ukunda, Kwale",
     division: "Interiors",
