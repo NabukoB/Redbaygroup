@@ -156,6 +156,11 @@ export function Footer() {
             <li><a className="hover:text-charcoal-deep" href={whatsappLink()} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
             <li><a className="hover:text-charcoal-deep" href={`mailto:${site.email}`}>{site.email}</a></li>
             <li>{site.location}</li>
+            <li>
+              <a className="hover:text-charcoal-deep" href={site.googleProfile} target="_blank" rel="noopener noreferrer">
+                Find us on Google
+              </a>
+            </li>
           </ul>
         </div>
       </div>

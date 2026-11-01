@@ -11,6 +11,9 @@ export const site = {
   phone: "+254 725 546 059",
   whatsapp: "254725546059",
   email: "hello@redbaygroup.co.ke",
+  // Google Business Profile, listed as "Redbay Construction LTD"
+  googleProfile: "https://share.google/jXxjlTGROMj5VwUtr",
+  googleProfileName: "Redbay Construction LTD",
   emailIsReal: true,
 };
 

@@ -48,6 +48,8 @@ export function organizationLd() {
     "@id": `${site.url}/#organization`,
     name: site.name,
     legalName: site.legal,
+    alternateName: [site.googleProfileName, "Redbay Construction"],
+    sameAs: [site.googleProfile],
     url: `${site.url}/`,
     logo: `${site.url}/logo.png`,
     image: `${site.url}/og.png`,

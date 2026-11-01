@@ -22,7 +22,7 @@ export default function ContactPage() {
     { icon: MessageCircle, label: "WhatsApp", value: "Send plans and photos", href: whatsappLink(), primary: true },
     { icon: Phone, label: "Call us", value: site.phone, href: `tel:${site.phone.replace(/\s/g, "")}` },
     { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
-    { icon: MapPin, label: "Office", value: site.location },
+    { icon: MapPin, label: "Find us on Google", value: site.location, href: site.googleProfile },
   ];
   return (
     <>
