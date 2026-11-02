@@ -49,7 +49,7 @@ export default function InsightsPage() {
             </ul>
           </div>
         </section>
-        <CtaPanel title="Have a building question?" text="Send it to us on WhatsApp. If it helps other people too, it may become our next guide." message="Hello Redbay Group, I have a building question:" />
+        <CtaPanel title="Have a building question?" text="Send it to us on WhatsApp. If it helps other people too, it may become our next guide." message="Hello Redbay Group, I have a building question:" button="Ask on WhatsApp" />
       </main>
       <Footer />
     </>

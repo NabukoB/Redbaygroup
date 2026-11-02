@@ -25,7 +25,7 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
   const { slug } = await params;
   const p = insights.find((x) => x.slug === slug);
   if (!p) notFound();
-  const others = insights.filter((x) => x.slug !== p.slug);
+  const others = insights.filter((x) => x.slug !== p.slug).slice(0, 4);
 
   const articleLd = {
     "@context": "https://schema.org",

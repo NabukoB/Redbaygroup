@@ -88,7 +88,7 @@ export function PageHero({ crumbs, label, title, intro, children }: { crumbs: { 
 }
 
 // The black "start a project" panel used at the end of pages
-export function CtaPanel({ title = "Let’s build something that matters.", text = "Planning a home? Developing a school? Transforming a space? Let’s bring your vision to life.", message }: { title?: string; text?: string; message?: string }) {
+export function CtaPanel({ title = "Let’s build something that matters.", text = "Planning a home? Developing a school? Transforming a space? Let’s bring your vision to life.", message, button = "Start a project on WhatsApp" }: { title?: string; text?: string; message?: string; button?: string }) {
   return (
     <section className="pb-24 md:pb-32">
       <div className={wrap}>
@@ -98,7 +98,7 @@ export function CtaPanel({ title = "Let’s build something that matters.", text
             <p className="mx-auto mt-6 max-w-lg text-lg leading-relaxed text-white/65">{text}</p>
             <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild>
-                <a href={whatsappLink(message)} target="_blank" rel="noopener noreferrer">Start a project on WhatsApp</a>
+                <a href={whatsappLink(message)} target="_blank" rel="noopener noreferrer">{button}</a>
               </Button>
               <Button asChild variant="outlineLight">
                 <a href={`tel:${site.phone.replace(/\s/g, "")}`}>Call {site.phone}</a>

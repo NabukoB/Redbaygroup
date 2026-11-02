@@ -119,4 +119,218 @@ export const insights: Insight[] = [
       },
     ],
   },
+  {
+    slug: "building-your-house-in-phases",
+    title: "Building your house in phases: how to do it right",
+    description:
+      "Many Kenyan families build in stages as money allows. How to plan phases so each one is safe, protected and ready for the next.",
+    date: "2026-11-02",
+    sections: [
+      {
+        heading: "Why build in phases",
+        body: [
+          "Building in phases lets you pay as you go instead of taking on a large loan. Done well, it works. Done badly, you end up paying twice: for work that is exposed to the weather for months, or for parts that must be broken and redone.",
+        ],
+      },
+      {
+        heading: "Plan the whole house first",
+        body: [
+          "Get the full, approved drawings before the first phase starts, even if you will only build the foundation this year. The foundation, columns and starter bars must be sized for the finished house. Adding a floor later only works if the structure below was designed for it.",
+        ],
+      },
+      {
+        heading: "Sensible places to pause",
+        body: ["These are natural stopping points, where the work can wait safely:"],
+        list: [
+          "After the foundation and ground-floor slab",
+          "After the walls and ring beam, before the roof",
+          "After the roof is on, when the building is protected from rain",
+          "After plaster, before finishes such as tiles and paint",
+        ],
+      },
+      {
+        heading: "Protect the work between phases",
+        body: ["A long pause is where most damage happens. Before you stop:"],
+        list: [
+          "Cover exposed starter bars so they do not rust",
+          "Make sure rainwater drains away from the foundation",
+          "Store materials off the ground and under cover, or do not buy them yet",
+          "Keep a written record of what was built, so the next team knows",
+        ],
+      },
+      {
+        heading: "Ask for a phased quote",
+        body: [
+          "A good contractor can price the whole house and split the quote into phases. You then know the full cost from day one, and each phase has a clear scope and budget.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "cracks-in-walls-when-to-worry",
+    title: "Cracks in walls: when to worry and when not to",
+    description:
+      "Not every crack is a problem. How to tell a harmless plaster crack from a sign that something is moving, and what to do next.",
+    date: "2026-11-02",
+    sections: [
+      {
+        heading: "Most cracks are cosmetic",
+        body: [
+          "Fine, hairline cracks in plaster are common, especially in the first year as the plaster dries and shrinks. They usually run in random directions, do not grow, and can be filled when the house is next painted.",
+        ],
+      },
+      {
+        heading: "Signs that need a closer look",
+        body: ["Call a professional if you see any of these:"],
+        list: [
+          "Cracks wider than a coin's edge, or that keep getting wider",
+          "Diagonal cracks running from the corners of doors and windows",
+          "Stair-step cracks following the joints in block or stone walls",
+          "Doors and windows that suddenly stick or will not close",
+          "Cracks in the floor slab, beams or columns",
+        ],
+      },
+      {
+        heading: "Common causes",
+        body: [
+          "Bigger cracks usually point to movement: soil settling under the foundation, water collecting near the walls, or a beam or slab carrying more load than it was designed for. The crack itself is a symptom. The cause is what needs fixing.",
+        ],
+      },
+      {
+        heading: "What to do",
+        body: [
+          "Photograph the crack next to a ruler and note the date. Check it again after a few weeks. If it has grown, or matches any of the signs above, have a structural engineer inspect it before any repair. Filling a moving crack only hides the problem.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "gypsum-ceilings-where-they-work",
+    title: "Gypsum ceilings: where they work and where to avoid",
+    description:
+      "Gypsum ceilings look clean and modern, but they hate water. Where to use them, where to choose something else, and how to make them last.",
+    date: "2026-11-02",
+    sections: [
+      {
+        heading: "Why gypsum is popular",
+        body: [
+          "Gypsum board gives a smooth, modern ceiling. It can hide wiring and pipes, take recessed lights and form tray ceilings with concealed lighting. It is also fairly quick to install.",
+        ],
+      },
+      {
+        heading: "Its weakness is water",
+        body: [
+          "Ordinary gypsum board softens, sags and stains when it gets wet. A small roof leak or a dripping pipe above it can ruin a whole section.",
+        ],
+      },
+      {
+        heading: "Where to think twice",
+        body: ["Use moisture-resistant board, or a different ceiling, in:"],
+        list: [
+          "Bathrooms and showers",
+          "Kitchens with heavy cooking steam",
+          "Under a roof that has not been checked for leaks",
+          "Covered outdoor areas such as verandas",
+        ],
+      },
+      {
+        heading: "How to make it last",
+        body: ["A gypsum ceiling is only as good as what is above it:"],
+        list: [
+          "Fix every roof leak before the ceiling goes up",
+          "Use a proper metal or treated-timber frame, evenly spaced",
+          "Leave an access panel to reach pipes and wiring",
+          "Paint with a good-quality emulsion once the joints are dry",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-check-a-building-contractor",
+    title: "How to check a building contractor before you hire",
+    description:
+      "Simple checks to make before handing over your project and money: licence, past work, insurance and how the contractor quotes.",
+    date: "2026-11-02",
+    sections: [
+      {
+        heading: "Check the licence",
+        body: [
+          "Building contractors in Kenya must be registered with the National Construction Authority (NCA). Ask for the registration certificate and check the name and category on the NCA's website. The category tells you the size of project the contractor is registered for.",
+        ],
+      },
+      {
+        heading: "See real work",
+        body: ["Photos are a start, but go further:"],
+        list: [
+          "Ask for two or three past clients you can call",
+          "Visit a site that is under construction, not only finished houses",
+          "Look at the quality of walls, corners and finishes up close",
+        ],
+      },
+      {
+        heading: "Ask about insurance",
+        body: [
+          "Contractor's All Risk insurance covers damage to the works during construction, for example from fire, theft or storms. Ask whether the contractor carries it for your project.",
+        ],
+      },
+      {
+        heading: "Read the quotation carefully",
+        body: [
+          "A clear, itemised bill of quantities is a good sign. It shows the contractor has measured your project, and it makes comparing quotes fair. Be careful with very low lump-sum quotes; missing items usually come back as extra costs.",
+        ],
+      },
+      {
+        heading: "Agree it in writing",
+        body: ["Before work starts, have a written agreement that covers:"],
+        list: [
+          "The full scope of work and the drawings it follows",
+          "Payment stages tied to finished work, not to dates",
+          "The timeline, and what happens if it slips",
+          "Who buys which materials",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "perimeter-walls-what-to-know",
+    title: "Perimeter walls: what to know before you build",
+    description:
+      "A boundary wall is often the first thing built on a plot. Foundations, columns, height and drainage: what makes a perimeter wall last.",
+    date: "2026-11-02",
+    sections: [
+      {
+        heading: "Confirm the boundary first",
+        body: [
+          "Before any digging, make sure you know exactly where your boundary is. A surveyor can re-establish the beacons. A wall built on the wrong line is expensive to move and can lead to disputes with neighbours.",
+        ],
+      },
+      {
+        heading: "The foundation matters most",
+        body: [
+          "Most failed boundary walls fail at the bottom. A proper wall sits on a trench footing, with a stone or concrete base and a damp-proof layer before the walling starts. Skipping these to save money is the most common mistake.",
+        ],
+      },
+      {
+        heading: "Columns and height",
+        body: [
+          "Long walls need reinforced concrete columns at regular intervals to keep them straight and stable. The taller the wall, the stronger the foundation and columns must be. Very tall walls should be checked by an engineer.",
+        ],
+      },
+      {
+        heading: "Plan for water",
+        body: ["Water is a wall's main enemy. Make sure the design includes:"],
+        list: [
+          "Weep holes or gaps so water does not pond behind the wall",
+          "A coping on top to shed rain",
+          "Drainage along the base where water flows across the plot",
+        ],
+      },
+      {
+        heading: "Think about the gate early",
+        body: [
+          "Decide the gate size and type before the wall goes up, so the gate columns are built strong enough to carry it.",
+        ],
+      },
+    ],
+  },
 ];
