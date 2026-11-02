@@ -17,7 +17,7 @@ export default function ProjectsPage() {
   return (
     <>
       <Nav />
-      <main className="flex-1 bg-mist">
+      <main id="main" className="flex-1 bg-mist">
         <section className="pb-20 pt-10 md:pb-28 md:pt-14">
           <div className={wrap}>
             <Breadcrumbs items={[{ name: "Projects", path: "/projects/" }]} />

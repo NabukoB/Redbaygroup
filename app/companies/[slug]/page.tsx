@@ -40,7 +40,7 @@ export default async function CompanyPage({ params }: PageProps<"/companies/[slu
   return (
     <>
       <Nav />
-      <main>
+      <main id="main">
         <JsonLd data={serviceLd} />
         <PageHero
           crumbs={[{ name: c.name, path: `/companies/${c.slug}/` }]}

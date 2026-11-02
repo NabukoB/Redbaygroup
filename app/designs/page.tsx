@@ -15,7 +15,7 @@ export default function DesignsPage() {
   return (
     <>
       <Nav />
-      <main>
+      <main id="main">
         <PageHero
           crumbs={[{ name: "Home designs", path: "/designs/" }]}
           label="Home designs"

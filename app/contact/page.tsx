@@ -39,7 +39,7 @@ export default function ContactPage() {
   return (
     <>
       <Nav />
-      <main>
+      <main id="main">
         <JsonLd data={faqLd} />
         <PageHero
           crumbs={[{ name: "Contact", path: "/contact/" }]}

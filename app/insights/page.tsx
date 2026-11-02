@@ -16,7 +16,7 @@ export default function InsightsPage() {
   return (
     <>
       <Nav />
-      <main>
+      <main id="main">
         <PageHero
           crumbs={[{ name: "Insights", path: "/insights/" }]}
           label="Insights"

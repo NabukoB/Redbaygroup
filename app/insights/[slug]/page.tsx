@@ -25,7 +25,9 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
   const { slug } = await params;
   const p = insights.find((x) => x.slug === slug);
   if (!p) notFound();
-  const others = insights.filter((x) => x.slug !== p.slug).slice(0, 4);
+  // The next four guides after this one, wrapping round, so every guide gets linked
+  const at = insights.findIndex((x) => x.slug === p.slug);
+  const others = [1, 2, 3, 4].map((k) => insights[(at + k) % insights.length]).filter((x) => x.slug !== p.slug);
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -44,7 +46,7 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
   return (
     <>
       <Nav />
-      <main>
+      <main id="main">
         <JsonLd data={articleLd} />
         <article className="pb-20 pt-10 md:pt-14">
           <div className={wrap}>

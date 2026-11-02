@@ -35,7 +35,9 @@ export default async function DesignPage({ params }: PageProps<"/designs/[slug]"
   const d = designs.find((x) => x.slug === slug);
   if (!d) notFound();
   const base = `/designs/${d.slug}`;
-  const others = designs.filter((x) => x.slug !== d.slug).slice(0, 3);
+  // The next three designs after this one, wrapping round, so every design gets linked
+  const at = designs.findIndex((x) => x.slug === d.slug);
+  const others = [1, 2, 3].map((k) => designs[(at + k) % designs.length]);
 
   const designLd = {
     "@context": "https://schema.org",
@@ -51,7 +53,7 @@ export default async function DesignPage({ params }: PageProps<"/designs/[slug]"
   return (
     <>
       <Nav />
-      <main>
+      <main id="main">
         <JsonLd data={designLd} />
         <section className="pb-14 pt-10 md:pt-14">
           <div className={wrap}>

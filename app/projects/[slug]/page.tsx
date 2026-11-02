@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
 import { Badge, Breadcrumbs, CtaPanel, Footer, Nav, wrap } from "@/components/chrome";
 import { Gallery } from "@/components/gallery";
+import { ProjectCard } from "@/components/project-card";
 import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/reveal";
 import { pageMeta } from "@/lib/seo";
@@ -58,7 +59,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
   return (
     <>
       <Nav />
-      <main>
+      <main id="main">
         <JsonLd data={projectLd} />
         <section className="pb-16 pt-10 md:pt-14">
           <div className={wrap}>
@@ -96,6 +97,27 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
           <div className={wrap}>
             <h2 className="sr-only">Photos</h2>
             <Gallery base={`/projects/${p.slug}`} photos={p.photos!} />
+          </div>
+        </section>
+
+        <section className="bg-mist py-20 md:py-24">
+          <div className={wrap}>
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <h2 className="heading text-[clamp(2rem,4vw,3rem)]">More projects</h2>
+              <Link href="/projects/" className="inline-flex items-center gap-1.5 font-medium text-charcoal-deep underline-offset-4 hover:underline">
+                All projects <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </div>
+            <ul className="mt-10 grid gap-4 md:grid-cols-3">
+              {(() => {
+                const idx = withPages.findIndex((x) => x.slug === p.slug);
+                return [1, 2, 3].map((k) => withPages[(idx + k) % withPages.length]).filter((x) => x.slug !== p.slug);
+              })().map((o) => (
+                <li key={o.slug} className="h-full">
+                  <ProjectCard p={o} />
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 

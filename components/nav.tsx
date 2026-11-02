@@ -50,6 +50,9 @@ export function Nav() {
     };
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
+        if (dropRef.current?.contains(document.activeElement)) {
+          dropRef.current.querySelector("button")?.focus();
+        }
         setDropOpen(false);
         setMenuOpen(false);
       }
@@ -62,12 +65,18 @@ export function Nav() {
     };
   }, []);
 
-  const isActive = (href: string) => pathname === href || pathname === href.replace(/\/$/, "");
+  const isActive = (href: string) => pathname === href || pathname === href.replace(/\/$/, "") || pathname.startsWith(href);
   const linkCls = (href: string) =>
     `hover:text-charcoal-deep ${isActive(href) ? "text-charcoal-deep font-medium" : ""}`;
 
   return (
     <header className="sticky top-0 z-50 border-b border-line/70 bg-white/90 backdrop-blur-md">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-[60] focus:rounded-md focus:bg-charcoal-deep focus:px-4 focus:py-2 focus:text-white"
+      >
+        Skip to content
+      </a>
       <div className={`${wrap} flex h-16 items-center justify-between`}>
         <Link href="/" aria-label="Redbay Group, home">
           <Logo />
@@ -75,7 +84,13 @@ export function Nav() {
 
         <nav className="hidden items-center gap-8 text-[15px] text-slate lg:flex" aria-label="Main">
           <Link className={linkCls("/about/")} href="/about/">About</Link>
-          <div className="relative" ref={dropRef}>
+          <div
+            className="relative"
+            ref={dropRef}
+            onBlur={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setDropOpen(false);
+            }}
+          >
             <button
               type="button"
               className={`flex items-center gap-1 hover:text-charcoal-deep ${pathname.startsWith("/companies") ? "font-medium text-charcoal-deep" : ""}`}

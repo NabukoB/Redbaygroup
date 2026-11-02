@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <>
       <Nav />
-      <main>
+      <main id="main">
         <PageHero
           crumbs={[{ name: "About", path: "/about/" }]}
           label="About us"
