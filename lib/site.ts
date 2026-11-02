@@ -199,6 +199,32 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Bungalow",
+    place: "Oljororok, Nyahururu",
+    division: "Homes",
+    note: "Shell works",
+    slug: "oljororok-bungalow",
+    summary:
+      "Shell works for a bungalow in Oljororok, Nyahururu: slab, block walls, ring beam, timber roof and yellow stone cladding.",
+    // TODO: confirm scope and year with Redbay
+    scope: [
+      "Foundations and ground-floor slab",
+      "Block walling with reinforced concrete columns",
+      "Ring beam cast over the walls",
+      "Timber roof structure and roofing",
+      "Yellow stone cladding, external plaster and steel windows",
+    ],
+    photos: [
+      { file: "plastered-stone-cladding", alt: "Bungalow in Oljororok, Nyahururu, with external plaster, yellow stone cladding, steel windows and a stone-columned porch" },
+      { file: "roofing-cladding", alt: "Roof structure on and yellow stone cladding going up around the windows and entrance" },
+      { file: "roof-timbers", alt: "Timber roof rafters going up over the walls, with yellow stone corner columns" },
+      { file: "ring-beam-walling", alt: "Ring beam formwork along the top of the walls while masons lay yellow stone cladding" },
+      { file: "ring-beam-formwork", alt: "Site team fixing the ring beam formwork on top of the block walls" },
+      { file: "walling-columns", alt: "Block walls and reinforced concrete columns rising, with column formwork in place" },
+      { file: "foundation-slab", alt: "Ground-floor slab cast, with wall lines marked and column starter bars in place" },
+    ],
+  },
+  {
     name: "Home interiors",
     place: "Ukunda, Kwale",
     division: "Interiors",
