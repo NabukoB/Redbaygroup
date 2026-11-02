@@ -135,13 +135,13 @@ export const photoSrc = (slug: string, file: string, w: 800 | 1600) => imgSrc(`/
 // Projects with photos are listed first.
 export const projects: Project[] = [
   {
-    name: "Two-storey family home",
+    name: "Maisonette",
     place: "Baraka Estate, Nanyuki",
     division: "Homes",
     note: "Full build",
     slug: "nanyuki-baraka-home",
     summary:
-      "A two-storey family home in Baraka Estate, Nanyuki, built from walling to the final coat of paint, with tiled floors and a cabro driveway.",
+      "A family maisonette in Baraka Estate, Nanyuki, built from walling to the final coat of paint, with tiled floors and a cabro driveway.",
     // TODO: confirm scope and year with Redbay
     scope: [
       "Machine-cut stone walling with a reinforced concrete frame",
@@ -152,7 +152,7 @@ export const projects: Project[] = [
     ],
     photos: [
       { file: "finished-balconies", alt: "The finished house with columned balconies, black steel balustrades and decorative parapet detailing" },
-      { file: "finished-front", alt: "Finished two-storey home in Baraka Estate, Nanyuki, with white and grey walls, balconies and a cabro driveway" },
+      { file: "finished-front", alt: "Finished maisonette in Baraka Estate, Nanyuki, with white and grey walls, balconies and a cabro driveway" },
       { file: "finished-driveway", alt: "Side view of the finished home along the cabro-paved driveway and boundary wall" },
       { file: "interior-balcony-room", alt: "Upper-floor room with a full-height steel door opening onto the balcony and marble-effect floor tiles" },
       { file: "interior-tiled-room", alt: "Bright upper-floor room with marble-effect tiles, cornice and painted walls" },
@@ -168,6 +168,34 @@ export const projects: Project[] = [
       { file: "plastered-street-view", alt: "The plastered house seen from the road, behind the boundary wall and gate" },
       { file: "painting-start", alt: "Painting under way on the ground floor, with scaffolding still up" },
       { file: "painting-scaffold", alt: "Exterior painting in progress on the balconies and parapets" },
+    ],
+  },
+  {
+    name: "Four-bedroom home",
+    place: "Lukenya, Machakos",
+    division: "Homes",
+    note: "Full build",
+    slug: "lukenya-four-bedroom",
+    summary:
+      "A modern four-bedroom home in Lukenya, built from the foundations up, with a stone-clad facade, balconies and steel windows.",
+    // TODO: confirm scope and year with Redbay
+    scope: [
+      "Stone foundations and ground-floor slab",
+      "Machine-cut stone walling with a reinforced concrete frame",
+      "First-floor and roof slabs cast on site",
+      "Steel windows, doors and balcony balustrades",
+      "External plaster and decorative stone cladding",
+    ],
+    photos: [
+      { file: "finished-stone-cladding", alt: "Four-bedroom house in Lukenya with yellow and charcoal stone cladding in a diagonal pattern, balconies and black steel windows" },
+      { file: "plastered-balconies", alt: "The plastered house from the road, with steel balustrades fitted on the balconies" },
+      { file: "plastering-from-road", alt: "External plastering in progress, seen over the boundary wall" },
+      { file: "plastered-front", alt: "Front of the house after plastering, with grey steel windows fitted" },
+      { file: "windows-fitted", alt: "Steel windows and doors fitted before plastering" },
+      { file: "walls-from-road", alt: "First-floor walls and parapets going up, seen from outside the boundary wall" },
+      { file: "first-floor-walls", alt: "First-floor walling and parapets with the floor slab cast" },
+      { file: "slab-pour", alt: "Site team pouring the first-floor slab with a concrete mixer and hoist" },
+      { file: "foundations", alt: "Stone foundations being laid inside the walled plot" },
     ],
   },
   {
@@ -252,7 +280,6 @@ export const projects: Project[] = [
   },
   { name: "Merishaw School", place: "Isinya, Kajiado", division: "Schools", note: "School buildings" },
   { name: "Five-bedroom villa", place: "Diani, Kwale", division: "Homes", note: "Private residence" },
-  { name: "Maisonettes", place: "Nanyuki", division: "Homes", note: "Residential development" },
   { name: "Maisonettes", place: "Lukenya", division: "Homes", note: "Residential development" },
   { name: "Bungalows", place: "Nyahururu", division: "Homes", note: "Family homes" },
   { name: "Bungalows", place: "Kakamega", division: "Homes", note: "Family homes" },
