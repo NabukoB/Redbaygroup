@@ -286,6 +286,32 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Maisonette",
+    place: "Diani, Kwale",
+    division: "Homes",
+    note: "Coastal maisonette",
+    slug: "diani-maisonette",
+    summary:
+      "A modern coastal maisonette between Ukunda and Diani, with coral stone cladding, smoked glass balconies and timber pergolas over a rooftop terrace.",
+    // TODO: confirm scope with Redbay
+    scope: [
+      "Coral stone cladding on the main facade",
+      "Frameless smoked glass balustrades on the balconies and roof",
+      "Stainless steel railings on the ground-floor veranda",
+      "Aluminium sliding doors and windows",
+      "Treated hardwood pergolas with clear roofing sheets",
+      "Rooftop terrace",
+    ],
+    photos: [
+      { file: "front-pergolas", alt: "Coastal maisonette in Diani with coral stone cladding, a smoked glass balcony and timber pergolas on the roof" },
+      { file: "balcony-pergola", alt: "Hardwood pergola with clear roofing over the upper balcony and frameless glass balustrade" },
+      { file: "garden-facade", alt: "Garden side of the Diani maisonette with a stone-clad veranda, sliding doors and steel railings" },
+      { file: "rooftop-pergola", alt: "Team fixing the rooftop pergola on the Diani maisonette above the glass-fronted balcony" },
+      { file: "street-view", alt: "Diani maisonette seen from the street with its rooftop pergola above the boundary wall and gate" },
+      { file: "timber-treatment", alt: "Carpenter sanding and treating hardwood pergola beams on site before fixing" },
+    ],
+  },
+  {
     name: "Home interiors",
     place: "Ukunda, Kwale",
     division: "Interiors",
