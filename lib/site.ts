@@ -306,8 +306,6 @@ export const projects: Project[] = [
   },
   { name: "Merishaw School", place: "Isinya, Kajiado", division: "Schools", note: "School buildings" },
   { name: "Five-bedroom villa", place: "Diani, Kwale", division: "Homes", note: "Private residence" },
-  { name: "Maisonettes", place: "Lukenya", division: "Homes", note: "Residential development" },
-  { name: "Bungalows", place: "Nyahururu", division: "Homes", note: "Family homes" },
   { name: "Bungalows", place: "Kakamega", division: "Homes", note: "Family homes" },
 ];
 
