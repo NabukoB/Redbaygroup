@@ -30,7 +30,7 @@ export default function LocationsPage() {
               {locations.map((l, i) => {
                 const count = l.projects.filter((s) => projects.some((p) => p.slug === s)).length;
                 return (
-                  <Reveal as="li" key={l.slug} delay={(i % 2) * 0.06} className="h-full">
+                  <Reveal as="li" key={l.slug} delay={(i % 2) * 0.06} className={`h-full ${locations.length % 2 === 1 && i === locations.length - 1 ? "md:col-span-2" : ""}`}>
                     <Link
                       href={`/locations/${l.slug}/`}
                       className="group flex h-full flex-col justify-between rounded-3xl bg-mist p-8 transition-colors hover:bg-[#ebebe9] md:p-10"
@@ -53,7 +53,7 @@ export default function LocationsPage() {
               })}
             </ul>
             <p className="mx-auto mt-10 max-w-xl text-center text-[15px] leading-relaxed text-slate">
-              Building somewhere else? We have also worked in Kakamega. Tell us where your site is and we will confirm.
+              Building somewhere else? Tell us where your site is and we will confirm.
             </p>
           </div>
         </section>

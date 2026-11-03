@@ -286,6 +286,34 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Bungalow",
+    place: "Tala, Kangundo",
+    division: "Homes",
+    note: "Shell and roofing",
+    slug: "tala-bungalow-shell",
+    summary:
+      "Shell works for a family bungalow in Tala, Kangundo: stone foundation, block walls, ring beam, steel roof trusses and grey stone-coated tiles.",
+    // TODO: confirm scope with Redbay
+    scope: [
+      "Machine-cut stone foundation walling",
+      "Block walling with a reinforced concrete ring beam",
+      "Steel roof trusses with timber battens",
+      "Grey stone-coated roofing tiles with hips and fascia boards",
+      "Steel windows with grills",
+      "External plastering",
+    ],
+    photos: [
+      { file: "finished-roof", alt: "Bungalow in Tala, Kangundo with a grey stone-coated tile hipped roof and steel windows being fitted" },
+      { file: "roof-side", alt: "Side view of the Tala bungalow with its finished hipped roof while the walls are plastered" },
+      { file: "plastering", alt: "Plasterer working on the outside wall of the Tala bungalow beside the new boundary wall columns" },
+      { file: "rear-wall", alt: "Plastered rear wall of the bungalow with steel-framed windows and the stone foundation below" },
+      { file: "roof-trusses", alt: "Steel roof trusses and timber battens fixed over the block walls of the bungalow" },
+      { file: "roof-battens", alt: "Roofing team fixing timber battens across the steel trusses of the hipped roof" },
+      { file: "steel-trusses", alt: "Steel roof trusses being raised onto the ring beam of the Tala bungalow" },
+      { file: "ring-beam", alt: "Ring beam formwork along the top of the block walls with a column being set in place" },
+    ],
+  },
+  {
     name: "Maisonette",
     place: "Diani, Kwale",
     division: "Homes",
@@ -309,6 +337,65 @@ export const projects: Project[] = [
       { file: "rooftop-pergola", alt: "Team fixing the rooftop pergola on the Diani maisonette above the glass-fronted balcony" },
       { file: "street-view", alt: "Diani maisonette seen from the street with its rooftop pergola above the boundary wall and gate" },
       { file: "timber-treatment", alt: "Carpenter sanding and treating hardwood pergola beams on site before fixing" },
+    ],
+  },
+  {
+    name: "Thatched gazebo",
+    place: "Diani, Kwale",
+    division: "Homes",
+    note: "Outdoor gazebo",
+    slug: "diani-gazebo",
+    cta: {
+      title: "Want a gazebo like this?",
+      text: "Send us your plot location and how you want to use the space. We will design it with you and give you a fixed quote.",
+    },
+    summary:
+      "A traditional makuti-thatched gazebo in Diani on concrete columns and a raised coral stone base, with built-in wiring, low walls and a tiled floor.",
+    // TODO: confirm scope and size with Redbay
+    scope: [
+      "Raised coral stone base and concrete floor slab",
+      "Concrete columns and low surrounding walls",
+      "Treated pole roof frame with rafters and battens",
+      "Makuti (palm leaf) thatch roof",
+      "Electrical conduits and sockets chased into the walls",
+      "Plastering, white paint and floor tiling",
+    ],
+    photos: [
+      { file: "finished", alt: "Finished makuti-thatched gazebo in Diani with white walls, columns and a tiled floor" },
+      { file: "finished-angle", alt: "Thatched gazebo seen from the front, with white columns and low walls under the deep makuti roof" },
+      { file: "painting-tiling", alt: "Gazebo walls painted white while the floor tiles are laid under the new thatch" },
+      { file: "thatching", alt: "Makuti thatch going onto the pole roof frame of the Diani gazebo" },
+      { file: "wiring", alt: "Electrical conduits and socket boxes chased into the gazebo wall before plastering" },
+      { file: "rafters", alt: "Pole rafters fixed to the ring beam as the first thatch goes on" },
+      { file: "pole-frame", alt: "Pole roof frame of the gazebo taking shape over the concrete columns" },
+      { file: "frame-start", alt: "First roof poles set on the columns of the gazebo next to the main house" },
+    ],
+  },
+  {
+    name: "Family bungalow",
+    place: "Kakamega",
+    division: "Homes",
+    note: "Full build",
+    slug: "kakamega-bungalow",
+    summary:
+      "A family bungalow in Kakamega built from setting out to a finished hipped roof, with block walls, a front veranda, steel windows and a solar water heater.",
+    // TODO: confirm scope with Redbay
+    scope: [
+      "Setting out and foundation excavation",
+      "Stone foundation and block walling with a ring beam",
+      "Treated timber roof trusses and battens",
+      "Dark stone-coated roofing tiles with hips and fascia boards",
+      "Steel windows and doors with grills",
+      "Plastering and a solar water heater on the roof",
+    ],
+    photos: [
+      { file: "finished-front", alt: "Finished family bungalow in Kakamega with a dark tiled hipped roof, steel windows and a solar panel" },
+      { file: "roof-complete", alt: "Bungalow in Kakamega with the roof tiles complete and the walls ready for plastering" },
+      { file: "roof-battens", alt: "Roofing team fixing battens over the timber trusses of the bungalow" },
+      { file: "roof-trusses", alt: "Timber roof trusses going up over the block walls at dusk, seen across a maize field" },
+      { file: "walls-ring-beam", alt: "Block walls and concrete ring beam at a corner of the bungalow, with the first truss in place" },
+      { file: "foundation-excavation", alt: "Site team digging the foundation trenches for the Kakamega bungalow" },
+      { file: "setting-out", alt: "Foundation lines marked out on the ground as the trenches are excavated" },
     ],
   },
   {
@@ -364,6 +451,38 @@ export const projects: Project[] = [
   },
   {
     name: "Perimeter wall",
+    place: "Karen, Nairobi",
+    division: "Homes",
+    note: "Perimeter wall",
+    slug: "karen-perimeter-wall",
+    cta: {
+      title: "Need a perimeter wall?",
+      text: "Tell us the length of your boundary and the site location. We will measure it and give you a fixed price per running metre.",
+    },
+    summary:
+      "A long boundary wall in Karen on reinforced concrete columns and a machine-cut stone foundation, built in block walling with columns cast in place.",
+    // TODO: confirm scope, height and length with Redbay
+    scope: [
+      "Setting out with profile boards and string lines",
+      "Trench excavation and concrete strip footing",
+      "Reinforced concrete columns at regular spacing",
+      "Machine-cut stone foundation courses",
+      "Block walling between the columns",
+      "Columns cast in formwork, ready for a ring beam and coping",
+    ],
+    photos: [
+      { file: "finished-panels", alt: "Block perimeter wall in Karen with reinforced concrete columns between the panels" },
+      { file: "wall-run", alt: "Long run of the Karen perimeter wall with column steel left for the ring beam" },
+      { file: "column-casting", alt: "Columns cast in plywood formwork along the block wall in Karen" },
+      { file: "column-formwork", alt: "Formwork on the concrete columns of the boundary wall while a worker waters the concrete" },
+      { file: "stone-foundation", alt: "Machine-cut stone foundation laid in the trench with column steel rising through it" },
+      { file: "foundation-courses", alt: "Mortared stone foundation courses in the trench beside a column cage" },
+      { file: "foundation-trench-stone", alt: "Masons laying foundation stone along the string line in the trench" },
+      { file: "column-cages", alt: "Steel column cages set out along the excavated trench for the Karen wall" },
+    ],
+  },
+  {
+    name: "Perimeter wall",
     place: "Kikuyu, Kiambu",
     division: "Homes",
     note: "Perimeter wall",
@@ -391,7 +510,6 @@ export const projects: Project[] = [
       { file: "trench-excavation", alt: "Site team excavating the foundation trench for the perimeter wall" },
     ],
   },
-  { name: "Bungalows", place: "Kakamega", division: "Homes", note: "Family homes" },
 ];
 
 export const approach = [

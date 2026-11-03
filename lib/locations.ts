@@ -25,9 +25,9 @@ export const locations: Location[] = [
     seoDescription:
       "NCA-registered building contractor based in Ruaraka, Nairobi. Homes, maisonettes, perimeter walls and finishes across Nairobi, Kiambu and Machakos.",
     intro:
-      "We are based in Ruaraka, Nairobi, and build homes, boundary walls and finishes across the city and the counties around it, from Kikuyu to Kamulu and Lukenya.",
+      "We are based in Ruaraka, Nairobi, and build homes, boundary walls and finishes across the city and the counties around it, from Kikuyu to Kamulu, Lukenya and Tala.",
     counties: ["Nairobi", "Kiambu", "Machakos"],
-    towns: ["Ruaraka", "Kamulu", "Ruai", "Kikuyu", "Lukenya", "Athi River", "Syokimau", "Juja", "Ruiru"],
+    towns: ["Ruaraka", "Karen", "Kamulu", "Ruai", "Kikuyu", "Lukenya", "Tala", "Kangundo", "Athi River", "Syokimau", "Juja", "Ruiru"],
     local: [
       {
         heading: "Small plots, building up",
@@ -46,8 +46,8 @@ export const locations: Location[] = [
         text: "Nairobi City County, Kiambu and Machakos each run their own building approval process. Your architect submits the drawings to the county where the plot sits, and the project is then registered with the NCA before work starts.",
       },
     ],
-    projects: ["kamulu-roofing-shell", "lukenya-four-bedroom", "kikuyu-house", "kikuyu-perimeter-wall"],
-    guides: ["building-approvals-kenya", "maisonette-or-bungalow", "machine-cut-stone-vs-blocks", "cracks-in-walls-when-to-worry"],
+    projects: ["kamulu-roofing-shell", "tala-bungalow-shell", "karen-perimeter-wall", "lukenya-four-bedroom", "kikuyu-house", "kikuyu-perimeter-wall"],
+    guides: ["building-approvals-kenya", "perimeter-wall-cost-kenya", "maisonette-or-bungalow", "machine-cut-stone-vs-blocks"],
     faqs: [
       {
         q: "Where in Nairobi are you based?",
@@ -97,7 +97,7 @@ export const locations: Location[] = [
         text: "Cross ventilation, deep overhangs, balconies and rooftop pergolas keep a coastal home comfortable with less air conditioning.",
       },
     ],
-    projects: ["diani-maisonette", "ukunda-interiors"],
+    projects: ["diani-maisonette", "diani-gazebo", "ukunda-interiors"],
     guides: ["building-at-the-coast", "roofing-options-kenya", "flat-roofs-practical-questions", "epoxy-floors-choose-for-your-home"],
     faqs: [
       {
@@ -220,6 +220,57 @@ export const locations: Location[] = [
       },
     ],
     message: "Hello Redbay Group, I would like a quote for a project in Nanyuki or Nyahururu.",
+  },
+  {
+    slug: "kakamega",
+    name: "Kakamega",
+    title: "Building contractor in Kakamega and Western Kenya",
+    seoTitle: "Building Contractor in Kakamega & Western Kenya",
+    seoDescription:
+      "Redbay builds family homes in Kakamega, from foundations to a finished roof. Homes planned for heavy rain, with solar water heating and fixed, itemised quotes.",
+    intro:
+      "We built a family bungalow in Kakamega from setting out to a finished tiled roof. Homes in Western Kenya need to handle frequent heavy rain, so we plan roofs and drainage carefully.",
+    counties: ["Kakamega"],
+    towns: ["Kakamega town", "Lurambi", "Shinyalu", "Malava", "Mumias", "Butere"],
+    local: [
+      {
+        heading: "Plan for heavy rain",
+        text: "Kakamega gets rain for much of the year. Wide roof overhangs, good gutters and downpipes, and drainage that leads water away from the walls keep the house dry and the foundations sound.",
+      },
+      {
+        heading: "Raise the floor",
+        text: "A floor slab set above the surrounding ground, with a damp-proof membrane under it, stops water and damp rising into the house during the long rains.",
+      },
+      {
+        heading: "Treated timber",
+        text: "Timber trusses are common here. They should be treated against termites and rot, and properly tied down to the ring beam so the roof holds in strong winds.",
+      },
+      {
+        heading: "Hot water from the sun",
+        text: "A solar water heater on the roof cuts power bills. Plan the roof position and pipe runs during the build, as we did on our Kakamega bungalow.",
+      },
+    ],
+    projects: ["kakamega-bungalow"],
+    guides: ["roofing-options-kenya", "building-your-house-in-phases", "solar-power-for-homes-and-schools", "building-approvals-kenya"],
+    faqs: [
+      {
+        q: "Do you build in Kakamega?",
+        a: "Yes. We built a family bungalow in Kakamega from foundations to a finished roof. Send us your plot location and we will confirm.",
+      },
+      {
+        q: "I live in Nairobi. Can you build my home in Kakamega?",
+        a: "Yes. We agree the scope, timeline and payment stages in writing before work starts, and each payment is tied to a stage of work being completed.",
+      },
+      {
+        q: "Can you build in phases?",
+        a: "Yes. Many clients build the shell and roof first, then finishes later. We plan each stage so it is protected from the rain.",
+      },
+      {
+        q: "How do I get a quote?",
+        a: "Send your drawings, the site location and a few photos of the plot on WhatsApp. We will return an itemised bill of quantities and a fixed quote.",
+      },
+    ],
+    message: "Hello Redbay Group, I would like a quote for a project in Kakamega.",
   },
 ];
 

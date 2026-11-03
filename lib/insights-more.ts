@@ -4,6 +4,63 @@ import type { Insight } from "./insights";
 
 export const moreInsights: Insight[] = [
   {
+    slug: "perimeter-wall-cost-kenya",
+    title: "Perimeter wall cost in Kenya: what you pay per metre",
+    description:
+      "How much a perimeter wall costs in Kenya, from KSh 14,000 per running metre with Redbay, and what changes the price: height, foundation, columns and finish.",
+    date: "2026-11-04",
+    sections: [
+      {
+        heading: "Walls are priced per running metre",
+        body: [
+          "A perimeter wall is usually priced by its length along the boundary, called the running metre. Measure your boundary, multiply by the rate, and add the gate and any extras.",
+          "Redbay builds standard perimeter walls from KSh 14,000 per running metre. For example, a 100-metre boundary would start from about KSh 1.4 million before the gate. We confirm the exact rate after seeing the site.",
+        ],
+      },
+      {
+        heading: "What a solid wall includes",
+        body: ["A wall that lasts is more than blocks on the ground. A proper quote should cover:"],
+        list: [
+          "Setting out the boundary line with profile boards and string lines",
+          "Trench excavation and a concrete strip footing",
+          "Stone foundation courses up to ground level",
+          "Reinforced concrete columns at regular spacing",
+          "Block or stone walling between the columns",
+          "A ring beam or coping on top to tie the wall and shed rain",
+        ],
+      },
+      {
+        heading: "What changes the price",
+        body: ["Two walls of the same length can cost different amounts. The main reasons are:"],
+        list: [
+          "Height: taller walls need deeper foundations and stronger columns",
+          "Soil: black cotton soil or a sloping plot needs more foundation work",
+          "Walling material: machine-cut stone or concrete blocks",
+          "Finish: left fair-faced, plastered and painted, or clad in stone",
+          "Extras: electric fence, razor wire, lighting and the gate",
+          "Access: how far materials must travel to reach the site",
+        ],
+      },
+      {
+        heading: "Where people cut corners",
+        body: [
+          "Cheap walls usually save money underground: shallow trenches, no footing, too few columns or thin steel. These walls lean, crack or fall within a few years, often after heavy rain. Ask every builder exactly what sits below ground before you compare prices.",
+        ],
+      },
+      {
+        heading: "How to get an accurate price",
+        body: [
+          "Send us the length of your boundary, the height you want, the site location and a few photos of the plot. If you have a survey map, include it. We measure on site and give you one fixed price per running metre, with what is included written down.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Perimeter wall in Karen", href: "/projects/karen-perimeter-wall/" },
+      { label: "Perimeter wall in Kikuyu", href: "/projects/kikuyu-perimeter-wall/" },
+      { label: "Perimeter walls: what to know before you build", href: "/insights/perimeter-walls-what-to-know/" },
+    ],
+  },
+  {
     slug: "building-approvals-kenya",
     title: "Building approvals in Kenya: what you need",
     description:
@@ -116,6 +173,7 @@ export const moreInsights: Insight[] = [
     ],
     related: [
       { label: "Two-storey home with a stone-coated tile roof, Kamulu", href: "/projects/kamulu-roofing-shell/" },
+      { label: "Bungalow with a grey stone-coated tile roof, Tala", href: "/projects/tala-bungalow-shell/" },
       { label: "Flat roofs: are they practical?", href: "/insights/flat-roofs-practical-questions/" },
     ],
   },
@@ -171,6 +229,7 @@ export const moreInsights: Insight[] = [
     ],
     related: [
       { label: "Five-bedroom coastal maisonette, Diani", href: "/projects/diani-maisonette/" },
+      { label: "Makuti-thatched gazebo, Diani", href: "/projects/diani-gazebo/" },
       { label: "Home interiors, Ukunda", href: "/projects/ukunda-interiors/" },
     ],
   },
