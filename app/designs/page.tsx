@@ -26,11 +26,9 @@ export default function DesignsPage() {
           <div className={wrap}>
             <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {designs.map((d, i) => (
-                <Reveal key={d.slug} delay={(i % 3) * 0.05}>
-                  <li className="h-full">
+                <Reveal as="li" key={d.slug} delay={(i % 3) * 0.05} className="h-full">
                     <DesignCard d={d} />
-                  </li>
-                </Reveal>
+                  </Reveal>
               ))}
             </ul>
             <p className="mx-auto mt-10 max-w-2xl text-center text-sm leading-relaxed text-slate">

@@ -113,8 +113,7 @@ function Companies() {
           {companies.map((c, i) => {
             const Icon = icons[c.division];
             return (
-              <Reveal key={c.name} delay={(i % 2) * 0.08}>
-                <li className="h-full">
+              <Reveal as="li" key={c.name} delay={(i % 2) * 0.08} className="h-full">
                   <Link
                     href={`/companies/${c.slug}/`}
                     className="group flex h-full flex-col rounded-3xl bg-mist p-8 transition-colors hover:bg-[#ebebe9] md:p-10"
@@ -132,8 +131,7 @@ function Companies() {
                   <p className="mt-2 text-lg font-semibold text-charcoal-deep">{c.line}</p>
                   <p className="mt-3 max-w-md text-[15px] leading-relaxed text-slate">{c.text}</p>
                   </Link>
-                </li>
-              </Reveal>
+                </Reveal>
             );
           })}
         </ul>
@@ -153,11 +151,9 @@ function Projects() {
         />
         <ul className="mt-14 grid gap-4 md:grid-cols-3">
           {projects.slice(0, 3).map((p, i) => (
-            <Reveal key={`${p.name}-${p.place}`} delay={i * 0.06}>
-              <li className="h-full">
+            <Reveal as="li" key={`${p.name}-${p.place}`} delay={i * 0.06} className="h-full">
                 <ProjectCard p={p} />
-              </li>
-            </Reveal>
+              </Reveal>
           ))}
         </ul>
         <Reveal className="mt-12 text-center">
@@ -181,11 +177,9 @@ function Designs() {
         />
         <ul className="mt-14 grid gap-4 md:grid-cols-3">
           {designs.slice(0, 3).map((d, i) => (
-            <Reveal key={d.slug} delay={i * 0.06}>
-              <li className="h-full">
+            <Reveal as="li" key={d.slug} delay={i * 0.06} className="h-full">
                 <DesignCard d={d} />
-              </li>
-            </Reveal>
+              </Reveal>
           ))}
         </ul>
         <Reveal className="mt-12 text-center">

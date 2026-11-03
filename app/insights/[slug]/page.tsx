@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Badge, Breadcrumbs, CtaPanel, Footer, Nav, wrap } from "@/components/chrome";
+import { Fragment } from "react";
+import { Badge, Breadcrumbs, CtaPanel, Footer, Nav, whatsappLink, wrap } from "@/components/chrome";
 import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/reveal";
 import { insights } from "@/lib/insights";
@@ -60,8 +61,25 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
               </p>
             </Reveal>
             <div className="mx-auto mt-14 max-w-3xl space-y-12 border-t border-line pt-12">
-              {p.sections.map((s) => (
-                <Reveal key={s.heading}>
+              {p.sections.map((s, i) => (
+                <Fragment key={s.heading}>
+                {i === 2 && (
+                  <aside className="rounded-3xl bg-mist p-7 md:p-8">
+                    <p className="text-lg font-semibold tracking-tight text-charcoal-deep">Planning a project like this?</p>
+                    <p className="mt-2 text-[15px] leading-relaxed text-slate">
+                      Send us your drawings or a few photos of the site on WhatsApp. We reply with an itemised bill of quantities and one fixed price.
+                    </p>
+                    <a
+                      href={whatsappLink(`Hello Redbay Group, I read your guide "${p.title}" and would like advice on my project.`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-5 inline-flex h-12 items-center rounded-full bg-red px-6 text-[15px] font-semibold text-white transition-colors hover:bg-red/90"
+                    >
+                      Get a fixed quote on WhatsApp
+                    </a>
+                  </aside>
+                )}
+                <Reveal>
                   <section>
                     <h2 className="heading text-[28px] md:text-[32px]">{s.heading}</h2>
                     {s.body.map((para) => (
@@ -79,6 +97,7 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
                     )}
                   </section>
                 </Reveal>
+                </Fragment>
               ))}
             </div>
             {p.related?.length ? (

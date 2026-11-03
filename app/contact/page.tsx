@@ -62,8 +62,7 @@ export default function ContactPage() {
                   </>
                 );
                 return (
-                  <Reveal key={c.label} delay={i * 0.05}>
-                    <li className="h-full">
+                  <Reveal as="li" key={c.label} delay={i * 0.05} className="h-full">
                       {c.href ? (
                         <a
                           href={c.href}
@@ -75,8 +74,7 @@ export default function ContactPage() {
                       ) : (
                         <div className="h-full rounded-3xl bg-mist p-7">{inner}</div>
                       )}
-                    </li>
-                  </Reveal>
+                    </Reveal>
                 );
               })}
             </ul>

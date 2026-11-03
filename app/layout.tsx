@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { JsonLd } from "@/components/json-ld";
 import { MotionProvider } from "@/components/motion-provider";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 import { organizationLd } from "@/lib/seo";
 import { site } from "@/lib/site";
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <JsonLd data={organizationLd()} />
         <MotionProvider>{children}</MotionProvider>
+        <WhatsAppFloat />
       </body>
     </html>
   );

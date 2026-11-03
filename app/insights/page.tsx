@@ -27,8 +27,7 @@ export default function InsightsPage() {
           <div className={wrap}>
             <ul className="grid gap-4 md:grid-cols-3">
               {insights.map((p, i) => (
-                <Reveal key={p.slug} delay={i * 0.06}>
-                  <li className="h-full">
+                <Reveal as="li" key={p.slug} delay={i * 0.06} className="h-full">
                     <Link
                       href={`/insights/${p.slug}/`}
                       className="group flex h-full flex-col justify-between rounded-3xl bg-mist p-8 transition-colors hover:bg-[#ebebe9]"
@@ -43,8 +42,7 @@ export default function InsightsPage() {
                         <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
                       </span>
                     </Link>
-                  </li>
-                </Reveal>
+                  </Reveal>
               ))}
             </ul>
           </div>

@@ -13,15 +13,13 @@ export function StepsSection({ title = "How a project runs", text }: { title?: s
         <SectionHead label="Our process" title={title} text={text ?? "You know the price, the scope and the timeline before any work starts."} />
         <ol className="mt-14 grid gap-4 md:grid-cols-5">
           {steps.map((s, i) => (
-            <Reveal key={s.name} delay={i * 0.05}>
-              <li className="h-full rounded-2xl bg-mist p-6">
+            <Reveal as="li" key={s.name} delay={i * 0.05} className="h-full rounded-2xl bg-mist p-6">
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-charcoal-deep text-sm font-semibold text-white">
                   {i + 1}
                 </span>
                 <h3 className="mt-6 text-lg font-semibold tracking-tight">{s.name}</h3>
                 <p className="mt-2 text-[15px] leading-relaxed text-slate">{s.text}</p>
-              </li>
-            </Reveal>
+              </Reveal>
           ))}
         </ol>
       </div>
@@ -42,11 +40,9 @@ export function ProjectsFor({ division, title }: { division?: Division; title: s
             }`}
           >
             {list.map((p, i) => (
-              <Reveal key={`${p.name}-${p.place}`} delay={(i % 3) * 0.05}>
-                <li className="h-full">
+              <Reveal as="li" key={`${p.name}-${p.place}`} delay={(i % 3) * 0.05} className="h-full">
                   <ProjectCard p={p} />
-                </li>
-              </Reveal>
+                </Reveal>
             ))}
           </ul>
         ) : (
@@ -72,8 +68,7 @@ export function OtherCompanies({ current }: { current?: string }) {
         <SectionHead label="Redbay Group" title={current ? "The rest of the group" : "Our companies"} />
         <ul className={`mt-14 grid gap-4 ${list.length === 3 ? "md:grid-cols-3" : "md:grid-cols-2"}`}>
           {list.map((c, i) => (
-            <Reveal key={c.slug} delay={i * 0.05}>
-              <li className="h-full">
+            <Reveal as="li" key={c.slug} delay={i * 0.05} className="h-full">
                 <Link
                   href={`/companies/${c.slug}/`}
                   className="group flex h-full flex-col rounded-3xl bg-mist p-8 transition-colors hover:bg-[#ebebe9]"
@@ -86,8 +81,7 @@ export function OtherCompanies({ current }: { current?: string }) {
                   <p className="mt-2 font-semibold text-charcoal-deep">{c.line}</p>
                   <p className="mt-3 text-[15px] leading-relaxed text-slate">{c.text}</p>
                 </Link>
-              </li>
-            </Reveal>
+              </Reveal>
           ))}
         </ul>
       </div>

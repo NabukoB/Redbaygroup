@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { locations } from "@/lib/locations";
 import { companies, site } from "@/lib/site";
 
 // Builds the title, description, canonical address and share-card data for one page.
@@ -63,7 +64,10 @@ export function organizationLd() {
       addressRegion: "Nairobi",
       addressCountry: "KE",
     },
-    areaServed: { "@type": "Country", name: "Kenya" },
+    areaServed: [
+      { "@type": "Country", name: "Kenya" },
+      ...locations.flatMap((l) => l.counties).map((c) => ({ "@type": "AdministrativeArea", name: `${c} County, Kenya` })),
+    ],
     knowsAbout: ["Residential construction", "School construction", "Interior finishes", "Solar and wind energy"],
     department: companies.map((c) => ({
       "@type": "Organization",

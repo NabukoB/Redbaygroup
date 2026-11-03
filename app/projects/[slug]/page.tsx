@@ -8,6 +8,7 @@ import { ProjectCard } from "@/components/project-card";
 import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/reveal";
 import { insights } from "@/lib/insights";
+import { locationFor } from "@/lib/locations";
 import { pageMeta } from "@/lib/seo";
 import { companies, photoSrc, projects, site } from "@/lib/site";
 
@@ -43,6 +44,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
   const company = companies.find((c) => c.division === p.division)!;
   // Guides that point to this project in their "See it in practice" list
   const guides = insights.filter((g) => g.related?.some((r) => r.href === `/projects/${p.slug}/`));
+  const area = locationFor(p.slug!);
 
   const projectLd = {
     "@context": "https://schema.org",
@@ -90,6 +92,11 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
                   <Link href={`/companies/${company.slug}/`} className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-white underline-offset-4 hover:underline">
                     Delivered by {company.name} <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                   </Link>
+                  {area && (
+                    <Link href={`/locations/${area.slug}/`} className="mt-3 flex items-center gap-1.5 text-sm font-medium text-white/80 underline-offset-4 hover:text-white hover:underline">
+                      Building in {area.name} <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                    </Link>
+                  )}
                 </div>
               </Reveal>
             </div>

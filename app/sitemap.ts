@@ -1,12 +1,13 @@
 import type { MetadataRoute } from "next";
 import { designs } from "@/lib/designs";
 import { insights } from "@/lib/insights";
+import { locations } from "@/lib/locations";
 import { companies, projects, site } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date("2026-10-30");
+  const now = new Date("2026-11-04");
   const page = (path: string, priority: number, changeFrequency: "monthly" | "yearly" = "monthly") => ({
     url: `${site.url}${path}`,
     lastModified: now,
@@ -23,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...designs.map((d) => page(`/designs/${d.slug}/`, 0.6)),
     page("/insights/", 0.6),
     ...insights.map((i) => page(`/insights/${i.slug}/`, 0.5, "yearly")),
+    page("/locations/", 0.8),
+    ...locations.map((l) => page(`/locations/${l.slug}/`, 0.9)),
     page("/contact/", 0.8),
   ];
 }

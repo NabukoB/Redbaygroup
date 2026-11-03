@@ -56,13 +56,11 @@ export default async function CompanyPage({ params }: PageProps<"/companies/[slu
             <SectionHead label="What we do" title={`${c.name} services`} text={c.text} />
             <ul className={`mt-14 grid gap-4 sm:grid-cols-2 ${c.services.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}>
               {c.services.map((s, i) => (
-                <Reveal key={s.name} delay={(i % 3) * 0.05}>
-                  <li className="h-full rounded-2xl border border-line p-7">
+                <Reveal as="li" key={s.name} delay={(i % 3) * 0.05} className="h-full rounded-2xl border border-line p-7">
                     <span className="block h-1.5 w-8 rounded-full bg-red" aria-hidden="true" />
                     <h3 className="mt-6 text-xl font-semibold tracking-tight">{s.name}</h3>
                     <p className="mt-2 text-[15px] leading-relaxed text-slate">{s.text}</p>
-                  </li>
-                </Reveal>
+                  </Reveal>
               ))}
             </ul>
           </div>

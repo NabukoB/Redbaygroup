@@ -5,6 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { breadcrumbLd } from "@/lib/seo";
 import { companies, site } from "@/lib/site";
+import { locations } from "@/lib/locations";
 
 export { Nav } from "@/components/nav";
 
@@ -115,7 +116,7 @@ export function Footer() {
   return (
     <footer className="border-t border-line">
       <div className={`${wrap} grid gap-10 py-14 md:grid-cols-12`}>
-        <div className="md:col-span-5">
+        <div className="md:col-span-4">
           <Logo />
           <p className="mt-3 max-w-xs text-[15px] leading-relaxed text-slate">
             {site.tagline} Homes, schools, interiors and energy across Kenya.
@@ -128,7 +129,7 @@ export function Footer() {
             ))}
           </ul>
         </div>
-        <nav className="grid grid-cols-2 gap-8 text-[15px] md:col-span-4" aria-label="Footer">
+        <nav className="grid grid-cols-2 gap-8 text-[15px] sm:grid-cols-3 md:col-span-5" aria-label="Footer">
           <div>
             <p className="font-semibold text-charcoal-deep">Companies</p>
             <ul className="mt-3 space-y-2 text-slate">
@@ -147,6 +148,17 @@ export function Footer() {
               <li><Link className="hover:text-charcoal-deep" href="/designs/">Home designs</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/insights/">Insights</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/contact/">Contact</Link></li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-semibold text-charcoal-deep">Areas</p>
+            <ul className="mt-3 space-y-2 text-slate">
+              {locations.map((l) => (
+                <li key={l.slug}>
+                  <Link className="hover:text-charcoal-deep" href={`/locations/${l.slug}/`}>{l.name}</Link>
+                </li>
+              ))}
+              <li><Link className="hover:text-charcoal-deep" href="/locations/">All areas</Link></li>
             </ul>
           </div>
         </nav>
@@ -171,7 +183,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-line">
-        <p className={`${wrap} py-6 text-sm text-slate`}>
+        <p className={`${wrap} pb-24 pt-6 text-sm text-slate md:pb-6`}>
           © {site.name}. {site.legal} is an {site.nca} licensed contractor registered with the National Construction Authority.
         </p>
       </div>

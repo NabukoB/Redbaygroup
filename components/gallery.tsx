@@ -52,8 +52,8 @@ export function Gallery({ base, photos }: { base: string; photos: ProjectPhoto[]
               type="button"
               onClick={() => setOpen(i)}
               className="group block h-full w-full overflow-hidden rounded-2xl bg-mist"
-              aria-label={`Open photo ${i + 1} of ${n}: ${ph.alt}`}
             >
+              <span className="sr-only">{`Open photo ${i + 1} of ${n}: `}</span>
               {/* eslint-disable-next-line @next/next/no-img-element -- static export: images are pre-sized WebP */}
               <img
                 src={imgSrc(base, ph.file, i === 0 ? 1600 : 800)}
