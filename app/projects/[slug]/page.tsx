@@ -7,6 +7,7 @@ import { Gallery } from "@/components/gallery";
 import { ProjectCard } from "@/components/project-card";
 import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/reveal";
+import { insights } from "@/lib/insights";
 import { pageMeta } from "@/lib/seo";
 import { companies, photoSrc, projects, site } from "@/lib/site";
 
@@ -40,6 +41,8 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
   const p = withPages.find((x) => x.slug === slug);
   if (!p) notFound();
   const company = companies.find((c) => c.division === p.division)!;
+  // Guides that point to this project in their "See it in practice" list
+  const guides = insights.filter((g) => g.related?.some((r) => r.href === `/projects/${p.slug}/`));
 
   const projectLd = {
     "@context": "https://schema.org",
@@ -97,6 +100,20 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
           <div className={wrap}>
             <h2 className="sr-only">Photos</h2>
             <Gallery base={`/projects/${p.slug}`} photos={p.photos!} />
+            {guides.length > 0 && (
+              <div className="mt-12 rounded-3xl border border-line p-8">
+                <h2 className="text-lg font-semibold">Guides for this kind of build</h2>
+                <ul className="mt-4 grid gap-3 md:grid-cols-2">
+                  {guides.map((g) => (
+                    <li key={g.slug}>
+                      <Link href={`/insights/${g.slug}/`} className="inline-flex items-start gap-1.5 text-lg font-medium text-charcoal-deep underline-offset-4 hover:underline">
+                        {g.title} <ArrowUpRight className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </section>
 

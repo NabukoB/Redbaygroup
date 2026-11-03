@@ -292,7 +292,7 @@ export const projects: Project[] = [
     note: "Coastal maisonette",
     slug: "diani-maisonette",
     summary:
-      "A modern coastal maisonette between Ukunda and Diani, with coral stone cladding, smoked glass balconies and timber pergolas over a rooftop terrace.",
+      "A five-bedroom coastal maisonette between Ukunda and Diani, with coral stone cladding, smoked glass balconies and timber pergolas on the roof.",
     // TODO: confirm scope with Redbay
     scope: [
       "Coral stone cladding on the main facade",
@@ -391,7 +391,6 @@ export const projects: Project[] = [
       { file: "trench-excavation", alt: "Site team excavating the foundation trench for the perimeter wall" },
     ],
   },
-  { name: "Five-bedroom villa", place: "Diani, Kwale", division: "Homes", note: "Private residence" },
   { name: "Bungalows", place: "Kakamega", division: "Homes", note: "Family homes" },
 ];
 

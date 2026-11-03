@@ -5,9 +5,13 @@ export type Insight = {
   description: string;
   date: string;
   sections: { heading: string; body: string[]; list?: string[] }[];
+  // Our own work or guides that show this in practice; project pages link back
+  related?: { label: string; href: string }[];
 };
 
-export const insights: Insight[] = [
+import { moreInsights } from "./insights-more";
+
+const baseInsights: Insight[] = [
   {
     slug: "does-your-quotation-include-everything",
     title: "Does your building quotation include everything?",
@@ -332,5 +336,9 @@ export const insights: Insight[] = [
         ],
       },
     ],
+    related: [{ label: "Perimeter wall in Kikuyu", href: "/projects/kikuyu-perimeter-wall/" }],
   },
 ];
+
+// Newest first, so the latest guides lead the list
+export const insights: Insight[] = [...moreInsights, ...baseInsights];

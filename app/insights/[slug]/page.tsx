@@ -81,7 +81,21 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
                 </Reveal>
               ))}
             </div>
-            <aside className="mx-auto mt-16 max-w-3xl rounded-3xl bg-mist p-8">
+            {p.related?.length ? (
+              <aside className="mx-auto mt-16 max-w-3xl rounded-3xl bg-charcoal-deep p-8 text-white">
+                <h2 className="text-lg font-semibold">See it in practice</h2>
+                <ul className="mt-4 space-y-3">
+                  {p.related.map((r) => (
+                    <li key={r.href}>
+                      <Link className="text-lg font-medium text-white underline-offset-4 hover:underline" href={r.href}>
+                        {r.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+            ) : null}
+            <aside className={`mx-auto ${p.related?.length ? "mt-4" : "mt-16"} max-w-3xl rounded-3xl bg-mist p-8`}>
               <h2 className="text-lg font-semibold">More guides</h2>
               <ul className="mt-4 space-y-3">
                 {others.map((o) => (
