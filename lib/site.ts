@@ -135,6 +135,43 @@ export const photoSrc = (slug: string, file: string, w: 800 | 1600) => imgSrc(`/
 // Projects with photos are listed first.
 export const projects: Project[] = [
   {
+    name: "Merishaw School",
+    place: "Isinya, Kajiado",
+    division: "Schools",
+    note: "School buildings",
+    slug: "merishaw-school",
+    cta: {
+      title: "Planning a school build?",
+      text: "Send us your drawings or brief. We will return an itemised bill of quantities, a phased programme and a fixed quote.",
+    },
+    summary:
+      "Classroom blocks for Merishaw School in Isinya, built around a courtyard, from foundations to the concrete frame, steel roofing and finishes.",
+    // TODO: confirm scope, block count and dates with Redbay
+    scope: [
+      "Setting out and foundation excavation",
+      "Reinforced concrete frame, slabs and corridors",
+      "Block walling, plastering and rendering",
+      "Steel roof trusses and roofing",
+      "Steel balustrades, windows and doors",
+      "Painting, courtyard paving and landscaping",
+    ],
+    photos: [
+      { file: "courtyard-walkway", alt: "Merishaw School courtyard with a concrete slab walkway leading between three-storey classroom blocks with red columns" },
+      { file: "courtyard-finished", alt: "Finished classroom blocks at Merishaw School with cream walls, red columns and balconies around the courtyard" },
+      { file: "courtyard-paving", alt: "Workers laying paving in the Merishaw School courtyard between the finished classroom wings" },
+      { file: "rear-facade", alt: "Painted rear wall of a classroom block with a red stair tower and steel roof trusses" },
+      { file: "classroom-wing", alt: "Ground-floor classrooms and corridor with steel balustrades and young palms planted outside" },
+      { file: "courtyard-roofing", alt: "Courtyard view during construction with steel roof trusses going up and water tanks on site" },
+      { file: "three-storey-block", alt: "Three-storey classroom block with decorative wall openings and plumbing pipes ready on site" },
+      { file: "steel-roof-trusses", alt: "Rendered classroom block with steel roof trusses and a balcony balustrade on the top floor" },
+      { file: "courtyard-plastering", alt: "Classroom wings under scaffolding during plastering around the central courtyard" },
+      { file: "wing-scaffolding", alt: "Timber scaffolding along a classroom wing while the walls are plastered" },
+      { file: "soffit-plastering", alt: "Plasterers working on the corridor ceiling from steel scaffolding" },
+      { file: "foundation-excavation", alt: "Site team excavating foundations for a new block, with the concrete frame behind" },
+      { file: "foundation-setting-out", alt: "Foundation setting out with profile boards and pegs as the team digs the footings" },
+    ],
+  },
+  {
     name: "Maisonette",
     place: "Baraka Estate, Nanyuki",
     division: "Homes",
@@ -225,6 +262,30 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Two-storey home",
+    place: "Kamulu, Nairobi",
+    division: "Homes",
+    note: "Roofing and shell",
+    slug: "kamulu-roofing-shell",
+    summary:
+      "Shell works and roofing for a two-storey family home in Kamulu, with a machine-cut stone ground floor, balconies and a red stone-coated tile roof.",
+    // TODO: confirm scope with Redbay
+    scope: [
+      "Machine-cut stone walling on the ground floor",
+      "Block walling on the upper floor with concrete slabs and balconies",
+      "Timber roof structure with hips and gables",
+      "Red stone-coated roofing tiles",
+      "Timber fascia boards around the roof",
+    ],
+    photos: [
+      { file: "front-corner", alt: "Two-storey home in Kamulu with a red stone-coated tile roof and stone ground floor" },
+      { file: "front-full", alt: "Front of the Kamulu home showing the hipped roof, gables and upper-floor balconies" },
+      { file: "rear-corner", alt: "Rear corner of the two-storey shell with the red tiled roof complete" },
+      { file: "gable-balconies", alt: "Timber gable and balconies on the upper floor of the Kamulu home" },
+      { file: "side-view", alt: "Side view of the Kamulu home showing the stone and block walling" },
+    ],
+  },
+  {
     name: "Home interiors",
     place: "Ukunda, Kwale",
     division: "Interiors",
@@ -304,7 +365,6 @@ export const projects: Project[] = [
       { file: "trench-excavation", alt: "Site team excavating the foundation trench for the perimeter wall" },
     ],
   },
-  { name: "Merishaw School", place: "Isinya, Kajiado", division: "Schools", note: "School buildings" },
   { name: "Five-bedroom villa", place: "Diani, Kwale", division: "Homes", note: "Private residence" },
   { name: "Bungalows", place: "Kakamega", division: "Homes", note: "Family homes" },
 ];

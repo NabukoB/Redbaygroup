@@ -30,8 +30,24 @@ export function Gallery({ base, photos }: { base: string; photos: ProjectPhoto[]
   return (
     <>
       <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
-        {photos.map((ph, i) => (
-          <li key={ph.file} className={i === 0 ? "col-span-2 row-span-2" : ""}>
+        {photos.map((ph, i) => {
+          // Widen the last photo so the grid never ends with an empty slot
+          const last = i === n - 1 && i > 0;
+          const sm = last && (n - 1) % 2 === 1 ? "col-span-2" : "";
+          const mdLeft = (n - 3) % 3;
+          let md = "";
+          let aspect = "";
+          if (n === 1) {
+            md = "md:col-span-3";
+            aspect = "md:aspect-[16/9]";
+          } else if (n === 2 && last) {
+            md = "md:col-span-1 md:row-span-2"; // sits beside the large first photo, full height
+          } else if (last && n > 3) {
+            md = mdLeft === 2 ? "md:col-span-2" : mdLeft === 1 ? "md:col-span-3" : "md:col-span-1";
+            aspect = mdLeft === 2 ? "md:aspect-[8/3]" : mdLeft === 1 ? "md:aspect-[4/1]" : "";
+          }
+          return (
+          <li key={ph.file} className={i === 0 ? `col-span-2 row-span-2 ${md}`.trim() : `${sm} ${md}`.trim()}>
             <button
               type="button"
               onClick={() => setOpen(i)}
@@ -48,11 +64,12 @@ export function Gallery({ base, photos }: { base: string; photos: ProjectPhoto[]
                 height={600}
                 loading={i < 3 ? "eager" : "lazy"}
                 decoding="async"
-                className="aspect-[4/3] h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                className={`aspect-[4/3] ${aspect} h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]`}
               />
             </button>
           </li>
-        ))}
+          );
+        })}
       </ul>
 
       <AnimatePresence>
