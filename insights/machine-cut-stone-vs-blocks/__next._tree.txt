@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/0t9oxxpjkbwxg.css","style"]
+:HL["/_next/static/chunks/30wuk93952f5-.css","style"]
 :HC["/",""]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"machine-cut-stone-vs-blocks","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"insights","h":131136,"c":"$Q2"}]]
-0:{"b":"Wv8mlrRbBVkekAtZVxgKU","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"q37XYeseO0mkGXa6uQ509","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
