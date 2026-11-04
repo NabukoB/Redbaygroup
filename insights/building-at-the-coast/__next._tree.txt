@@ -3,4 +3,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"building-at-the-coast","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"insights","h":131136,"c":"$Q2"}]]
-0:{"b":"do4Nq0anrCRe9sAsvKa5C","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"jdag8dWVdXS4El6iAQbz4","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
