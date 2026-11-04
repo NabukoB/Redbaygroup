@@ -293,7 +293,6 @@ export const projects: Project[] = [
     slug: "tala-bungalow-shell",
     summary:
       "Shell works for a family bungalow in Tala, Kangundo: stone foundation, block walls, ring beam, steel roof trusses and grey stone-coated tiles.",
-    // TODO: confirm scope with Redbay
     scope: [
       "Machine-cut stone foundation walling",
       "Block walling with a reinforced concrete ring beam",
@@ -342,7 +341,7 @@ export const projects: Project[] = [
   {
     name: "Thatched gazebo",
     place: "Diani, Kwale",
-    division: "Homes",
+    division: "Interiors",
     note: "Outdoor gazebo",
     slug: "diani-gazebo",
     cta: {
@@ -351,7 +350,6 @@ export const projects: Project[] = [
     },
     summary:
       "A traditional makuti-thatched gazebo in Diani on concrete columns and a raised coral stone base, with built-in wiring, low walls and a tiled floor.",
-    // TODO: confirm scope and size with Redbay
     scope: [
       "Raised coral stone base and concrete floor slab",
       "Concrete columns and low surrounding walls",
@@ -379,7 +377,6 @@ export const projects: Project[] = [
     slug: "kakamega-bungalow",
     summary:
       "A family bungalow in Kakamega built from setting out to a finished hipped roof, with block walls, a front veranda, steel windows and a solar water heater.",
-    // TODO: confirm scope with Redbay
     scope: [
       "Setting out and foundation excavation",
       "Stone foundation and block walling with a ring beam",
@@ -461,7 +458,6 @@ export const projects: Project[] = [
     },
     summary:
       "A long boundary wall in Karen on reinforced concrete columns and a machine-cut stone foundation, built in block walling with columns cast in place.",
-    // TODO: confirm scope, height and length with Redbay
     scope: [
       "Setting out with profile boards and string lines",
       "Trench excavation and concrete strip footing",

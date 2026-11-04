@@ -21,7 +21,7 @@ export function generateStaticParams() {
 }
 
 const titleFor = (p: (typeof projects)[number]) =>
-  p.division === "Interiors" ? `Interior Finishes for a Home in ${p.place}` : `${p.name}, ${p.place}`;
+  p.name === "Home interiors" ? `Interior Finishes for a Home in ${p.place}` : `${p.name}, ${p.place}`;
 
 export async function generateMetadata({ params }: PageProps<"/projects/[slug]">): Promise<Metadata> {
   const { slug } = await params;
