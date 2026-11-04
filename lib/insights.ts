@@ -9,6 +9,7 @@ export type Insight = {
   related?: { label: string; href: string }[];
 };
 
+import { energyInsights } from "./insights-energy";
 import { moreInsights } from "./insights-more";
 
 const baseInsights: Insight[] = [
@@ -345,4 +346,4 @@ const baseInsights: Insight[] = [
 ];
 
 // Newest first, so the latest guides lead the list
-export const insights: Insight[] = [...moreInsights, ...baseInsights];
+export const insights: Insight[] = [...energyInsights, ...moreInsights, ...baseInsights];

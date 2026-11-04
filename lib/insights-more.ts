@@ -413,7 +413,7 @@ export const moreInsights: Insight[] = [
         heading: "Three types of system",
         body: [],
         list: [
-          "Grid-tied: works alongside KPLC power to cut your bill, but usually switches off during a blackout",
+          "Grid-tied: works alongside KPLC power to cut your bill and can earn net-metering credit, but usually switches off during a blackout",
           "Hybrid: grid-tied with batteries, so key loads keep running during blackouts",
           "Off-grid: panels and batteries only, for sites far from the grid",
         ],
@@ -446,7 +446,8 @@ export const moreInsights: Insight[] = [
     ],
     related: [
       { label: "Redbay Energy: solar and wind", href: "/companies/energy/" },
-      { label: "Planning a school building", href: "/insights/planning-a-school-building/" },
+      { label: "Net metering in Kenya", href: "/insights/net-metering-kenya/" },
+      { label: "Solar power for schools", href: "/insights/solar-for-schools-kenya/" },
     ],
   },
 ];

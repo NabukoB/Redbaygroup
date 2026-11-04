@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { OtherCompanies, ProjectsFor, StepsSection } from "@/components/blocks";
 import { CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
 import { DivisionArt } from "@/components/division-art";
 import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/reveal";
+import { insights } from "@/lib/insights";
 import { pageMeta } from "@/lib/seo";
 import { companies, site } from "@/lib/site";
 
@@ -25,6 +28,8 @@ export default async function CompanyPage({ params }: PageProps<"/companies/[slu
   const { slug } = await params;
   const c = companies.find((x) => x.slug === slug);
   if (!c) notFound();
+  // Guides that point to this company in their "See it in practice" list
+  const guides = insights.filter((g) => g.related?.some((r) => r.href === `/companies/${c.slug}/`));
 
   const serviceLd = {
     "@context": "https://schema.org",
@@ -70,6 +75,29 @@ export default async function CompanyPage({ params }: PageProps<"/companies/[slu
           division={c.division}
           title={{ Homes: "Homes we have built", Schools: "Schools we have built", Interiors: "Interior projects", Energy: "Energy projects" }[c.division]}
         />
+        {guides.length > 0 && (
+          <section className="py-24 md:py-28">
+            <div className={wrap}>
+              <SectionHead label="Guides" title="Read before you decide" />
+              <ul className="mx-auto mt-12 grid max-w-4xl gap-3 md:grid-cols-2">
+                {guides.map((g) => (
+                  <li key={g.slug}>
+                    <Link
+                      href={`/insights/${g.slug}/`}
+                      className="group flex h-full items-start justify-between gap-4 rounded-2xl border border-line p-6 transition-colors hover:bg-mist"
+                    >
+                      <span>
+                        <span className="block text-lg font-semibold tracking-tight">{g.title}</span>
+                        <span className="mt-1 block text-[15px] leading-relaxed text-slate">{g.description}</span>
+                      </span>
+                      <ArrowUpRight className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
         <StepsSection />
         <OtherCompanies current={c.slug} />
         <CtaPanel message={`Hello Redbay Group, I would like to talk about a ${c.division.toLowerCase()} project.`} />
