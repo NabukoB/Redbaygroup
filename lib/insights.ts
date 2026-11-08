@@ -338,6 +338,7 @@ const baseInsights: Insight[] = [
       },
     ],
     related: [
+      { label: "Wall cost calculator", href: "/perimeter-wall-calculator/" },
       { label: "Perimeter wall cost per metre", href: "/insights/perimeter-wall-cost-kenya/" },
       { label: "Perimeter wall in Karen", href: "/projects/karen-perimeter-wall/" },
       { label: "Perimeter wall in Kikuyu", href: "/projects/kikuyu-perimeter-wall/" },

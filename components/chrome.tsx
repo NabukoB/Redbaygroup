@@ -147,6 +147,7 @@ export function Footer() {
               <li><Link className="hover:text-charcoal-deep" href="/projects/">Projects</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/designs/">Home designs</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/insights/">Insights</Link></li>
+              <li><Link className="hover:text-charcoal-deep" href="/perimeter-wall-calculator/">Wall cost calculator</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/contact/">Contact</Link></li>
             </ul>
           </div>
