@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/25-1fvgyes-uj.css","style"]
+:HL["/_next/static/chunks/0tny-pt8ie99f.css","style"]
 :HC["/",""]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"stone-solar-cottage","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"designs","h":131136,"c":"$Q2"}]]
-0:{"b":"Pxw0bXoi4NXSCiixouSeF","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"aYcRBAw1DsIysFjUBSvXN","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
