@@ -616,8 +616,12 @@ export const steps = [
 
 export const faqs = [
   {
+    q: "What do you build?",
+    a: "Family homes, from bungalows to maisonettes, school buildings, perimeter walls and outdoor structures such as gazebos. Redbay Interiors fits out homes and offices, and Redbay Energy installs solar and wind power.",
+  },
+  {
     q: "Where in Kenya do you work?",
-    a: "We are based in Ruaraka, Nairobi, and have worked in Kikuyu, Isinya, Lukenya, Nanyuki, Nyahururu, Kakamega, Diani and Ukunda. Tell us where your site is and we will confirm.",
+    a: "We are based in Ruaraka, Nairobi. We have built in Nairobi (including Karen and Kamulu), Kiambu (Kikuyu), Machakos (Lukenya and Tala), Kajiado (Isinya), Laikipia (Nanyuki), Nyandarua (Oljororok, Nyahururu), Nakuru, Kakamega and Kwale (Diani and Ukunda). Tell us where your site is and we will confirm.",
   },
   {
     q: "Are you a licensed contractor?",
@@ -632,11 +636,27 @@ export const faqs = [
     a: "We measure the work into an itemised bill of quantities, then give you one fixed quotation with the scope, timeline and payment stages written down. Prices are quoted before VAT.",
   },
   {
+    q: "How much does a perimeter wall cost?",
+    a: "From KSh 14,000 per running metre for a wall 2.4 metres high on a foundation 0.8 metres deep, before VAT. The gate is priced separately. Our perimeter wall calculator gives an instant estimate, and we confirm the exact rate after seeing the site.",
+  },
+  {
     q: "What should I send to get a quote?",
     a: "Your drawings if you have them, the site location, a few photos of the site, and when you would like to start. If you do not have drawings yet, tell us what you want to build and we will advise on next steps.",
   },
   {
     q: "Do you build from my architect’s drawings?",
-    a: "Yes. We build to the approved drawings and work with your architect and engineer during construction.",
+    a: "Yes. We build to the approved drawings and work with your architect and engineer during construction. If you are still choosing a design, our home designs page shows designs we have developed with clients.",
+  },
+  {
+    q: "Can I build in phases?",
+    a: "Yes. Many clients build the foundation, walls and roof first and do the finishes later. We plan each phase so the work is protected from the weather and nothing has to be broken out later.",
+  },
+  {
+    q: "Can you do only part of a project?",
+    a: "Yes. We take on shell and roofing works, finishes and interiors, or a perimeter wall on its own, as well as complete builds.",
+  },
+  {
+    q: "Do you renovate offices?",
+    a: "Yes. Redbay Interiors fits out offices with glass partitions, boardrooms, suspended ceilings and LED lighting, built-in cabinets and painting, planned around your staff to keep disruption low.",
   },
 ];
