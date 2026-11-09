@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import { StepsSection } from "@/components/blocks";
-import { CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
+import { cardItem, cardRow, CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
 import { JsonLd } from "@/components/json-ld";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
@@ -99,9 +99,9 @@ export default async function LocationPage({ params }: PageProps<"/locations/[sl
         <section className="bg-mist py-24 md:py-28">
           <div className={wrap}>
             <SectionHead label="Our work here" title={work.length > 1 ? "Projects in this area" : "A project in this area"} />
-            <ul className={`mt-14 grid gap-4 ${work.length === 1 ? "mx-auto max-w-md" : work.length === 2 ? "md:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-4"}`}>
+            <ul className={`mt-14 ${work.length === 1 ? "mx-auto grid max-w-md" : cardRow}`}>
               {work.map((p, i) => (
-                <Reveal as="li" key={p.slug} delay={(i % 4) * 0.05} className="h-full">
+                <Reveal as="li" key={p.slug} delay={(i % 3) * 0.05} className={work.length === 1 ? "h-full" : cardItem}>
                   <ProjectCard p={p} />
                 </Reveal>
               ))}

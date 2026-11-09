@@ -11,6 +11,11 @@ export { Nav } from "@/components/nav";
 
 export const wrap = "mx-auto w-full max-w-[1240px] px-5 md:px-10";
 
+// Project card rows: 3 across on desktop, 2 on tablet, 1 on phone.
+// Cards wrap and the last row is centred, so there is never an empty slot.
+export const cardRow = "flex flex-wrap justify-center gap-4";
+export const cardItem = "h-full w-full md:w-[calc((100%-1rem)/2)] lg:w-[calc((100%-2rem)/3)]";
+
 export const whatsappLink = (text = "Hello Redbay Group, I would like to start a project.") =>
   `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;
 

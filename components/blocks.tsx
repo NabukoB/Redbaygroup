@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { Badge, SectionHead, wrap } from "@/components/chrome";
+import { Badge, SectionHead, wrap, cardItem, cardRow } from "@/components/chrome";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { companies, projects, site, steps, type Division } from "@/lib/site";
@@ -35,12 +35,10 @@ export function ProjectsFor({ division, title }: { division?: Division; title: s
         <SectionHead label="Projects" title={title} />
         {list.length > 0 ? (
           <ul
-            className={`mt-14 grid gap-4 ${
-              list.length === 1 ? "mx-auto max-w-md" : list.length === 2 ? "mx-auto max-w-4xl md:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-3"
-            }`}
+            className={`mt-14 ${list.length === 1 ? "mx-auto grid max-w-md" : cardRow}`}
           >
             {list.map((p, i) => (
-              <Reveal as="li" key={`${p.name}-${p.place}`} delay={(i % 3) * 0.05} className="h-full">
+              <Reveal as="li" key={`${p.name}-${p.place}`} delay={(i % 3) * 0.05} className={list.length === 1 ? "h-full" : cardItem}>
                   <ProjectCard p={p} />
                 </Reveal>
             ))}

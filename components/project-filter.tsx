@@ -1,5 +1,7 @@
 "use client";
 
+import { cardItem, cardRow } from "@/components/chrome";
+
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ProjectCard } from "@/components/project-card";
@@ -27,7 +29,7 @@ export function ProjectFilter() {
           </button>
         ))}
       </div>
-      <motion.ul layout className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <motion.ul layout className={`mt-10 ${cardRow}`}>
         <AnimatePresence mode="popLayout">
           {shown.map((p) => (
             <motion.li
@@ -37,6 +39,7 @@ export function ProjectFilter() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.97 }}
               transition={{ duration: 0.3 }}
+              className={cardItem}
             >
               <ProjectCard p={p} />
             </motion.li>

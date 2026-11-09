@@ -281,6 +281,7 @@ export const moreInsights: Insight[] = [
     ],
     related: [
       { label: "Stone and block two-storey home, Kamulu", href: "/projects/kamulu-roofing-shell/" },
+      { label: "Two-storey house shell, Kikuyu", href: "/projects/kikuyu-house/" },
       { label: "Perimeter wall in Kikuyu", href: "/projects/kikuyu-perimeter-wall/" },
     ],
   },
