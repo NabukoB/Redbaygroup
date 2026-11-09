@@ -4,6 +4,9 @@ ErrorDocument 404 /404.html
 # Never list folder contents
 Options -Indexes
 
+# Plain-text files (llms.txt, robots.txt) are UTF-8
+AddCharset utf-8 .txt
+
 # Security headers. The site loads nothing from other websites, so the browser
 # is told to refuse any outside script, style, font or frame.
 <IfModule mod_headers.c>
