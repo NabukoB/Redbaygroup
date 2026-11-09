@@ -199,7 +199,7 @@ export const locations: Location[] = [
         text: "Plans are approved by the county where the plot sits. Allow time for the approval before planning your start date, then register the project with the NCA.",
       },
     ],
-    projects: ["nanyuki-baraka-home", "oljororok-bungalow"],
+    projects: ["nanyuki-baraka-home", "nanyuki-perimeter-wall", "oljororok-bungalow"],
     guides: ["maisonette-or-bungalow", "roofing-options-kenya", "building-your-house-in-phases", "gypsum-ceilings-where-they-work"],
     faqs: [
       {

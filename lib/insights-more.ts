@@ -50,12 +50,13 @@ export const moreInsights: Insight[] = [
       {
         heading: "How to get an accurate price",
         body: [
-          "Send us the length of your boundary, the height you want, the site location and a few photos of the plot. If you have a survey map, include it. We measure on site and give you one fixed price per running metre, with what is included written down. For a quick figure first, use our wall cost calculator.",
+          "Send us the length of your boundary, the height you want, the site location and a few photos of the plot. If you have a survey map, include it. We measure on site and give you one fixed price per running metre, with what is included written down. For a quick figure first, use our perimeter wall calculator.",
         ],
       },
     ],
     related: [
-      { label: "Wall cost calculator: get an instant estimate", href: "/perimeter-wall-calculator/" },
+      { label: "Perimeter wall calculator: get an instant estimate", href: "/perimeter-wall-calculator/" },
+      { label: "Finished perimeter wall and gate, Nanyuki", href: "/projects/nanyuki-perimeter-wall/" },
       { label: "Perimeter wall in Karen", href: "/projects/karen-perimeter-wall/" },
       { label: "Perimeter wall in Kikuyu", href: "/projects/kikuyu-perimeter-wall/" },
       { label: "Perimeter walls: what to know before you build", href: "/insights/perimeter-walls-what-to-know/" },

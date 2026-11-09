@@ -397,6 +397,32 @@ export const projects: Project[] = [
   },
   {
     name: "Home interiors",
+    place: "Nakuru",
+    division: "Interiors",
+    note: "Interior finishes",
+    slug: "nakuru-interiors",
+    summary:
+      "Interior finishes for a home in Nakuru: a fluted wood and marble-effect TV wall, tray ceiling, pendant lights and a fitted kitchen with granite tops.",
+    scope: [
+      "Feature TV wall with fluted wood panels and marble-effect board",
+      "Tray ceiling with cornice and chandelier",
+      "Wall lights and pendant lights over the kitchen counter",
+      "Fitted kitchen with granite worktops, built-in oven, hob and hood",
+      "Floor tiling and wall painting",
+    ],
+    photos: [
+      { file: "living-room", alt: "Living room in Nakuru with a fluted wood feature wall, tray ceiling and brass chandelier" },
+      { file: "feature-wall", alt: "Feature TV wall with marble-effect panel, fluted wood slats and wall lights" },
+      { file: "pendant-lights", alt: "Cage pendant lights over the living area with the feature wall and TV unit behind" },
+      { file: "living-to-kitchen", alt: "Living room opening onto the kitchen through a serving counter with granite top" },
+      { file: "kitchen", alt: "Fitted kitchen with granite worktops, gas hob, white and wood-finish cabinets and pendant lights" },
+      { file: "kitchen-oven", alt: "Kitchen wall with built-in oven, hob, cooker hood and two-tone cabinets" },
+      { file: "kitchen-side", alt: "Kitchen seen through the serving opening, with wood-finish wall units, cage pendants and a tiled splashback" },
+      { file: "tv-unit", alt: "TV unit with wood top below the marble-effect panel, beside full-length curtains and a wall light" },
+    ],
+  },
+  {
+    name: "Home interiors",
     place: "Ukunda, Kwale",
     division: "Interiors",
     note: "Interior finishes",
@@ -444,6 +470,35 @@ export const projects: Project[] = [
       { file: "rear", alt: "Rear of the house with the stair tower, tall windows and a long upper balcony" },
       { file: "rear-balcony", alt: "Upper balcony with decorative steel balustrade above the ground-floor veranda" },
       { file: "stair-tower", alt: "Stair tower with tall vertical windows and a water tank on the roof" },
+    ],
+  },
+  {
+    name: "Perimeter wall",
+    place: "Nanyuki, Laikipia",
+    division: "Homes",
+    note: "Perimeter wall",
+    slug: "nanyuki-perimeter-wall",
+    cta: {
+      title: "Need a perimeter wall?",
+      text: "Tell us the length of your boundary and the site location. We will measure it and give you a fixed price per running metre.",
+    },
+    summary:
+      "A complete perimeter wall in Nanyuki, from trench to finish: stone walling with concrete columns, plastered and painted, with coping and a steel gate.",
+    scope: [
+      "Trench excavation for the foundation",
+      "Machine-cut stone walling with reinforced concrete columns",
+      "Plaster and paint on the outer face",
+      "Coping along the top of the wall",
+      "Steel sliding gate with pedestrian door",
+    ],
+    photos: [
+      { file: "finished-gate", alt: "Finished grey perimeter wall in Nanyuki with a dark green steel gate and coping on top" },
+      { file: "finished-wall", alt: "Plastered and painted perimeter wall in Nanyuki running either side of the steel gate" },
+      { file: "column-gap", alt: "Stone wall panels either side of a reinforced column ready to be cast" },
+      { file: "walling-panels", alt: "Machine-cut stone wall panels going up between the column positions" },
+      { file: "walling-team", alt: "Masons laying stone courses along the Nanyuki boundary with column steel standing up" },
+      { file: "stone-delivery", alt: "Worker wheeling machine-cut stone to the masons building the wall" },
+      { file: "trench", alt: "Foundation trench dug along the boundary line beside the old fence and gate" },
     ],
   },
   {

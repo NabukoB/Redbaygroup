@@ -41,7 +41,7 @@ const faqs = [
 ];
 
 export default function WallCalculatorPage() {
-  const walls = ["karen-perimeter-wall", "kikuyu-perimeter-wall"].map((s) => projects.find((p) => p.slug === s)!).filter(Boolean);
+  const walls = ["nanyuki-perimeter-wall", "karen-perimeter-wall", "kikuyu-perimeter-wall"].map((s) => projects.find((p) => p.slug === s)!).filter(Boolean);
   const appLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -65,10 +65,10 @@ export default function WallCalculatorPage() {
         <JsonLd data={appLd} />
         <JsonLd data={faqLd} />
         <PageHero
-          crumbs={[{ name: "Wall cost calculator", path }]}
+          crumbs={[{ name: "Perimeter wall calculator", path }]}
           label="Calculator"
-          title="What will your wall cost?"
-          intro="Enter the length of your boundary for an instant estimate, then send it to us for an exact quote."
+          title="What will your perimeter wall cost?"
+          intro="Enter the length of your boundary for an instant perimeter wall estimate, then send it to us for an exact quote."
         >
           <WallCalculator />
         </PageHero>
@@ -110,8 +110,8 @@ export default function WallCalculatorPage() {
 
         <section className="bg-mist py-24 md:py-28">
           <div className={wrap}>
-            <SectionHead label="Our walls" title="Walls we have built" />
-            <ul className="mx-auto mt-14 grid max-w-4xl gap-4 md:grid-cols-2">
+            <SectionHead label="Our work" title="Perimeter walls we have built" />
+            <ul className="mt-14 grid gap-4 md:grid-cols-3">
               {walls.map((p) => (
                 <li key={p.slug} className="h-full">
                   <ProjectCard p={p} />

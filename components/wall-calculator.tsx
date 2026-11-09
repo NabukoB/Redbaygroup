@@ -19,7 +19,7 @@ export function WallCalculator() {
   const [length, setLength] = useState("100");
   const m = Math.min(Math.max(Number(length) || 0, 0), 10000);
   const total = m * WALL_RATE;
-  const message = `Hello Redbay Group, I used your wall calculator: about ${m} m of boundary, estimate ${ksh(total)}. I would like an exact quote. My site is in: `;
+  const message = `Hello Redbay Group, I used your perimeter wall calculator: about ${m} m of boundary, estimate ${ksh(total)}. I would like an exact quote. My site is in: `;
 
   return (
     <div className="rounded-3xl bg-charcoal-deep p-6 text-white md:p-10">
@@ -40,7 +40,7 @@ export function WallCalculator() {
         <span className="text-lg text-white/70">metres</span>
       </div>
       {Number(length) > 10000 && (
-        <p className="mt-2 text-sm text-white/70">That is a very long wall. The calculator stops at 10,000 m; send us the details for a proper quote.</p>
+        <p className="mt-2 text-sm text-white/70">That is a very long perimeter wall. The calculator stops at 10,000 m; send us the details for a proper quote.</p>
       )}
 
       <p className="mt-6 text-sm text-white/60">Not sure? Start from a common plot size:</p>
@@ -58,10 +58,10 @@ export function WallCalculator() {
       </div>
 
       <div className="mt-8 border-t border-white/10 pt-8" aria-live="polite">
-        <p className="text-sm text-white/60">Estimated cost</p>
+        <p className="text-sm text-white/60">Estimated perimeter wall cost</p>
         <p className="mt-1 text-[clamp(2.4rem,7vw,3.6rem)] font-semibold leading-none tracking-tight">{ksh(total)}</p>
         <p className="mt-3 text-[15px] leading-relaxed text-white/65">
-          {m} m × {ksh(WALL_RATE)} per metre, for a wall 2.4 m high on a 0.8 m deep foundation. Before VAT. The gate is priced separately.
+          {m} m × {ksh(WALL_RATE)} per metre, for a perimeter wall 2.4 m high on a 0.8 m deep foundation. Before VAT. The gate is priced separately.
         </p>
       </div>
 
