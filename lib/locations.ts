@@ -46,7 +46,7 @@ export const locations: Location[] = [
         text: "Nairobi City County, Kiambu and Machakos each run their own building approval process. Your architect submits the drawings to the county where the plot sits, and the project is then registered with the NCA before work starts.",
       },
     ],
-    projects: ["kamulu-roofing-shell", "tala-bungalow-shell", "karen-perimeter-wall", "lukenya-four-bedroom", "kikuyu-house", "kikuyu-perimeter-wall"],
+    projects: ["kamulu-roofing-shell", "tala-bungalow-shell", "karen-perimeter-wall", "sacco-office-nairobi", "lukenya-four-bedroom", "kikuyu-house", "kikuyu-perimeter-wall"],
     guides: ["building-approvals-kenya", "perimeter-wall-cost-kenya", "maisonette-or-bungalow", "machine-cut-stone-vs-blocks"],
     faqs: [
       {
