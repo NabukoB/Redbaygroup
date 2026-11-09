@@ -27,7 +27,7 @@ export default function InsightsPage() {
           <div className={wrap}>
             <ul className="grid gap-4 md:grid-cols-3">
               {insights.map((p, i) => (
-                <Reveal as="li" key={p.slug} delay={i * 0.06} className="h-full">
+                <Reveal as="li" key={p.slug} delay={(i % 3) * 0.06} className="h-full">
                     <Link
                       href={`/insights/${p.slug}/`}
                       className="group flex h-full flex-col justify-between rounded-3xl bg-mist p-8 transition-colors hover:bg-[#ebebe9]"

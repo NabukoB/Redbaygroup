@@ -149,7 +149,7 @@ export const locations: Location[] = [
       },
     ],
     projects: ["merishaw-school"],
-    guides: ["planning-a-school-building", "building-approvals-kenya", "solar-power-for-homes-and-schools", "cracks-in-walls-when-to-worry"],
+    guides: ["building-on-black-cotton-soil", "planning-a-school-building", "rainwater-harvesting-for-homes", "building-approvals-kenya"],
     faqs: [
       {
         q: "Have you built schools in Kajiado?",
@@ -251,7 +251,7 @@ export const locations: Location[] = [
       },
     ],
     projects: ["kakamega-bungalow"],
-    guides: ["roofing-options-kenya", "building-your-house-in-phases", "solar-power-for-homes-and-schools", "building-approvals-kenya"],
+    guides: ["roofing-options-kenya", "rainwater-harvesting-for-homes", "damp-and-waterproofing", "building-your-house-in-phases"],
     faqs: [
       {
         q: "Do you build in Kakamega?",
