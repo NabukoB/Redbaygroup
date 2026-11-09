@@ -355,7 +355,7 @@ export const practicalInsights: Insight[] = [
       {
         heading: "Keep the business running",
         body: [
-          "Most offices cannot close for a renovation. Work can be phased room by room, with noisy and dusty work done after hours or at weekends. Agree the programme in advance so staff know which areas are affected and when.",
+          "Most offices cannot close for a renovation. Work can be phased room by room, with noisy and dusty work done after hours or at weekends. Redbay Interiors can work evenings and weekends for this reason. Agree the programme in advance so staff know which areas are affected and when.",
         ],
       },
     ],

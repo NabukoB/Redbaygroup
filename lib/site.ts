@@ -403,7 +403,7 @@ export const projects: Project[] = [
     slug: "sacco-office-nairobi",
     cta: {
       title: "Renovating an office?",
-      text: "Send us your floor plan or a few photos of the space. We will plan the layout with you and give you a fixed quote, with work scheduled to keep disruption low.",
+      text: "Send us your floor plan or a few photos of the space. We will plan the layout with you and give you a fixed quote. We can work evenings and weekends so your office keeps running.",
     },
     summary:
       "Office renovation for a SACCO head office in Nairobi: glass partitions, a boardroom, private offices, gypsum ceilings with LED lighting and a reception.",
@@ -649,14 +649,14 @@ export const faqs = [
   },
   {
     q: "Can I build in phases?",
-    a: "Yes. Many clients build the foundation, walls and roof first and do the finishes later. We plan each phase so the work is protected from the weather and nothing has to be broken out later.",
+    a: "Yes. Many clients build the foundation, walls and roof first and do the finishes later, as funds allow. We price each phase separately in the bill of quantities and plan the order of work so each stage is protected from the weather and nothing has to be broken out later.",
   },
   {
     q: "Can you do only part of a project?",
-    a: "Yes. We take on shell and roofing works, finishes and interiors, or a perimeter wall on its own, as well as complete builds.",
+    a: "Yes. As well as complete builds, we take on parts of a project: shell and roofing works only, finishes and interiors only, or a perimeter wall on its own.",
   },
   {
     q: "Do you renovate offices?",
-    a: "Yes. Redbay Interiors fits out offices with glass partitions, boardrooms, suspended ceilings and LED lighting, built-in cabinets and painting, planned around your staff to keep disruption low.",
+    a: "Yes. Redbay Interiors fits out offices with glass partitions, boardrooms, suspended ceilings and LED lighting, built-in cabinets and painting. We can work in the evenings and at weekends, so your office keeps running during the renovation.",
   },
 ];
