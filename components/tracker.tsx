@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 // Counts page views and WhatsApp/phone taps on our own server (hit.php).
 // No cookies, no IP addresses and no outside services: just a tally per page per day.
-const send = (event: "view" | "whatsapp" | "call", path: string) => {
+export const send = (event: "view" | "whatsapp" | "call", path: string) => {
   try {
     const body = new URLSearchParams({ e: event, p: path });
     if (!navigator.sendBeacon?.("/hit.php", body)) fetch("/hit.php", { method: "POST", body, keepalive: true }).catch(() => {});

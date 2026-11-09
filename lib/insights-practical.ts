@@ -112,6 +112,7 @@ export const practicalInsights: Insight[] = [
       },
     ],
     related: [
+      { label: "Get a BoQ prepared for your drawings", href: "/bill-of-quantities-service/" },
       { label: "Does your building quotation include everything?", href: "/insights/does-your-quotation-include-everything/" },
       { label: "Perimeter wall calculator", href: "/perimeter-wall-calculator/" },
     ],

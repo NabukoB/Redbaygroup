@@ -29,6 +29,8 @@ export function GET() {
     "- Quotes are itemised bills of quantities with one fixed price, quoted before VAT.",
     "- Perimeter walls: from KSh 14,000 per running metre for a wall 2.4 m high on a foundation 0.8 m deep, before VAT; gate priced separately.",
     `- [Perimeter wall cost calculator](${u("/perimeter-wall-calculator/")}): instant estimate from the boundary length.`,
+    `- [Bill of quantities service](${u("/bill-of-quantities-service/")}): itemised BoQ prepared from your drawings; fee quoted before starting.`,
+    `- [Get a quote](${u("/get-a-quote/")}): short form that opens WhatsApp with project details.`,
     "",
     "## Companies",
     "",

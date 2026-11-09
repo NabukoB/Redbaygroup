@@ -141,7 +141,7 @@ export function Nav() {
             <Phone className="h-[18px] w-[18px]" aria-hidden="true" />
           </a>
           <Button asChild size="sm" className="hidden sm:inline-flex">
-            <Link href="/contact/">Start a project</Link>
+            <Link href="/get-a-quote/">Get a quote</Link>
           </Button>
           <button
             type="button"
@@ -188,7 +188,7 @@ export function Nav() {
                 ))}
               </ul>
               <Button asChild className="mt-3 w-full">
-                <Link href="/contact/">Start a project</Link>
+                <Link href="/get-a-quote/">Get a quote</Link>
               </Button>
             </div>
           </motion.nav>

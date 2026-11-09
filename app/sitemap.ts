@@ -25,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/insights/", 0.6),
     ...insights.map((i) => page(`/insights/${i.slug}/`, 0.5, "yearly")),
     page("/perimeter-wall-calculator/", 0.9),
+    page("/get-a-quote/", 0.9),
+    page("/bill-of-quantities-service/", 0.9),
     page("/locations/", 0.8),
     ...locations.map((l) => page(`/locations/${l.slug}/`, 0.9)),
     page("/contact/", 0.8),

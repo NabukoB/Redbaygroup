@@ -33,7 +33,7 @@ export default function ContactPage() {
       ),
       href: `mailto:${site.email}`,
     },
-    { icon: MapPin, label: "Find us on Google", value: site.location, href: site.googleProfile },
+    { icon: MapPin, label: "Find and review us on Google", value: site.location, href: site.googleProfile },
     { icon: ThumbsUp, label: "Facebook", value: "Follow our work", href: site.facebook },
   ];
   return (

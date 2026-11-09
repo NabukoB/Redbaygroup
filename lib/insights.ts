@@ -55,6 +55,10 @@ const baseInsights: Insight[] = [
         ],
       },
     ],
+    related: [
+      { label: "Get a BoQ prepared for your drawings", href: "/bill-of-quantities-service/" },
+      { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
+    ],
   },
   {
     slug: "flat-roofs-practical-questions",
