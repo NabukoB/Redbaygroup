@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { designs } from "@/lib/designs";
 import { insights } from "@/lib/insights";
 import { locations } from "@/lib/locations";
+import { services } from "@/lib/services";
 import { companies, projects, site } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -26,6 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...insights.map((i) => page(`/insights/${i.slug}/`, 0.5, "yearly")),
     page("/perimeter-wall-calculator/", 0.9),
     page("/get-a-quote/", 0.9),
+    page("/services/", 0.8),
+    ...services.map((x) => page(`/services/${x.slug}/`, 0.9)),
     page("/bill-of-quantities-service/", 0.9),
     page("/locations/", 0.8),
     ...locations.map((l) => page(`/locations/${l.slug}/`, 0.9)),

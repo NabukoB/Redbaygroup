@@ -96,6 +96,7 @@ const baseInsights: Insight[] = [
         ],
       },
     ],
+    related: [{ label: "Redbay waterproofing service", href: "/services/waterproofing/" }],
   },
   {
     slug: "epoxy-floors-choose-for-your-home",

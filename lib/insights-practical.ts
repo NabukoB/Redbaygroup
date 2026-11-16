@@ -165,6 +165,7 @@ export const practicalInsights: Insight[] = [
       },
     ],
     related: [
+      { label: "Redbay waterproofing service", href: "/services/waterproofing/" },
       { label: "Flat roofs: are they practical?", href: "/insights/flat-roofs-practical-questions/" },
       { label: "Building at the Kenyan coast", href: "/insights/building-at-the-coast/" },
     ],

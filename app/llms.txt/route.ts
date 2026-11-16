@@ -3,6 +3,7 @@
 import { designs } from "@/lib/designs";
 import { insights } from "@/lib/insights";
 import { locations } from "@/lib/locations";
+import { services } from "@/lib/services";
 import { companies, faqs, projects, site } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -31,6 +32,10 @@ export function GET() {
     `- [Perimeter wall cost calculator](${u("/perimeter-wall-calculator/")}): instant estimate from the boundary length.`,
     `- [Bill of quantities service](${u("/bill-of-quantities-service/")}): itemised BoQ prepared from your drawings; fee quoted before starting.`,
     `- [Get a quote](${u("/get-a-quote/")}): short form that opens WhatsApp with project details.`,
+    "",
+    "## Specialised services",
+    "",
+    ...services.map((x) => `- [${x.name}](${u(`/services/${x.slug}/`)}): ${x.seoDescription}`),
     "",
     "## Companies",
     "",

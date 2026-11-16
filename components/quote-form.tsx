@@ -13,6 +13,7 @@ const types = [
   "Shell and roofing only",
   "Finishes or interiors",
   "Office renovation",
+  "Waterproofing or damp",
   "Gazebo or outdoor structure",
   "Solar or wind power",
   "Bill of quantities only",
