@@ -398,6 +398,34 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Office interiors",
+    place: "Cyber 1, Nairobi",
+    division: "Interiors",
+    note: "Reception redecoration",
+    slug: "cyber1-office-interiors",
+    cta: {
+      title: "Refreshing your office?",
+      text: "Send us a few photos of the space. We will suggest colours and finishes and give you a fixed quote. We can work evenings and weekends so your office keeps running.",
+    },
+    summary:
+      "Interior redecoration of the reception and waiting area at Cyber 1's offices in Nairobi: navy feature walls, painted ceiling bulkheads and fresh white walls and ceilings.",
+    // TODO: confirm full scope (open-plan office area too?) with Redbay
+    scope: [
+      "Navy feature walls behind the reception and around the arched doorway",
+      "Ceiling bulkheads and beams painted to match the feature walls",
+      "White emulsion on walls, ceilings, display niches and the oval ceiling feature",
+      "Surface preparation, masking and protection of furniture and floors",
+    ],
+    photos: [
+      { file: "reception-feature-wall", alt: "Reception at Cyber 1 offices with a navy feature wall, a white display niche and an oval ceiling feature with warm lighting" },
+      { file: "navy-wall-arch", alt: "Navy feature wall with an arched doorway leading to the office corridor" },
+      { file: "reception-ceiling", alt: "Curved ceiling bulkheads painted navy above the reception, with a mosaic glass pendant light" },
+      { file: "waiting-area", alt: "Waiting area with a navy wall strip, freshly painted white walls and a timber-effect grid ceiling" },
+      { file: "window-view", alt: "Reception counter by full-height windows, under a curved ceiling with pendant lights" },
+      { file: "entrance-ceiling", alt: "Office entrance with timber double doors under a timber-effect grid ceiling and a navy bulkhead" },
+    ],
+  },
+  {
     name: "SACCO head office",
     place: "Nairobi",
     division: "Interiors",
