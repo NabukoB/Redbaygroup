@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
-3:"/_next/static/chunks/12un4ck5w4b_v.js"
+3:"/_next/static/chunks/2hj0g3j2ebxnw.js"
 4:I[35259,["$3"],"MotionProvider"]
 5:I[39756,["$3"],"default"]
 6:I[37457,["$3"],"default"]
-7:"/_next/static/chunks/2gy6xh_ij_jzm.js"
+7:"/_next/static/chunks/03v62f8871hyd.js"
 8:I[47401,["$3","$7"],"Nav"]
 15:I[68027,["$3"],"default",1]
 :HL["/_next/static/chunks/2kq8x8rjq4ntn.css","style"]
@@ -12,7 +12,7 @@
 12:[["children",{"s":"__PAGE__","h":512,"d":{"r":"$L13","p":false,"v":null}}]]
 10:[["children",{"s":{"n":"slug","t":"d","k":"roofing-options-kenya","s":[]},"h":66048,"d":{"r":"$L11","p":false,"v":"$f"},"c":"$Q12"}]]
 d:[["children",{"s":"insights","h":131584,"d":{"r":"$Le","p":false,"v":"$f"},"c":"$Q10"}]]
-0:{"P":null,"c":["","insights","roofing-options-kenya",""],"q":"","i":false,"t":{"t":{"s":"","h":131600,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2kq8x8rjq4ntn.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/12un4ck5w4b_v.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en-KE","className":"h-full","children":["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L4",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","$L8",null,{}],["$","main",null,{"id":"main","className":"flex-1","children":"$L9"}],"$La"],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Lb","$Lc"]}]}]]}],"p":false,"v":null},"c":"$Qd"},"h":{"r":"$L14","p":false,"v":null}},"m":"$undefined","G":["$15",["$L16"]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"10oxAYVh08WL3VH-wcDCH"}
+0:{"P":null,"c":["","insights","roofing-options-kenya",""],"q":"","i":false,"t":{"t":{"s":"","h":131600,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2kq8x8rjq4ntn.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2hj0g3j2ebxnw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en-KE","className":"h-full","children":["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L4",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","$L8",null,{}],["$","main",null,{"id":"main","className":"flex-1","children":"$L9"}],"$La"],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Lb","$Lc"]}]}]]}],"p":false,"v":null},"c":"$Qd"},"h":{"r":"$L14","p":false,"v":null}},"m":"$undefined","G":["$15",["$L16"]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"wnumwsxOnGpttG_9egndh"}
 17:I[22016,["$3","$7"],""]
 1e:I[46993,["$3"],"WhatsAppFloat"]
 1f:I[60563,["$3"],"Tracker"]
@@ -28,7 +28,7 @@ b:["$","$L1e",null,{}]
 c:["$","$L1f",null,{}]
 e:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
 11:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
-13:["$","$1","c",{"children":["$L20",[["$","script","script-0",{"src":"/_next/static/chunks/2gy6xh_ij_jzm.js","async":true,"nonce":"$undefined"}]],["$","$L21",null,{"children":["$","$22",null,{"name":"Next.MetadataOutlet","children":"$@23"}]}]]}]
+13:["$","$1","c",{"children":["$L20",[["$","script","script-0",{"src":"/_next/static/chunks/03v62f8871hyd.js","async":true,"nonce":"$undefined"}]],["$","$L21",null,{"children":["$","$22",null,{"name":"Next.MetadataOutlet","children":"$@23"}]}]]}]
 14:["$","$1","h",{"children":[null,["$","$L25",null,{"children":"$L26"}],["$","$L28",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$22",null,{"name":"Next.Metadata","children":"$L29"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
 16:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2kq8x8rjq4ntn.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
 f:C
