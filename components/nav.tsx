@@ -99,7 +99,7 @@ export function Nav() {
               aria-controls="companies-menu"
               onClick={() => setDropOpen((v) => !v)}
             >
-              Our companies
+              Our divisions
               <ChevronDown className={`h-4 w-4 transition-transform ${dropOpen ? "rotate-180" : ""}`} aria-hidden="true" />
             </button>
             <AnimatePresence>
@@ -169,7 +169,7 @@ export function Nav() {
             className="overflow-hidden border-t border-line bg-white lg:hidden"
           >
             <div className={`${wrap} py-4`}>
-              <p className="px-1 pb-2 pt-1 text-sm text-slate">Our companies</p>
+              <p className="px-1 pb-2 pt-1 text-sm text-slate">Our divisions</p>
               <ul className="grid grid-cols-2 gap-2">
                 {companies.map((c) => (
                   <li key={c.slug}>

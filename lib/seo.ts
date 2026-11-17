@@ -60,6 +60,7 @@ export function organizationLd() {
     foundingDate: String(site.founded),
     address: {
       "@type": "PostalAddress",
+      streetAddress: site.streetAddress,
       addressLocality: "Ruaraka, Nairobi",
       addressRegion: "Nairobi",
       addressCountry: "KE",

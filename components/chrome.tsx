@@ -136,7 +136,7 @@ export function Footer() {
         </div>
         <nav className="grid grid-cols-2 gap-8 text-[15px] sm:grid-cols-3 md:col-span-5" aria-label="Footer">
           <div>
-            <p className="font-semibold text-charcoal-deep">Companies</p>
+            <p className="font-semibold text-charcoal-deep">Divisions</p>
             <ul className="mt-3 space-y-2 text-slate">
               {companies.map((c) => (
                 <li key={c.slug}>
@@ -177,7 +177,7 @@ export function Footer() {
             <li><a className="hover:text-charcoal-deep" href={`tel:${site.phone.replace(/\s/g, "")}`}>{site.phone}</a></li>
             <li><a className="hover:text-charcoal-deep" href={whatsappLink()} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
             <li><a className="hover:text-charcoal-deep" href={`mailto:${site.email}`}>{site.email}</a></li>
-            <li>{site.location}</li>
+            <li>{site.address}</li>
             <li>
               <a className="hover:text-charcoal-deep" href={site.googleProfile} target="_blank" rel="noopener noreferrer">
                 Find us on Google

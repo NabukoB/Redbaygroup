@@ -63,7 +63,7 @@ export function OtherCompanies({ current }: { current?: string }) {
   return (
     <section className="py-24 md:py-28">
       <div className={wrap}>
-        <SectionHead label="Redbay Group" title={current ? "The rest of the group" : "Our companies"} />
+        <SectionHead label="Redbay Group" title={current ? "The rest of the group" : "Our divisions"} />
         <ul className={`mt-14 grid gap-4 ${list.length === 3 ? "md:grid-cols-3" : "md:grid-cols-2"}`}>
           {list.map((c, i) => (
             <Reveal as="li" key={c.slug} delay={i * 0.05} className="h-full">

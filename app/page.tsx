@@ -42,7 +42,6 @@ function Hero() {
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate md:text-xl">
             We build homes, schools and spaces that serve people and communities.
           </p>
-          <p className="mt-3 text-[15px] font-semibold text-charcoal-deep">Building better, for generations.</p>
         </Reveal>
         <Reveal delay={0.2}>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
@@ -72,14 +71,14 @@ function About() {
     <section id="about" className="scroll-mt-16 py-24 md:py-32">
       <div className={`${wrap} grid gap-12 lg:grid-cols-12 lg:items-center`}>
         <div className="lg:col-span-7">
-          <SectionHead label="About us" title="Creating spaces that make a difference." center={false} />
+          <SectionHead label="About us" title="Better places to live, learn and thrive." center={false} />
           <Reveal delay={0.1} className="mt-6 max-w-xl space-y-4 text-lg leading-relaxed text-slate">
             <p>
-              Redbay Group is a multidisciplinary development group focused on building better places to live, learn
-              and thrive.
+              Redbay Group is the brand of {site.legal}, an {site.nca} licensed contractor based in {site.location},
+              building since {site.founded}.
             </p>
             <p>
-              Through our specialised companies, we deliver residential construction, school infrastructure, interior
+              Through our four divisions, we deliver residential construction, school infrastructure, interior
               solutions and renewable energy systems. We combine practical expertise, thoughtful design and quality
               execution to create lasting value.
             </p>
@@ -108,7 +107,7 @@ function Companies() {
   return (
     <section id="companies" className="scroll-mt-16 border-t border-line py-24 md:py-32">
       <div className={wrap}>
-        <SectionHead label="Our companies" title="Specialised expertise. One group." />
+        <SectionHead label="Our divisions" title="Specialised expertise. One group." />
         <ul className="mt-14 grid gap-4 md:grid-cols-2">
           {companies.map((c, i) => {
             const Icon = icons[c.division];

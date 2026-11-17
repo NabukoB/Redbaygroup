@@ -3,7 +3,7 @@ import { BuildSteps } from "@/components/build-steps";
 import { Badge, CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
 import { Reveal } from "@/components/reveal";
 import { pageMeta } from "@/lib/seo";
-import { approach, areas, site } from "@/lib/site";
+import { approach, areas, mission, site, values, vision } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "About Us: Kenyan Builders Since 2019",
@@ -20,8 +20,8 @@ export default function AboutPage() {
         <PageHero
           crumbs={[{ name: "About", path: "/about/" }]}
           label="About us"
-          title="Creating spaces that make a difference."
-          intro="Redbay Group is a multidisciplinary development group focused on building better places to live, learn and thrive."
+          title="Better places to live, learn and thrive."
+          intro={`Redbay Group is the brand of ${site.legal}, a development group building homes, schools, interiors and energy systems across Kenya.`}
         >
           <CredentialsPanel />
         </PageHero>
@@ -39,7 +39,7 @@ export default function AboutPage() {
               </p>
               <p>
                 As our work grew, so did what clients asked of us: the finishes inside a building, and the power that runs
-                it. Redbay Group brings that work together through four specialised companies: Redbay Construction, Redbay
+                it. Redbay Group brings that work together through four divisions of {site.legal}: Redbay Construction, Redbay
                 Schools, Redbay Interiors and Redbay Energy.
               </p>
               <p>
@@ -51,6 +51,38 @@ export default function AboutPage() {
         </section>
 
         <OtherCompanies />
+
+        <section className="border-t border-line py-24 md:py-28">
+          <div className={`${wrap} grid gap-12 lg:grid-cols-12`}>
+            <div className="lg:col-span-5">
+              <SectionHead label="Our purpose" title="Vision, mission and values." center={false} />
+            </div>
+            <div className="space-y-10 lg:col-span-7">
+              <Reveal className="space-y-8">
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate">Vision</h3>
+                  <p className="heading mt-3 text-2xl leading-snug md:text-3xl">{vision}</p>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate">Mission</h3>
+                  <p className="heading mt-3 text-2xl leading-snug md:text-3xl">{mission}</p>
+                </div>
+              </Reveal>
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate">Values</h3>
+                <ul className="mt-5 grid gap-4 sm:grid-cols-2">
+                  {values.map((v, i) => (
+                    <Reveal as="li" key={v.name} delay={i * 0.05} className="h-full rounded-2xl border border-line p-6">
+                      <span className="block h-1.5 w-8 rounded-full bg-red" aria-hidden="true" />
+                      <p className="mt-5 text-xl font-semibold tracking-tight">{v.name}</p>
+                      <p className="mt-2 text-[15px] leading-relaxed text-slate">{v.text}</p>
+                    </Reveal>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className="border-t border-line py-24 md:py-28">
           <div className={wrap}>

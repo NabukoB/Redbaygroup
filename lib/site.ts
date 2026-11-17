@@ -4,6 +4,8 @@ export const site = {
   tagline: "Building places. Shaping futures.",
   url: "https://redbaygroup.co.ke",
   location: "Ruaraka, Nairobi",
+  address: "Shelter Pride, Ground Floor, Room 1, opposite Garden City Mall, Ruaraka, Nairobi",
+  streetAddress: "Shelter Pride, Ground Floor, Room 1, opposite Garden City Mall",
   locality: "Nairobi",
   founded: 2019,
   incorporated: 2022,
@@ -19,7 +21,7 @@ export const site = {
 };
 
 // Towns where Redbay has built (from the project list)
-export const areas = ["Nairobi", "Kikuyu", "Isinya", "Lukenya", "Nanyuki", "Nyahururu", "Kakamega", "Diani", "Ukunda"];
+export const areas = ["Nairobi", "Kikuyu", "Isinya", "Lukenya", "Kibwezi", "Nanyuki", "Nyahururu", "Kakamega", "Diani", "Ukunda"];
 
 export type Division = "Homes" | "Schools" | "Interiors" | "Energy";
 
@@ -595,6 +597,23 @@ export const projects: Project[] = [
       { file: "trench-excavation", alt: "Site team excavating the foundation trench for the perimeter wall" },
     ],
   },
+  {
+    // TODO: add photos (same ones as the company profile) to give it its own page
+    name: "5-bedroom maisonette",
+    place: "Kibwezi, Makueni",
+    division: "Homes",
+    note: "Structure and roof",
+  },
+];
+
+// Same wording as the company profile. Keep the two in step.
+export const vision = "To be East Africa’s most trusted development group for precise, accountable delivery.";
+export const mission = "To deliver safe, well-built structures through disciplined planning, honest costing and hands-on supervision.";
+export const values = [
+  { name: "Precision", text: "Accurate measurement, clear scopes and work built to drawing." },
+  { name: "Accountability", text: "One point of responsibility, open reporting and honest costs." },
+  { name: "Safety", text: "Every worker goes home safe. Every structure is built to last." },
+  { name: "Integrity", text: "Fair dealing with clients, suppliers, workers and communities." },
 ];
 
 export const approach = [
@@ -621,7 +640,7 @@ export const faqs = [
   },
   {
     q: "Where in Kenya do you work?",
-    a: "We are based in Ruaraka, Nairobi. We have built in Nairobi (including Karen and Kamulu), Kiambu (Kikuyu), Machakos (Lukenya and Tala), Kajiado (Isinya), Laikipia (Nanyuki), Nyandarua (Oljororok, Nyahururu), Nakuru, Kakamega and Kwale (Diani and Ukunda). Tell us where your site is and we will confirm.",
+    a: "We are based in Ruaraka, Nairobi. We have built in Nairobi (including Karen and Kamulu), Kiambu (Kikuyu), Machakos (Lukenya and Tala), Makueni (Kibwezi), Kajiado (Isinya), Laikipia (Nanyuki), Nyandarua (Oljororok, Nyahururu), Nakuru, Kakamega and Kwale (Diani and Ukunda). Tell us where your site is and we will confirm.",
   },
   {
     q: "Are you a licensed contractor?",
