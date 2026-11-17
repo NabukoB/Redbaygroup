@@ -238,6 +238,37 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "5-bedroom maisonette",
+    place: "Kibwezi, Makueni",
+    division: "Homes",
+    note: "Shell, roof and plaster",
+    slug: "kibwezi-maisonette",
+    summary:
+      "A two-storey, five-bedroom family home in Kibwezi, Makueni, built from the foundations to a finished hip-and-gable roof in black stone-coated tiles, with the outside walls plastered.",
+    // TODO: confirm year and whether finishes are in Redbay's scope
+    scope: [
+      "Setting out and machine-cut stone foundation walling",
+      "Reinforced concrete columns, beams and first-floor slab",
+      "Stone walling to both floors, with balconies and a covered veranda",
+      "Timber roof trusses and battens for a hip-and-gable roof",
+      "Black stone-coated roof tiles with white fascia boards",
+      "External plastering",
+    ],
+    photos: [
+      { file: "finished-roof-front", alt: "Two-storey maisonette in Kibwezi with a black stone-coated tile roof, white fascia boards and plastered walls" },
+      { file: "gable-front", alt: "Front gable and first-floor balcony of the Kibwezi home under its new tiled roof" },
+      { file: "rear-plastered", alt: "Rear of the house with plastered walls, two roof levels and a first-floor terrace" },
+      { file: "roof-tiles", alt: "Close view of the black stone-coated tiles on the main and lower roofs" },
+      { file: "roof-battens", alt: "Timber roof trusses and battens fixed over the first-floor walls before tiling" },
+      { file: "fascia-boards", alt: "Roof structure with white fascia boards fitted along the eaves" },
+      { file: "first-floor-walling", alt: "Stone walls rising to the first floor, with column steel ready for the next pour" },
+      { file: "ground-floor-frame", alt: "Ground floor with concrete columns, beams and stone walling, and the veranda taking shape" },
+      { file: "two-storey-shell", alt: "The two-storey shell after the formwork was struck, with the first-floor walls complete" },
+      { file: "foundation-walling", alt: "Mason laying the first courses of machine-cut stone foundation walling to a string line" },
+      { file: "slab-formwork", alt: "Timber formwork for the ground-floor beams, set out over the stone walls" },
+    ],
+  },
+  {
     name: "Bungalow",
     place: "Oljororok, Nyahururu",
     division: "Homes",
@@ -624,13 +655,6 @@ export const projects: Project[] = [
       { file: "trench-concrete", alt: "Concrete strip footing in the excavated trench with string lines for alignment" },
       { file: "trench-excavation", alt: "Site team excavating the foundation trench for the perimeter wall" },
     ],
-  },
-  {
-    // TODO: add photos (same ones as the company profile) to give it its own page
-    name: "5-bedroom maisonette",
-    place: "Kibwezi, Makueni",
-    division: "Homes",
-    note: "Structure and roof",
   },
 ];
 
