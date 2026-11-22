@@ -11,6 +11,7 @@ export type Insight = {
 
 import { energyInsights } from "./insights-energy";
 import { practicalInsights } from "./insights-practical";
+import { waterproofingInsights } from "./insights-waterproofing";
 import { moreInsights } from "./insights-more";
 
 const baseInsights: Insight[] = [
@@ -358,4 +359,4 @@ const baseInsights: Insight[] = [
 ];
 
 // Newest first, so the latest guides lead the list
-export const insights: Insight[] = [...practicalInsights, ...energyInsights, ...moreInsights, ...baseInsights];
+export const insights: Insight[] = [...waterproofingInsights, ...practicalInsights, ...energyInsights, ...moreInsights, ...baseInsights];

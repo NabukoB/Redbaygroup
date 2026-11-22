@@ -75,7 +75,7 @@ export const services: Service[] = [
         a: "Send photos of the problem area, the location and a rough size on WhatsApp. For leaks we usually need to inspect before giving a fixed price.",
       },
     ],
-    guides: ["damp-and-waterproofing", "flat-roofs-practical-questions", "building-at-the-coast", "rainwater-harvesting-for-homes"],
+    guides: ["flat-roof-leaking-causes-and-fixes", "bathroom-waterproofing-before-tiling", "balcony-and-terrace-leaks", "water-tank-waterproofing", "basement-and-retaining-wall-waterproofing", "choosing-a-waterproofing-method", "damp-and-waterproofing", "flat-roofs-practical-questions"],
     projects: [], // add project slugs once there are photos of this work
     message: "Hello Redbay Group, I need waterproofing. The problem is: ",
   },
