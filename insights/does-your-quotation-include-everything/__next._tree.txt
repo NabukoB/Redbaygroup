@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/1jub4ulpbv0zk.css","style"]
+:HL["/_next/static/chunks/1aq4oy7ih4xih.css","style"]
 :HC["/",""]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"does-your-quotation-include-everything","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"insights","h":131136,"c":"$Q2"}]]
-0:{"b":"wP9uN0UGUp6Gab_b-mgn1","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"6cfWS5R0CAsxunXMAsVvr","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
