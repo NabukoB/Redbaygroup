@@ -58,7 +58,7 @@ export function GET() {
     ...faqs.flatMap((f) => [`### ${f.q}`, "", f.a, ""]),
     "## Optional",
     "",
-    `- [Home designs](${u("/designs/")}): ${designs.length} client-commissioned concept designs shown as 3D renders`,
+    `- [Home designs](${u("/designs/")}): ${designs.length} concept designs (client-commissioned or inspiration designs Redbay can build) shown as 3D renders`,
     `- [About](${u("/about/")})`,
     `- [Sitemap](${u("/sitemap.xml")})`,
     "",

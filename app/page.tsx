@@ -172,7 +172,7 @@ function Designs() {
         <SectionHead
           label="Home designs"
           title="Find a design you love. We will build it."
-          text="Concept designs we have developed with our clients, from hillside villas to a stone cottage with a solar roof."
+          text="Concept designs we can build for you, from a modern four-bedroom maisonette to a stone cottage with a solar roof."
         />
         <ul className="mt-14 grid gap-4 md:grid-cols-3">
           {designs.slice(0, 3).map((d, i) => (

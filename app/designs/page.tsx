@@ -19,8 +19,8 @@ export default function DesignsPage() {
         <PageHero
           crumbs={[{ name: "Home designs", path: "/designs/" }]}
           label="Home designs"
-          title="Designs we have developed with our clients."
-          intro="Every home starts as a design. These are concept designs commissioned by our clients, shown as 3D renders. Like one? We can adapt it to your plot and budget, then build it."
+          title="Home designs we can build for you."
+          intro="Every home starts as a design. These are concept designs, most commissioned by our clients and some we use as inspiration, shown as 3D renders. Like one? We can adapt it to your plot and budget, then build it."
         />
         <section className="bg-mist py-20 md:py-24">
           <div className={wrap}>

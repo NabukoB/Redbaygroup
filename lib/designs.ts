@@ -1,6 +1,6 @@
-// Client-commissioned home designs (3D renders, not completed buildings).
+// Home designs (3D renders, not completed buildings): client-commissioned, or plans Redbay has bought.
 // Every page and card labels them as concept designs. Clients are not named.
-// Descriptions only state what is visible in the renders.
+// Descriptions only state what is visible in the renders or the plans.
 import type { ProjectPhoto } from "@/lib/site";
 
 export type Design = {
@@ -10,11 +10,61 @@ export type Design = {
   summary: string;
   features: string[];
   photos: ProjectPhoto[];
+  source?: "client" | "inspiration"; // defaults to client; inspiration = an outside design we can build a version of
+  size?: string; // overall size from the plans
+  floors?: { heading: string; rooms: string[] }[]; // the layout, described in words (plans are not shown)
 };
 
 const shots = (alts: string[]): ProjectPhoto[] => alts.map((alt, i) => ({ file: String(i + 1), alt }));
 
 export const designs: Design[] = [
+  {
+    slug: "four-bedroom-maisonette",
+    name: "Modern Four-Bedroom Maisonette",
+    style: "Two-storey family home",
+    summary:
+      "A modern flat-roof maisonette with four bedrooms upstairs, a guest room and double garage below, and a timber pergola terrace for outdoor living.",
+    source: "inspiration",
+    size: "About 210 m² of rooms over two floors, including the double garage, on a footprint of roughly 17 × 10 m",
+    features: [
+      "Flat roof with white render, stone cladding and timber panels",
+      "Master suite with walk-in wardrobe and private balcony",
+      "Double garage with a timber-finish door",
+      "Timber pergola over a large covered terrace",
+      "Glass balconies and full-height sliding doors",
+    ],
+    floors: [
+      {
+        heading: "Ground floor",
+        rooms: [
+          "Open living room with the staircase, about 28 m², opening onto the covered terrace",
+          "Kitchen and dining area, about 16 m²",
+          "Pantry or store, about 6 m²",
+          "Entrance hall with built-in wardrobe, about 9.5 m²",
+          "Guest bedroom or study, about 12.6 m²",
+          "Shower room with toilet, about 4.5 m²",
+          "Double garage, about 31 m², with a door into the house",
+          "Covered terrace under the pergola, about 25 m²",
+        ],
+      },
+      {
+        heading: "First floor",
+        rooms: [
+          "Master bedroom, about 21.6 m², with a walk-in wardrobe (7 m²) and its own balcony",
+          "Three more bedrooms of about 13, 15 and 15.6 m², each with built-in wardrobes",
+          "Family bathroom with bath, about 6.4 m²",
+          "Second bathroom with corner bath, about 6.2 m²",
+          "Laundry or linen room, about 4.8 m²",
+          "Landing linking all rooms, about 8.9 m²",
+        ],
+      },
+    ],
+    photos: shots([
+      "Modern two-storey maisonette with a double garage, an upper balcony framed in white render and a timber pergola terrace",
+      "Rear view of the maisonette with stone cladding, glass balconies and a timber-decked terrace under a pergola",
+      "The maisonette at dusk with warm interior lighting, glass balconies and the pergola terrace",
+    ]),
+  },
   {
     slug: "hillside-villa",
     name: "Hillside Villa",

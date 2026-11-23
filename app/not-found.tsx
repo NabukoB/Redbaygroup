@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const links = [
   { href: "/projects/", label: "Projects", text: "Homes, schools and interiors we have built." },
-  { href: "/designs/", label: "Home designs", text: "Designs we have developed with our clients." },
+  { href: "/designs/", label: "Home designs", text: "Concept designs we can build for you." },
   { href: "/insights/", label: "Insights", text: "Plain-English building guides." },
   { href: "/contact/", label: "Contact", text: "Call or WhatsApp us about your project." },
 ];

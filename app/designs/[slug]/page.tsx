@@ -89,7 +89,9 @@ export default async function DesignPage({ params }: PageProps<"/designs/[slug]"
                     ))}
                   </ul>
                   <p className="mt-6 border-t border-white/10 pt-4 text-sm leading-relaxed text-white/60">
-                    3D render of a client-commissioned design, not a photo of a completed building.
+                    {d.source === "inspiration"
+                      ? "3D render of a design we use as inspiration, not a photo of a completed building. We build a version adapted to your plot and budget."
+                      : "3D render of a client-commissioned design, not a photo of a completed building."}
                   </p>
                 </div>
               </Reveal>
@@ -103,6 +105,30 @@ export default async function DesignPage({ params }: PageProps<"/designs/[slug]"
             <Gallery base={base} photos={d.photos} />
           </div>
         </section>
+
+        {d.floors && (
+          <section className="pb-16">
+            <div className={wrap}>
+              <h2 className="heading text-[clamp(1.8rem,3.5vw,2.6rem)]">The layout</h2>
+              {d.size && <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate">{d.size}. Room sizes are approximate.</p>}
+              <div className="mt-8 grid gap-4 md:grid-cols-2">
+                {d.floors.map((f) => (
+                  <div key={f.heading} className="rounded-3xl bg-mist p-6 md:p-8">
+                    <h3 className="text-lg font-semibold text-charcoal-deep">{f.heading}</h3>
+                    <ul className="mt-4 space-y-3">
+                      {f.rooms.map((r) => (
+                        <li key={r} className="flex gap-3 text-[15px] leading-relaxed text-slate">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-red" aria-hidden="true" />
+                          {r}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         <section className="bg-mist py-20 md:py-24">
           <div className={wrap}>
