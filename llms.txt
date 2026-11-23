@@ -42,14 +42,14 @@
 - [Merishaw School, Isinya, Kajiado](https://redbaygroup.co.ke/projects/merishaw-school/): Classroom blocks for Merishaw School in Isinya, built around a courtyard, from foundations to the concrete frame, steel roofing and finishes.
 - [Maisonette, Baraka Estate, Nanyuki](https://redbaygroup.co.ke/projects/nanyuki-baraka-home/): A family maisonette in Baraka Estate, Nanyuki, built from walling to the final coat of paint, with tiled floors and a cabro driveway.
 - [Four-bedroom home, Lukenya, Machakos](https://redbaygroup.co.ke/projects/lukenya-four-bedroom/): A modern four-bedroom home in Lukenya, built from the foundations up, with a stone-clad facade, balconies and steel windows.
-- [5-bedroom maisonette, Kibwezi, Makueni](https://redbaygroup.co.ke/projects/kibwezi-maisonette/): A two-storey, five-bedroom family home in Kibwezi, Makueni, built from the foundations to a finished hip-and-gable roof in black stone-coated tiles, with the outside walls plastered.
+- [5-bedroom maisonette, Kibwezi, Makueni](https://redbaygroup.co.ke/projects/kibwezi-maisonette/): A two-storey, five-bedroom home in Kibwezi, Makueni, built from foundations to a hip-and-gable roof in black stone-coated tiles, with plastered outside walls.
 - [Bungalow, Oljororok, Nyahururu](https://redbaygroup.co.ke/projects/oljororok-bungalow/): Shell works for a bungalow in Oljororok, Nyahururu: slab, block walls, ring beam, timber roof and yellow stone cladding.
 - [Two-storey home, Kamulu, Nairobi](https://redbaygroup.co.ke/projects/kamulu-roofing-shell/): Shell works and roofing for a two-storey family home in Kamulu, with a machine-cut stone ground floor, balconies and a red stone-coated tile roof.
 - [Bungalow, Tala, Kangundo](https://redbaygroup.co.ke/projects/tala-bungalow-shell/): Shell works for a family bungalow in Tala, Kangundo: stone foundation, block walls, ring beam, steel roof trusses and grey stone-coated tiles.
 - [Maisonette, Diani, Kwale](https://redbaygroup.co.ke/projects/diani-maisonette/): A five-bedroom coastal maisonette between Ukunda and Diani, with coral stone cladding, smoked glass balconies and timber pergolas on the roof.
 - [Thatched gazebo, Diani, Kwale](https://redbaygroup.co.ke/projects/diani-gazebo/): A traditional makuti-thatched gazebo in Diani on concrete columns and a raised coral stone base, with built-in wiring, low walls and a tiled floor.
 - [Family bungalow, Kakamega](https://redbaygroup.co.ke/projects/kakamega-bungalow/): A family bungalow in Kakamega built from setting out to a finished hipped roof, with block walls, a front veranda, steel windows and a solar water heater.
-- [Office interiors, Cyber 1, Nairobi](https://redbaygroup.co.ke/projects/cyber1-office-interiors/): Interior redecoration of the reception and waiting area at Cyber 1's offices in Nairobi: navy feature walls, painted ceiling bulkheads and fresh white walls and ceilings.
+- [Office interiors, Cyber 1, Nairobi](https://redbaygroup.co.ke/projects/cyber1-office-interiors/): Redecoration of the reception and waiting area at Cyber 1's Nairobi offices: navy feature walls, painted ceiling bulkheads and fresh white walls and ceilings.
 - [SACCO head office, Nairobi](https://redbaygroup.co.ke/projects/sacco-office-nairobi/): Office renovation for a SACCO head office in Nairobi: glass partitions, a boardroom, private offices, gypsum ceilings with LED lighting and a reception.
 - [Home interiors, Nakuru](https://redbaygroup.co.ke/projects/nakuru-interiors/): Interior finishes for a home in Nakuru: a fluted wood and marble-effect TV wall, tray ceiling, pendant lights and a fitted kitchen with granite tops.
 - [Home interiors, Ukunda, Kwale](https://redbaygroup.co.ke/projects/ukunda-interiors/): Interior finishes for an open-plan family home in Ukunda: a feature TV wall, tray ceilings with concealed lighting, and polished floor tiling throughout.
@@ -127,7 +127,7 @@ Your drawings if you have them, the site location, a few photos of the site, and
 
 ### Do you build from my architect’s drawings?
 
-Yes. We build to the approved drawings and work with your architect and engineer during construction. If you are still choosing a design, our home designs page shows designs we have developed with clients.
+Yes. We build to the approved drawings and work with your architect and engineer during construction. If you are still choosing a design, our home designs page shows concept designs we can build for you, adapted to your plot and budget.
 
 ### Can I build in phases?
 
