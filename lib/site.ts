@@ -152,7 +152,6 @@ export const projects: Project[] = [
     },
     summary:
       "Classroom blocks for Merishaw School in Isinya, built around a courtyard, from foundations to the concrete frame, steel roofing and finishes.",
-    // TODO: confirm scope, block count and dates with Redbay
     scope: [
       "Setting out and foundation excavation",
       "Reinforced concrete frame, slabs and corridors",
@@ -185,7 +184,6 @@ export const projects: Project[] = [
     slug: "nanyuki-baraka-home",
     summary:
       "A family maisonette in Baraka Estate, Nanyuki, built from walling to the final coat of paint, with tiled floors and a cabro driveway.",
-    // TODO: confirm scope and year with Redbay
     scope: [
       "Machine-cut stone walling with a reinforced concrete frame",
       "Ground-floor and roof slabs, columned balconies and parapet detailing",
@@ -221,7 +219,6 @@ export const projects: Project[] = [
     slug: "lukenya-four-bedroom",
     summary:
       "A modern four-bedroom home in Lukenya, built from the foundations up, with a stone-clad facade, balconies and steel windows.",
-    // TODO: confirm scope and year with Redbay
     scope: [
       "Stone foundations and ground-floor slab",
       "Machine-cut stone walling with a reinforced concrete frame",
@@ -249,7 +246,6 @@ export const projects: Project[] = [
     slug: "kibwezi-maisonette",
     summary:
       "A two-storey, five-bedroom home in Kibwezi, Makueni, built from foundations to a hip-and-gable roof in black stone-coated tiles, with plastered outside walls.",
-    // TODO: confirm year and whether finishes are in Redbay's scope
     scope: [
       "Setting out and machine-cut stone foundation walling",
       "Reinforced concrete columns, beams and first-floor slab",
@@ -280,7 +276,6 @@ export const projects: Project[] = [
     slug: "oljororok-bungalow",
     summary:
       "Shell works for a bungalow in Oljororok, Nyahururu: slab, block walls, ring beam, timber roof and yellow stone cladding.",
-    // TODO: confirm scope and year with Redbay
     scope: [
       "Foundations and ground-floor slab",
       "Block walling with reinforced concrete columns",
@@ -306,7 +301,6 @@ export const projects: Project[] = [
     slug: "kamulu-roofing-shell",
     summary:
       "Shell works and roofing for a two-storey family home in Kamulu, with a machine-cut stone ground floor, balconies and a red stone-coated tile roof.",
-    // TODO: confirm scope with Redbay
     scope: [
       "Machine-cut stone walling on the ground floor",
       "Block walling on the upper floor with concrete slabs and balconies",
@@ -357,7 +351,6 @@ export const projects: Project[] = [
     slug: "diani-maisonette",
     summary:
       "A five-bedroom coastal maisonette between Ukunda and Diani, with coral stone cladding, smoked glass balconies and timber pergolas on the roof.",
-    // TODO: confirm scope with Redbay
     scope: [
       "Coral stone cladding on the main facade",
       "Frameless smoked glass balustrades on the balconies and roof",
@@ -444,7 +437,6 @@ export const projects: Project[] = [
     },
     summary:
       "Redecoration of the reception and waiting area at Cyber 1's Nairobi offices: navy feature walls, painted ceiling bulkheads and fresh white walls and ceilings.",
-    // TODO: confirm full scope (open-plan office area too?) with Redbay
     scope: [
       "Navy feature walls behind the reception and around the arched doorway",
       "Ceiling bulkheads and beams painted to match the feature walls",
@@ -528,7 +520,6 @@ export const projects: Project[] = [
     slug: "ukunda-interiors",
     summary:
       "Interior finishes for an open-plan family home in Ukunda: a feature TV wall, tray ceilings with concealed lighting, and polished floor tiling throughout.",
-    // TODO: confirm with Redbay that this scope matches the job
     scope: [
       "Feature TV wall with marble-effect panels, fluted slat panels and lit display shelves",
       "Tray ceilings with concealed LED strip lighting and downlights",
@@ -555,7 +546,6 @@ export const projects: Project[] = [
     slug: "kikuyu-house",
     summary:
       "Shell works for a two-storey family home in Kikuyu: concrete frame, walls, flat roof slabs, a stair tower and wide balconies with steel balustrades.",
-    // TODO: confirm scope with Redbay
     scope: [
       "Reinforced concrete frame, columns and floor slabs",
       "Walling and flat roof slabs with deep overhangs",
@@ -643,7 +633,6 @@ export const projects: Project[] = [
     },
     summary:
       "A machine-cut stone perimeter wall for a home in Kikuyu, built on trench foundations with a stone base, a damp-proof layer and concrete columns.",
-    // TODO: confirm scope and wall length with Redbay
     scope: [
       "Trench excavation set out with string lines",
       "Concrete strip footing in the trench",
