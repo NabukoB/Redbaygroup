@@ -19,6 +19,48 @@ const shots = (alts: string[]): ProjectPhoto[] => alts.map((alt, i) => ({ file: 
 
 export const designs: Design[] = [
   {
+    slug: "three-bedroom-flat-roof-bungalow",
+    name: "Three-Bedroom Flat-Roof Bungalow",
+    style: "Single-storey family home",
+    summary:
+      "A compact three-bedroom bungalow with a flat roof in bold blue and white, two bathrooms and a 45 m² terrace for outdoor living.",
+    source: "inspiration",
+    size: "Roughly 10.4 × 10.5 m outside, about 110 m² under one roof, plus a 45 m² terrace",
+    features: [
+      "Flat roof with slim dark edge and hidden gutters",
+      "Two-tone blue and white render on a dark plinth",
+      "Covered front porch with a rain chain",
+      "Sliding glass doors onto a large raised terrace",
+      "Compact square plan that keeps building costs down",
+    ],
+    floors: [
+      {
+        heading: "Living spaces",
+        rooms: [
+          "Front porch, about 3.9 m², under a flat canopy",
+          "Entrance hall leading to a central hallway",
+          "Living room with sliding doors to the terrace",
+          "Kitchen",
+          "Large terrace, about 45 m², along the side of the house",
+        ],
+      },
+      {
+        heading: "Bedrooms and bathrooms",
+        rooms: [
+          "Three bedrooms off the central hallway",
+          "Two bathrooms",
+          "Everything on one level, with no stairs",
+        ],
+      },
+    ],
+    photos: shots([
+      "Blue and white flat-roof bungalow with a covered front porch, white front door and climbing plants",
+      "Side view of the bungalow with sliding doors opening onto a large raised terrace with outdoor seating",
+      "Corner view showing the white and blue walls, porch canopy and downpipe",
+      "Rear view of the bungalow with a large window, sliding doors and a terrace with steps",
+    ]),
+  },
+  {
     slug: "four-bedroom-maisonette",
     name: "Modern Four-Bedroom Maisonette",
     style: "Two-storey family home",
