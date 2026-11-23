@@ -18,3 +18,14 @@ AddCharset utf-8 .txt
   Header always set Cross-Origin-Opener-Policy "same-origin"
   Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
 </IfModule>
+
+# Caching. Pages and page data are always re-checked, so phones never keep an old page
+# that points to files from an earlier version. Versioned files (their names change on
+# every update) can be kept for a year.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|txt|xml)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  SetEnvIf Request_URI "^/_next/static/" versioned
+  Header set Cache-Control "public, max-age=31536000, immutable" env=versioned
+</IfModule>
