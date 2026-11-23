@@ -34,7 +34,7 @@ export default function AboutPage() {
             <Reveal delay={0.1} className="space-y-5 text-lg leading-relaxed text-slate lg:col-span-7">
               <p>
                 Redbay started building in {site.founded} and was incorporated as {site.legal} in {site.incorporated}. Since
-                then we have built schools and family homes in {areas.slice(1, -1).join(", ")} and {areas.at(-1)}, from our
+                then we have built schools and homes, and fitted out interiors, in {areas.slice(1, -1).join(", ")} and {areas.at(-1)}, from our
                 base in {site.location}.
               </p>
               <p>

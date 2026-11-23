@@ -9,7 +9,7 @@ import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { designs } from "@/lib/designs";
 import { pageMeta } from "@/lib/seo";
-import { approach, companies, projects, site } from "@/lib/site";
+import { approach, companies, projects, site, type Division } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Redbay Group | Building Contractors for Homes and Schools in Kenya",
@@ -19,7 +19,7 @@ export const metadata = pageMeta({
   absoluteTitle: true,
 });
 
-const icons: Record<string, LucideIcon> = { Homes: House, Schools: School, Interiors: Sofa, Energy: Sun };
+const icons: Record<Division, LucideIcon> = { Homes: House, Schools: School, Interiors: Sofa, Energy: Sun };
 
 function Hero() {
   return (

@@ -2,23 +2,13 @@
 
 import { useState } from "react";
 import { site } from "@/lib/site";
+import { MAX_METRES, WALL_RATE, ksh, plots, wallEstimate } from "@/lib/wall";
 
-export const WALL_RATE = 14000; // KSh per running metre: 2.4 m high wall on a 0.8 m deep foundation
 
-// Common Kenyan plot sizes, perimeter in metres (1 ft = 0.3048 m)
-const plots = [
-  { label: "50 × 100 ft (⅛ acre)", m: 91 },
-  { label: "100 × 100 ft (¼ acre)", m: 122 },
-  { label: "100 × 200 ft (½ acre)", m: 183 },
-  { label: "1 acre (square)", m: 255 },
-];
-
-const ksh = (n: number) => `KSh ${Math.round(n).toLocaleString("en-KE")}`;
 
 export function WallCalculator() {
   const [length, setLength] = useState("100");
-  const m = Math.min(Math.max(Number(length) || 0, 0), 10000);
-  const total = m * WALL_RATE;
+  const { metres: m, total, tooLong } = wallEstimate(length);
   const message = `Hello Redbay Group, I used your perimeter wall calculator: about ${m} m of boundary, estimate ${ksh(total)}. I would like an exact quote. My site is in: `;
 
   return (
@@ -32,14 +22,14 @@ export function WallCalculator() {
           type="number"
           inputMode="decimal"
           min={1}
-          max={10000}
+          max={MAX_METRES}
           value={length}
           onChange={(e) => setLength(e.target.value)}
           className="h-14 w-full max-w-[220px] rounded-2xl bg-white px-5 text-2xl font-semibold text-charcoal-deep outline-none focus-visible:ring-2 focus-visible:ring-red"
         />
         <span className="text-lg text-white/70">metres</span>
       </div>
-      {Number(length) > 10000 && (
+      {tooLong && (
         <p className="mt-2 text-sm text-white/70">That is a very long perimeter wall. The calculator stops at 10,000 m; send us the details for a proper quote.</p>
       )}
 

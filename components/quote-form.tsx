@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { send } from "@/components/tracker";
+import { buildQuote } from "@/lib/quote";
 import { site } from "@/lib/site";
 
 // Short quote form. Nothing is stored or sent to a server: on submit it opens
@@ -32,25 +33,15 @@ export function QuoteForm() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
-    const get = (k: string) => String(f.get(k) ?? "").trim();
-    if (!get("type") || !get("location")) {
-      setError("Please choose the type of project and tell us where the site is.");
+    const get = (k: string) => String(f.get(k) ?? "");
+    const result = buildQuote({ type: get("type"), location: get("location"), drawings: get("drawings"), budget: get("budget"), start: get("start"), details: get("details"), name: get("name") });
+    if (!result.ok) {
+      setError(result.error);
       return;
     }
     setError("");
-    const lines = [
-      "Hello Redbay Group, I would like a quote.",
-      "",
-      `Project: ${get("type")}`,
-      `Site location: ${get("location")}`,
-      `Drawings: ${get("drawings") || "Not said"}`,
-      `Budget: ${get("budget") || "Not said"}`,
-      `Start: ${get("start") || "Not said"}`,
-      get("details") ? `Details: ${get("details")}` : "",
-      get("name") ? `Name: ${get("name")}` : "",
-    ].filter((l, i) => l !== "" || i === 1);
     if (location.hostname === "redbaygroup.co.ke") send("whatsapp", location.pathname);
-    window.open(`https://wa.me/${site.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank", "noopener");
+    window.open(`https://wa.me/${site.whatsapp}?text=${encodeURIComponent(result.message)}`, "_blank", "noopener");
   };
 
   return (

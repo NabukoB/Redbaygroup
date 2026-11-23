@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { designs } from "@/lib/designs";
 import { pageMeta } from "@/lib/seo";
 import { imgSrc, site } from "@/lib/site";
+import { neighbours } from "@/lib/utils";
 
 export const dynamicParams = false;
 
@@ -36,8 +37,7 @@ export default async function DesignPage({ params }: PageProps<"/designs/[slug]"
   if (!d) notFound();
   const base = `/designs/${d.slug}`;
   // The next three designs after this one, wrapping round, so every design gets linked
-  const at = designs.findIndex((x) => x.slug === d.slug);
-  const others = [1, 2, 3].map((k) => designs[(at + k) % designs.length]);
+  const others = neighbours(designs, designs.indexOf(d), 3);
 
   const designLd = {
     "@context": "https://schema.org",

@@ -6,6 +6,7 @@ import { Badge, Breadcrumbs, CtaPanel, Footer, Nav, whatsappLink, wrap } from "@
 import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/reveal";
 import { insights } from "@/lib/insights";
+import { neighbours } from "@/lib/utils";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
 
@@ -27,8 +28,7 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
   const p = insights.find((x) => x.slug === slug);
   if (!p) notFound();
   // The next four guides after this one, wrapping round, so every guide gets linked
-  const at = insights.findIndex((x) => x.slug === p.slug);
-  const others = [1, 2, 3, 4].map((k) => insights[(at + k) % insights.length]).filter((x) => x.slug !== p.slug);
+  const others = neighbours(insights, insights.indexOf(p), 4);
 
   const articleLd = {
     "@context": "https://schema.org",

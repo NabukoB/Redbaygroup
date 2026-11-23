@@ -9,6 +9,7 @@ import { imgSrc, type ProjectPhoto } from "@/lib/site";
 export function Gallery({ base, photos }: { base: string; photos: ProjectPhoto[] }) {
   const [open, setOpen] = useState<number | null>(null);
   const n = photos.length;
+  const current = open === null ? undefined : photos[open];
   const go = (d: number) => setOpen((i) => (i === null ? i : (i + d + n) % n));
 
   useEffect(() => {
@@ -73,7 +74,7 @@ export function Gallery({ base, photos }: { base: string; photos: ProjectPhoto[]
       </ul>
 
       <AnimatePresence>
-        {open !== null && (
+        {open !== null && current && (
           <motion.div
             role="dialog"
             aria-modal="true"
@@ -96,8 +97,8 @@ export function Gallery({ base, photos }: { base: string; photos: ProjectPhoto[]
               <AnimatePresence mode="wait">
                 <motion.img
                   key={open}
-                  src={imgSrc(base, photos[open].file, 1600)}
-                  alt={photos[open].alt}
+                  src={imgSrc(base, current.file, 1600)}
+                  alt={current.alt}
                   className="max-h-[80vh] max-w-full rounded-xl object-contain"
                   initial={{ opacity: 0, scale: 0.98 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -113,7 +114,7 @@ export function Gallery({ base, photos }: { base: string; photos: ProjectPhoto[]
               </button>
             </div>
             <p className="px-6 pb-6 text-center text-sm text-white/70" onClick={(e) => e.stopPropagation()}>
-              {photos[open].alt}
+              {current.alt}
             </p>
           </motion.div>
         )}

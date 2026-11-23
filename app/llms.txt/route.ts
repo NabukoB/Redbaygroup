@@ -4,14 +4,14 @@ import { designs } from "@/lib/designs";
 import { insights } from "@/lib/insights";
 import { locations } from "@/lib/locations";
 import { services } from "@/lib/services";
-import { companies, faqs, projects, site } from "@/lib/site";
+import { companies, faqs, hasPage, projects, site } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 const u = (path: string) => `${site.url}${path}`;
 
 export function GET() {
-  const withPages = projects.filter((p) => p.slug && p.photos?.length);
+  const withPages = projects.filter(hasPage);
   const lines = [
     `# ${site.name}`,
     "",

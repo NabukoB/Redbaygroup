@@ -10,29 +10,30 @@ import { Reveal } from "@/components/reveal";
 import { insights } from "@/lib/insights";
 import { locationFor } from "@/lib/locations";
 import { pageMeta } from "@/lib/seo";
-import { companies, photoSrc, projects, site } from "@/lib/site";
+import { companies, hasPage, photoSrc, projects, site, type ProjectWithPage } from "@/lib/site";
+import { neighbours } from "@/lib/utils";
 
-const withPages = projects.filter((p) => p.slug && p.photos?.length);
+const withPages = projects.filter(hasPage);
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return withPages.map((p) => ({ slug: p.slug! }));
+  return withPages.map((p) => ({ slug: p.slug }));
 }
 
-const titleFor = (p: (typeof projects)[number]) =>
+const titleFor = (p: ProjectWithPage) =>
   p.name === "Home interiors" ? `Interior Finishes for a Home in ${p.place}` : `${p.name}, ${p.place}`;
 
 export async function generateMetadata({ params }: PageProps<"/projects/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const p = withPages.find((x) => x.slug === slug);
   if (!p) return {};
-  const meta = pageMeta({ title: titleFor(p), description: p.summary!, path: `/projects/${p.slug}/` });
+  const meta = pageMeta({ title: titleFor(p), description: p.summary, path: `/projects/${p.slug}/` });
   // Share card uses the project's own cover photo
-  const cover = `${site.url}${photoSrc(p.slug!, p.photos![0].file, 1600)}`;
+  const cover = `${site.url}${photoSrc(p.slug, p.photos[0].file, 1600)}`;
   return {
     ...meta,
-    openGraph: { ...meta.openGraph, images: [{ url: cover, width: 1600, height: 1200, alt: p.photos![0].alt }] },
+    openGraph: { ...meta.openGraph, images: [{ url: cover, width: 1600, height: 1200, alt: p.photos[0].alt }] },
     twitter: { ...meta.twitter, images: [cover] },
   };
 }
@@ -44,7 +45,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
   const company = companies.find((c) => c.division === p.division)!;
   // Guides that point to this project in their "See it in practice" list
   const guides = insights.filter((g) => g.related?.some((r) => r.href === `/projects/${p.slug}/`));
-  const area = locationFor(p.slug!);
+  const area = locationFor(p.slug);
 
   const projectLd = {
     "@context": "https://schema.org",
@@ -54,9 +55,9 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
     url: `${site.url}/projects/${p.slug}/`,
     locationCreated: { "@type": "Place", name: `${p.place}, Kenya` },
     creator: { "@id": `${site.url}/#organization` },
-    image: p.photos!.map((ph) => ({
+    image: p.photos.map((ph) => ({
       "@type": "ImageObject",
-      contentUrl: `${site.url}${photoSrc(p.slug!, ph.file, 1600)}`,
+      contentUrl: `${site.url}${photoSrc(p.slug, ph.file, 1600)}`,
       caption: ph.alt,
     })),
   };
@@ -106,7 +107,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
         <section className="pb-24">
           <div className={wrap}>
             <h2 className="sr-only">Photos</h2>
-            <Gallery base={`/projects/${p.slug}`} photos={p.photos!} />
+            <Gallery base={`/projects/${p.slug}`} photos={p.photos} />
             {guides.length > 0 && (
               <div className="mt-12 rounded-3xl border border-line p-8">
                 <h2 className="text-lg font-semibold">Guides for this kind of build</h2>
@@ -133,10 +134,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
               </Link>
             </div>
             <ul className="mt-10 grid gap-4 md:grid-cols-3">
-              {(() => {
-                const idx = withPages.findIndex((x) => x.slug === p.slug);
-                return [1, 2, 3].map((k) => withPages[(idx + k) % withPages.length]).filter((x) => x.slug !== p.slug);
-              })().map((o) => (
+              {neighbours(withPages, withPages.indexOf(p), 3).map((o) => (
                 <li key={o.slug} className="h-full">
                   <ProjectCard p={o} />
                 </li>

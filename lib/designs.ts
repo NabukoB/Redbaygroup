@@ -2,6 +2,7 @@
 // Every page and card labels them as concept designs. Clients are not named.
 // Descriptions only state what is visible in the renders or the plans.
 import type { ProjectPhoto } from "@/lib/site";
+import type { NonEmpty } from "@/lib/utils";
 
 export type Design = {
   slug: string;
@@ -9,14 +10,18 @@ export type Design = {
   style: string;
   summary: string;
   features: string[];
-  photos: ProjectPhoto[];
+  photos: NonEmpty<ProjectPhoto>;
   source?: "client" | "inspiration"; // defaults to client; inspiration = an outside design we can build a version of
   size?: string; // overall size from the plans
   floors?: { heading: string; rooms: string[] }[]; // the layout, described in words (plans are not shown)
   interiorsFrom?: number; // index of the first interior render; these also show on the Interiors page as inspiration
 };
 
-const shots = (alts: string[]): ProjectPhoto[] => alts.map((alt, i) => ({ file: String(i + 1), alt }));
+// Photos are numbered 1, 2, 3... in the design's folder. Every design needs at least one.
+const shots = ([first, ...rest]: NonEmpty<string>): NonEmpty<ProjectPhoto> => [
+  { file: "1", alt: first },
+  ...rest.map((alt, i) => ({ file: String(i + 2), alt })),
+];
 
 export const designs: Design[] = [
   {

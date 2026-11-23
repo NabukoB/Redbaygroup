@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "House Designs and 3D Plans for Homes in Kenya",
   description:
-    "House designs Redbay Group has developed with clients: villas, bungalows, a stone cottage with a solar roof and more. Pick a design and we will build it.",
+    "House designs we can build for you: modern maisonettes, flat-roof bungalows, villas and a stone cottage with a solar roof. Pick one and we will build it.",
   path: "/designs/",
 });
 

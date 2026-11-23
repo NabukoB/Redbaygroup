@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Redbay Group website
 
-## Getting Started
+The website for Redbay Group (Redbay Construction Ltd) at https://redbaygroup.co.ke.
+Next.js, exported as static files and hosted on Hostinger.
 
-First, run the development server:
+## Commands
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev         # local preview at http://localhost:3000
+npm run build       # builds the site into out/
+npm run typecheck   # strict TypeScript check
+npm test            # all tests (run a build first for the built-site tests)
+npm run check       # everything: types, lint, build, tests. Run before every publish.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where things live
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `lib/` holds the content: projects (`site.ts`), guides (`insights*.ts`), designs, areas, services.
+- `public/<projects|designs>/<slug>/` holds photos as `N-800.webp` and `N-1600.webp`.
+- `public/hit.php` and `public/stats-*.php` are the cookie-free visit counter and its private stats page.
+- `public/.htaccess` holds the security and caching rules.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tests (`tests/`)
 
-## Learn More
+- `logic.test.ts`: visitor-source detection, the perimeter wall calculator, the quote form message.
+- `data.test.ts`: unique slugs, every photo file exists, every link points to a real page, nothing half-written,
+  the SACCO client is never named, the wall rate is quoted consistently.
+- `counter.test.ts`: runs the PHP counter and stats page on real PHP (needs `php` installed).
+- `built-site.test.ts`: every built page has one h1, a title and description within Google's limits, a correct
+  canonical address, share image, valid structured data, working links and images, and is in the sitemap.
 
-To learn more about Next.js, take a look at the following resources:
+## Publishing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Build, copy `out/` onto the `hostinger` branch (keeping older files in `_next/static` so pages saved on phones
+keep working, and never committing `_stats/*.json`), push, then deploy from Hostinger.

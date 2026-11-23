@@ -67,7 +67,7 @@ export function BuildSteps({ items }: { items: Item[] }) {
       {/* The house stays pinned while the steps scroll past (top of screen on phones, left on desktop) */}
       <div className="sticky top-16 z-10 self-start bg-white pb-3 pt-2 lg:top-28 lg:col-span-6 lg:bg-transparent lg:p-0">
         <div className="mx-auto max-w-sm rounded-3xl bg-mist p-5 md:max-w-md md:p-8 lg:max-w-none lg:p-10">
-          <House stage={stage} label={items[stage].name} />
+          <House stage={stage} label={items[stage]?.name ?? ""} />
           <div className="mt-4 flex items-center gap-2" aria-hidden="true">
             {items.map((s, i) => (
               <span

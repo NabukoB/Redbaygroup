@@ -21,7 +21,7 @@ export const site = {
 };
 
 // Towns where Redbay has built (from the project list)
-export const areas = ["Nairobi", "Kikuyu", "Isinya", "Lukenya", "Kibwezi", "Nanyuki", "Nyahururu", "Kakamega", "Diani", "Ukunda"];
+export const areas = ["Nairobi", "Kikuyu", "Isinya", "Lukenya", "Tala", "Kibwezi", "Nanyuki", "Nyahururu", "Nakuru", "Kakamega", "Diani", "Ukunda"];
 
 export type Division = "Homes" | "Schools" | "Interiors" | "Energy";
 
@@ -128,6 +128,10 @@ export type Project = {
   // Closing call to action on the project page
   cta?: { title: string; text: string };
 };
+
+// A project that has its own page: a slug, a summary and at least one photo.
+export type ProjectWithPage = Project & { slug: string; summary: string; photos: [ProjectPhoto, ...ProjectPhoto[]] };
+export const hasPage = (p: Project): p is ProjectWithPage => Boolean(p.slug && p.summary && p.photos?.length);
 
 // Image helpers: every image exists at -1600.webp and -800.webp in /public/<base>
 export const imgSrc = (base: string, file: string, w: 800 | 1600) => `${base}/${file}-${w}.webp`;
@@ -244,7 +248,7 @@ export const projects: Project[] = [
     note: "Shell, roof and plaster",
     slug: "kibwezi-maisonette",
     summary:
-      "A two-storey, five-bedroom family home in Kibwezi, Makueni, built from the foundations to a finished hip-and-gable roof in black stone-coated tiles, with the outside walls plastered.",
+      "A two-storey, five-bedroom home in Kibwezi, Makueni, built from foundations to a hip-and-gable roof in black stone-coated tiles, with plastered outside walls.",
     // TODO: confirm year and whether finishes are in Redbay's scope
     scope: [
       "Setting out and machine-cut stone foundation walling",
@@ -439,7 +443,7 @@ export const projects: Project[] = [
       text: "Send us a few photos of the space. We will suggest colours and finishes and give you a fixed quote. We can work evenings and weekends so your office keeps running.",
     },
     summary:
-      "Interior redecoration of the reception and waiting area at Cyber 1's offices in Nairobi: navy feature walls, painted ceiling bulkheads and fresh white walls and ceilings.",
+      "Redecoration of the reception and waiting area at Cyber 1's Nairobi offices: navy feature walls, painted ceiling bulkheads and fresh white walls and ceilings.",
     // TODO: confirm full scope (open-plan office area too?) with Redbay
     scope: [
       "Navy feature walls behind the reception and around the arched doorway",
@@ -716,7 +720,7 @@ export const faqs = [
   },
   {
     q: "Do you build from my architect’s drawings?",
-    a: "Yes. We build to the approved drawings and work with your architect and engineer during construction. If you are still choosing a design, our home designs page shows designs we have developed with clients.",
+    a: "Yes. We build to the approved drawings and work with your architect and engineer during construction. If you are still choosing a design, our home designs page shows concept designs we can build for you, adapted to your plot and budget.",
   },
   {
     q: "Can I build in phases?",
