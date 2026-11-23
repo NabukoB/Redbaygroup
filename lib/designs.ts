@@ -32,6 +32,7 @@ export const designs: Design[] = [
       "Covered front porch with a rain chain",
       "Sliding glass doors onto a large raised terrace",
       "Compact square plan that keeps building costs down",
+      "Warm interiors: gypsum ceilings with hidden lighting, timber doors and built-in wardrobes",
     ],
     floors: [
       {
@@ -58,6 +59,12 @@ export const designs: Design[] = [
       "Side view of the bungalow with sliding doors opening onto a large raised terrace with outdoor seating",
       "Corner view showing the white and blue walls, porch canopy and downpipe",
       "Rear view of the bungalow with a large window, sliding doors and a terrace with steps",
+      "Entrance hallway with a tiled floor, timber doors, a floating console and a gypsum ceiling with hidden lighting, looking through to the living room",
+      "Living room with a corner sofa, wall-mounted TV unit, timber slat feature wall and sliding doors to the terrace",
+      "Open kitchen and dining area with grey lower cabinets, cream upper cabinets, an oven, cooker hood and a six-seat dining table",
+      "Master bedroom with an upholstered bed, built-in wardrobes either side of a dressing table and a ring pendant light",
+      "Second bedroom with a double bed, built-in wardrobe, study desk and curtained window",
+      "Third bedroom with a double bed, built-in wardrobe, wall desk and garden view",
     ]),
   },
   {
