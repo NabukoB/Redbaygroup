@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/2kq8x8rjq4ntn.css","style"]
+:HL["/_next/static/chunks/1jub4ulpbv0zk.css","style"]
 :HC["/",""]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"sacco-office-nairobi","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"projects","h":131136,"c":"$Q2"}]]
-0:{"b":"OwpMUz0JxZiNl6koI7nmv","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"5xokydIAtsTBcHHEaonJm","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
