@@ -13,6 +13,7 @@ export type Design = {
   source?: "client" | "inspiration"; // defaults to client; inspiration = an outside design we can build a version of
   size?: string; // overall size from the plans
   floors?: { heading: string; rooms: string[] }[]; // the layout, described in words (plans are not shown)
+  interiorsFrom?: number; // index of the first interior render; these also show on the Interiors page as inspiration
 };
 
 const shots = (alts: string[]): ProjectPhoto[] => alts.map((alt, i) => ({ file: String(i + 1), alt }));
@@ -25,6 +26,7 @@ export const designs: Design[] = [
     summary:
       "A compact three-bedroom bungalow with a flat roof in bold blue and white, two bathrooms and a 45 m² terrace for outdoor living.",
     source: "inspiration",
+    interiorsFrom: 4,
     size: "Roughly 10.4 × 10.5 m outside, about 110 m² under one roof, plus a 45 m² terrace",
     features: [
       "Flat roof with slim dark edge and hidden gutters",

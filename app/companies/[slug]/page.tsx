@@ -5,8 +5,10 @@ import { notFound } from "next/navigation";
 import { OtherCompanies, ProjectsFor, StepsSection } from "@/components/blocks";
 import { CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
 import { DivisionArt } from "@/components/division-art";
+import { Gallery } from "@/components/gallery";
 import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/reveal";
+import { designs } from "@/lib/designs";
 import { insights } from "@/lib/insights";
 import { pageMeta } from "@/lib/seo";
 import { companies, site } from "@/lib/site";
@@ -29,6 +31,8 @@ export default async function CompanyPage({ params }: PageProps<"/companies/[slu
   const c = companies.find((x) => x.slug === slug);
   if (!c) notFound();
   // Guides that point to this company in their "See it in practice" list
+  // Interior renders from our designs, shown on the Interiors page as inspiration
+  const ideas = c.division === "Interiors" ? designs.filter((d) => d.interiorsFrom !== undefined) : [];
   const guides = insights.filter((g) => g.related?.some((r) => r.href === `/companies/${c.slug}/`));
 
   const serviceLd = {
@@ -75,6 +79,29 @@ export default async function CompanyPage({ params }: PageProps<"/companies/[slu
           division={c.division}
           title={{ Homes: "Homes we have built", Schools: "Schools we have built", Interiors: "Interior projects", Energy: "Energy projects" }[c.division]}
         />
+        {ideas.length > 0 && (
+          <section className="bg-mist py-24 md:py-28">
+            <div className={wrap}>
+              <SectionHead
+                label="Inspiration"
+                title="Interior ideas"
+                text="Warm, modern finishes we can create in your home: gypsum ceilings with hidden lighting, timber doors, built-in wardrobes and fitted kitchens. These are 3D renders, not photos of completed work."
+              />
+              {ideas.map((d) => (
+                <div key={d.slug} className="mt-12">
+                  <Gallery base={`/designs/${d.slug}`} photos={d.photos.slice(d.interiorsFrom)} />
+                  <p className="mt-6 text-center text-[15px] text-slate">
+                    Interiors from the{" "}
+                    <Link href={`/designs/${d.slug}/`} className="font-medium text-charcoal-deep underline underline-offset-4 hover:text-red">
+                      {d.name}
+                    </Link>{" "}
+                    design.
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
         {guides.length > 0 && (
           <section className="py-24 md:py-28">
             <div className={wrap}>
