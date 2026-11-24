@@ -98,6 +98,14 @@ describe.skipIf(!built)("site files", () => {
     expect(expected.filter((u) => !listed.includes(u)), "page missing from sitemap").toEqual([]);
   });
 
+  it("sitemap dates are real: not all the same, none in the future", () => {
+    const dates = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((m) => m[1]!.slice(0, 10));
+    expect(dates.length).toBe(listed.length);
+    expect(new Set(dates).size, "distinct dates").toBeGreaterThan(3);
+    const today = new Date().toISOString().slice(0, 10);
+    expect(dates.filter((d) => d > today), "dates in the future").toEqual([]);
+  });
+
   it("robots.txt allows search engines and points to the sitemap", () => {
     const robots = readFileSync(join(out, "robots.txt"), "utf8");
     expect(robots).toContain(`Sitemap: ${SITE}/sitemap.xml`);
