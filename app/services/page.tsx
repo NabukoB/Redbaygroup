@@ -7,7 +7,7 @@ import { services } from "@/lib/services";
 export const metadata = pageMeta({
   title: "Specialised Building Services in Kenya",
   description:
-    "Specialised services from Redbay Group, an NCA-registered contractor: waterproofing, bills of quantities and perimeter walls, for new and existing buildings.",
+    "Specialised services from Redbay Group, an NCA-registered contractor: waterproofing, roofing, paving, floors, solar, BoQs and walls.",
   path: "/services/",
 });
 
