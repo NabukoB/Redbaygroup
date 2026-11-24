@@ -7,20 +7,20 @@ import { services } from "@/lib/services";
 export const metadata = pageMeta({
   title: "Specialised Building Services in Kenya",
   description:
-    "Specialised services from Redbay Group, an NCA-registered contractor: waterproofing, roofing, paving, floors, solar, BoQs and walls.",
+    "Specialised services from Redbay Group, an NCA-registered contractor: drawings, BoQs, waterproofing, roofing, project management and site audits.",
   path: "/services/",
 });
 
-const more = [
-  { href: "/bill-of-quantities-service/", name: "Bill of quantities", text: "An itemised BoQ measured from your drawings, so you know the real cost before you build." },
-  { href: "/perimeter-wall-calculator/", name: "Perimeter walls", text: "Boundary walls from KSh 14,000 per running metre. Get an instant estimate with our calculator." },
-];
+const boq = {
+  href: "/bill-of-quantities-service/",
+  name: "Cost estimation and planning (BoQs)",
+  text: "An itemised bill of quantities measured from your drawings, so you know the real cost before you build.",
+};
 
 export default function ServicesPage() {
-  const cards = [
-    ...services.map((s) => ({ href: `/services/${s.slug}/`, name: s.name, text: s.intro })),
-    ...more,
-  ];
+  const all = services.map((s) => ({ href: `/services/${s.slug}/`, name: s.name, text: s.intro }));
+  // Drawings first, then cost estimation, then the rest
+  const cards = [...all.slice(0, 1), boq, ...all.slice(1)];
   return (
     <>
       <Nav />
