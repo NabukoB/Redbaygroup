@@ -310,11 +310,18 @@ const baseInsights: Insight[] = [
   },
   {
     slug: "perimeter-walls-what-to-know",
-    title: "Perimeter walls: what to know before you build",
+    title: "What is a perimeter wall? What to know before building",
     description:
-      "A boundary wall is often the first thing built on a plot. Foundations, columns, height and drainage: what makes a perimeter wall last.",
+      "What a perimeter wall is, why most plots have one, and what makes it last: boundary, foundation, columns, height and drainage.",
     date: "2026-11-02",
     sections: [
+      {
+        heading: "What is a perimeter wall?",
+        body: [
+          "A perimeter wall, also called a boundary wall or compound wall, is the wall built around the edge of a plot. It marks where your land ends, keeps out people and animals, and gives the home privacy and security.",
+          "It is often the first thing built on a plot, before the house, because it protects the site and the materials on it. The rest of this guide covers what makes one last.",
+        ],
+      },
       {
         heading: "Confirm the boundary first",
         body: [

@@ -123,6 +123,9 @@ describe.skipIf(!built)("site files", () => {
     const rules = readFileSync(join(out, ".htaccess"), "utf8");
     expect(rules).toContain("Content-Security-Policy");
     expect(rules).toContain("Strict-Transport-Security");
+    // www goes to the one real address
+    expect(rules).toMatch(/RewriteCond %\{HTTP_HOST\} \^www\\\./);
+    expect(rules).toMatch(/RewriteRule \^ https:\/\/%1%\{REQUEST_URI\} \[R=301,L\]/);
     expect(rules).toMatch(/Cache-Control "no-cache"/);
     expect(readFileSync(join(out, "_stats", ".htaccess"), "utf8")).toMatch(/Require all denied|Deny from all/i);
   });
