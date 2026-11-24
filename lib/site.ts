@@ -681,7 +681,7 @@ export const steps = [
 export const faqs = [
   {
     q: "What do you build?",
-    a: "Family homes, from bungalows to maisonettes, school buildings, perimeter walls and outdoor structures such as gazebos. Redbay Interiors fits out homes and offices, and Redbay Energy installs solar and wind power. We also offer specialised services: architectural and structural drawings, bills of quantities, waterproofing, roofing, project management, and site audits and inspections.",
+    a: "Family homes, from bungalows to maisonettes, school buildings, perimeter walls and outdoor structures such as gazebos. Redbay Interiors fits out homes and offices, and Redbay Energy installs solar and wind power. We also offer specialised services: architectural and structural drawings, bills of quantities, waterproofing, roofing, site setup, project management, site audits and inspections, and property maintenance.",
   },
   {
     q: "Where in Kenya do you work?",

@@ -351,4 +351,57 @@ export const services: Service[] = [
     projects: ["nanyuki-perimeter-wall", "karen-perimeter-wall"],
     message: "Hello Redbay Group, I need a site set up for building. The plot is: ",
   },
+  {
+    slug: "property-maintenance",
+    name: "Property maintenance",
+    title: "Property maintenance and repairs",
+    seoTitle: "Property Maintenance and Repairs in Kenya",
+    seoDescription:
+      "Property maintenance by Redbay, an NCA-registered contractor: inspections and repairs for homes, rentals, schools and offices, before small faults grow.",
+    intro:
+      "Buildings wear out fastest when small faults are left. We inspect your property, list what needs attention in order of importance, and repair it, so a small leak or crack does not become an expensive one.",
+    areas: [
+      { heading: "Homes and rental properties", text: "Repairs and repainting for family homes, and upkeep for landlords and agents, including work between tenants." },
+      { heading: "Schools and institutions", text: "Repairs to classrooms, roofs, floors and toilets, scheduled around the school calendar so lessons are not disturbed." },
+      { heading: "Offices and commercial buildings", text: "Repairs to ceilings, partitions, floors and finishes, done in the evenings and at weekends where needed." },
+      { heading: "Before letting or selling", text: "Fixing leaks, repainting and repairing finishes so a property is ready for new tenants or buyers." },
+    ],
+    signs: [
+      "Damp stains, leaks or peeling paint on walls and ceilings",
+      "Cracked plaster, broken tiles or lifting floor finishes",
+      "Blocked gutters or drains, and water standing around the building",
+      "Rusted grills, loose doors or damaged ceilings",
+      "A building that has not been inspected for years",
+    ],
+    methods: [
+      { heading: "Planned inspections", text: "A walk-through of the whole property, with photos and a list of defects ranked by importance." },
+      { heading: "Routine repairs", text: "Plaster, paint, tiles, ceilings, doors and grills repaired and finished to match what is there." },
+      { heading: "Leaks and drainage", text: "Roof repairs, waterproofing, gutters and drains, fixed at the source rather than patched over." },
+      { heading: "Regular maintenance visits", text: "A visit at an agreed interval to inspect and fix small items, so problems are caught early." },
+    ],
+    process: [
+      "We inspect the property and list what needs attention, ranked by importance",
+      "You get an itemised quote, with labour and materials shown separately",
+      "We agree the priorities, the order of work and the dates, including times that suit the people using the building",
+      "We carry out the repairs with as little disruption as possible",
+      "We send a short report with before and after photos, and agree when to inspect again",
+    ],
+    faqs: [
+      {
+        q: "Do you take on small repairs?",
+        a: "Yes. Send photos of the fault on WhatsApp, and we will tell you what is needed and give you a fixed quote.",
+      },
+      {
+        q: "Can you look after a property on a regular basis?",
+        a: "Yes. We can agree a regular visit, such as quarterly or yearly, and quote each visit and each repair so you know the cost.",
+      },
+      {
+        q: "Can you work around tenants or pupils?",
+        a: "Yes. We agree the times and the notice with you first, and keep the work area as small as we can.",
+      },
+    ],
+    guides: ["cracks-in-walls-when-to-worry", "damp-and-waterproofing", "flat-roof-leaking-causes-and-fixes"],
+    projects: [],
+    message: "Hello Redbay Group, I need property maintenance or repairs. The property is: ",
+  },
 ];

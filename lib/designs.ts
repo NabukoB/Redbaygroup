@@ -25,6 +25,70 @@ const shots = ([first, ...rest]: NonEmpty<string>): NonEmpty<ProjectPhoto> => [
 
 export const designs: Design[] = [
   {
+    slug: "flat-roof-villa-with-pool-lounge",
+    name: "Flat-Roof Villa with Pool Lounge",
+    style: "Single-storey luxury home",
+    summary:
+      "A single-storey flat-roof villa with stone and timber cladding, floor-to-ceiling glass, a pool lounge, an attached garage and a covered terrace.",
+    source: "inspiration",
+    features: [
+      "Flat roof with a slim dark edge over white textured render",
+      "Stone-effect brick cladding and timber panels, with a round feature opening in the stone wall",
+      "Black-framed, floor-to-ceiling glass along the living area",
+      "Raised timber terrace under a covered roof with downlights",
+      "Attached garage with a roller door, plus open parking for two more cars",
+      "Pool lounge with a plunge pool at the back of the house",
+      "Wall lights, gravel paths and a metal slat gate at the front",
+    ],
+    floors: [
+      {
+        heading: "Arrival and living",
+        rooms: [
+          "Covered front entrance leading to an entrance hall with a built-in cloakroom",
+          "Central hallway linking every part of the house",
+          "Large open-plan living, dining and kitchen area with floor-to-ceiling glass, a long dining table and a kitchen counter with a hob, sink and dishwasher",
+          "Pantry beside the kitchen",
+          "Laundry room, and a storage room off the hallway",
+        ],
+      },
+      {
+        heading: "Bedrooms and bathrooms",
+        rooms: [
+          "Master bedroom with a double bed, a private bathroom with a bath, toilet and basin, and a walk-in dressing room",
+          "Second bedroom with a double bed",
+          "Study with a desk and built-in cabinets along one wall",
+          "Guest toilet and a separate shower room off the hallway",
+        ],
+      },
+      {
+        heading: "Pool and wellness wing",
+        rooms: [
+          "Link passage from the hallway to the pool lounge",
+          "Pool lounge with a square plunge pool, a sun lounger and a sofa and armchair seating area",
+          "Shower, toilet with a basin, and a wellness room beside the pool lounge",
+        ],
+      },
+      {
+        heading: "Garage and outdoors",
+        rooms: [
+          "Garage for one car, with two store rooms opening off it",
+          "Open parking for two more cars on the drive",
+          "Covered terrace with a dining table and an outdoor kitchen with a built-in grill and sink",
+          "Garden patio with sun loungers and a seating area",
+          "Everything on one level, with no stairs",
+        ],
+      },
+    ],
+    photos: shots([
+      "Garden side of the flat-roof villa with a stone wall and round opening, a timber terrace with sun loungers, floor-to-ceiling glass and a gravel path through the garden",
+      "Wide view of the single-storey villa with stone cladding, timber panels and black-framed floor-to-ceiling glass under a flat white roof",
+      "Street front of the villa with a metal slat gate, a garage door under a flat canopy, entrance steps and a paved drive",
+      "Front of the villa with a covered carport on the left, a roller garage door in the stone wall and glazed doors on the right, with a curved gravel path",
+      "Covered timber terrace with sun loungers and a dining set under a flat roof with downlights, beside floor-to-ceiling glass",
+      "Entrance side of the villa with a garage door under the flat roof, stone cladding with lit wall lights and a paved forecourt",
+    ]),
+  },
+  {
     slug: "three-bedroom-flat-roof-bungalow",
     name: "Three-Bedroom Flat-Roof Bungalow",
     style: "Single-storey family home",
