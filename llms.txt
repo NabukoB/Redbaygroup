@@ -26,6 +26,7 @@
 - [Project management](https://redbaygroup.co.ke/services/project-management/): Project management by Redbay, an NCA-registered contractor: programme, budget, site supervision and progress reports for homes, schools and fit-outs.
 - [Site audits and inspection](https://redbaygroup.co.ke/services/site-audits/): Site audits and inspections by Redbay, an NCA-registered contractor: we check work against drawings and BoQs, and report what needs fixing.
 - [Site setup](https://redbaygroup.co.ke/services/site-setup/): Site setup by Redbay, an NCA-registered contractor: site house, toilet, CCTV security and perimeter walling, so your build starts organised and safe.
+- [Property maintenance](https://redbaygroup.co.ke/services/property-maintenance/): Property maintenance by Redbay, an NCA-registered contractor: inspections and repairs for homes, rentals, schools and offices, before small faults grow.
 
 ## Companies
 
@@ -104,7 +105,7 @@
 
 ### What do you build?
 
-Family homes, from bungalows to maisonettes, school buildings, perimeter walls and outdoor structures such as gazebos. Redbay Interiors fits out homes and offices, and Redbay Energy installs solar and wind power. We also offer specialised services: architectural and structural drawings, bills of quantities, waterproofing, roofing, project management, and site audits and inspections.
+Family homes, from bungalows to maisonettes, school buildings, perimeter walls and outdoor structures such as gazebos. Redbay Interiors fits out homes and offices, and Redbay Energy installs solar and wind power. We also offer specialised services: architectural and structural drawings, bills of quantities, waterproofing, roofing, site setup, project management, site audits and inspections, and property maintenance.
 
 ### Where in Kenya do you work?
 
@@ -148,6 +149,6 @@ Yes. Redbay Interiors fits out offices with glass partitions, boardrooms, suspen
 
 ## Optional
 
-- [Home designs](https://redbaygroup.co.ke/designs/): 8 concept designs (client-commissioned or inspiration designs Redbay can build) shown as 3D renders
+- [Home designs](https://redbaygroup.co.ke/designs/): 9 concept designs (client-commissioned or inspiration designs Redbay can build) shown as 3D renders
 - [About](https://redbaygroup.co.ke/about/)
 - [Sitemap](https://redbaygroup.co.ke/sitemap.xml)
