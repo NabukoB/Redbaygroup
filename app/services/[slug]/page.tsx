@@ -73,7 +73,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
             </ul>
             <Button asChild className="mt-7">
               <a href={whatsappLink(s.message)} target="_blank" rel="noopener noreferrer">
-                Send photos on WhatsApp
+                Message us on WhatsApp
               </a>
             </Button>
           </div>
@@ -97,7 +97,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
         <section className="bg-mist py-24 md:py-28">
           <div className={`${wrap} grid gap-12 lg:grid-cols-2`}>
             <div>
-              <SectionHead label="Methods" title="The right system for each area" center={false} />
+              <SectionHead label="Methods" title="How we do it" center={false} />
               <div className="mt-10 space-y-6">
                 {s.methods.map((m) => (
                   <div key={m.heading}>
@@ -108,7 +108,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
               </div>
             </div>
             <div>
-              <SectionHead label="How we work" title="From inspection to tested finish" center={false} />
+              <SectionHead label="How we work" title="From first visit to handover" center={false} />
               <ol className="mt-10 space-y-4">
                 {s.process.map((p, i) => (
                   <li key={p} className="flex gap-4 rounded-2xl bg-white p-5">
@@ -170,9 +170,9 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
 
         <CtaPanel
           title={`Need ${s.name.toLowerCase()}?`}
-          text="Send photos of the problem area, the location and a rough size. We will tell you what is causing it and give you a fixed quote."
+          text="Send the location, photos if you have them, and a rough size. We will tell you what is needed and give you a fixed quote."
           message={s.message}
-          button="Send photos on WhatsApp"
+          button="Message us on WhatsApp"
         />
       </main>
       <Footer />

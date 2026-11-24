@@ -294,4 +294,61 @@ export const services: Service[] = [
     projects: [],
     message: "Hello Redbay Group, I would like a site audit or inspection. The building is: ",
   },
+  {
+    slug: "site-setup",
+    name: "Site setup",
+    title: "Site setup: site house, toilet, security and perimeter",
+    seoTitle: "Construction Site Setup Services in Kenya",
+    seoDescription:
+      "Site setup by Redbay, an NCA-registered contractor: site house, toilet, CCTV security and perimeter walling, so your build starts organised and safe.",
+    intro:
+      "A building site needs a secure place for materials, a toilet for the workers, security and a boundary before the first foundation is dug. We set all four up together, so the site is organised and protected from day one.",
+    areas: [
+      { heading: "Site house", text: "A lockable room on site for cement, tools and fittings, and for the foreman and the drawings, built on a raised floor to keep it dry." },
+      { heading: "Site toilet", text: "A toilet for the workers, placed away from the building area and the neighbours, so the site stays clean and the crew has what it needs." },
+      { heading: "Security and CCTV", text: "Cameras covering the gate, the materials store and the work area, with a recorder, so you can see who comes and goes." },
+      { heading: "Perimeter walling", text: "The plot closed off from the start: a barricade for the building period, or the permanent perimeter wall built first." },
+    ],
+    signs: [
+      "You are about to start building and have no safe place for materials",
+      "Cement, tools or fittings have gone missing from the site",
+      "Workers have no toilet on site",
+      "The plot is open and anyone can walk in",
+      "You live far from the site and want to see what happens on it",
+    ],
+    methods: [
+      { heading: "Site house on a raised floor", text: "A simple, lockable structure with a raised floor, so cement and fittings stay dry and secure." },
+      { heading: "Site toilet", text: "A basic toilet built or placed on site, kept away from the work area and the plot boundary." },
+      { heading: "CCTV cameras and recorder", text: "Cameras fixed at the gate and the store, wired to a recorder, with the cabling protected from weather and damage." },
+      { heading: "Barricade or permanent wall", text: "Iron sheets on posts for a quick barricade that comes down after the build, or a permanent wall built first and kept as the final boundary." },
+    ],
+    process: [
+      "We visit the plot and agree where the gate, site house, toilet and cameras will go",
+      "You get an itemised quote, with labour and materials shown separately for each part",
+      "We close off the plot first, with a gate that locks",
+      "We build the site house and toilet, then install and test the cameras",
+      "We hand over the keys and show you how the system works, then plan what stays and what comes down after the build",
+    ],
+    faqs: [
+      {
+        q: "Do I really need a site house?",
+        a: "It is not required on every project, but materials left in the open get wet, damaged or stolen. A lockable site house protects them and gives the foreman a dry place for the drawings.",
+      },
+      {
+        q: "Can I watch the cameras from my phone?",
+        a: "Where the site has a network connection, remote viewing can be set up. Tell us when you ask for the quote.",
+      },
+      {
+        q: "Is the perimeter a temporary barricade or a permanent wall?",
+        a: "Either. A barricade is quicker and cheaper and comes down after building. A permanent wall can be built first so it becomes your final boundary. Our perimeter wall calculator gives a quick estimate for a permanent wall.",
+      },
+      {
+        q: "Is site setup included in the bill of quantities?",
+        a: "We list it as its own section, so you can see what it costs separately from the building work.",
+      },
+    ],
+    guides: ["perimeter-walls-what-to-know", "perimeter-wall-cost-kenya", "does-your-quotation-include-everything"],
+    projects: ["nanyuki-perimeter-wall", "karen-perimeter-wall"],
+    message: "Hello Redbay Group, I need a site set up for building. The plot is: ",
+  },
 ];
