@@ -31,7 +31,7 @@ export const services: Service[] = [
       { heading: "Flat roofs and terraces", text: "Concrete roofs and roof terraces need a membrane and a slight fall so rain drains away instead of soaking into the slab." },
       { heading: "Balconies", text: "Balconies take rain on top and drip onto rooms below. A membrane under the tiles and proper drainage stop the leaks." },
       { heading: "Bathrooms and wet areas", text: "Showers and bathroom floors are waterproofed under the tiles, so water never reaches the slab or the walls next door." },
-      { heading: "Water tanks", text: "Concrete and masonry tanks are lined so they hold water without leaking or contaminating it." },
+      { heading: "Water tanks", text: "Tank bases are built, and concrete and masonry tanks are lined so they hold water without leaking or contaminating it." },
       { heading: "Basements and retaining walls", text: "Walls below ground are protected against water pushing in from the soil around them." },
       { heading: "Damp walls", text: "Rising damp at the base of walls is treated at the source, then the plaster and paint are made good." },
     ],
@@ -93,6 +93,7 @@ export const services: Service[] = [
       { heading: "Re-roofing", text: "Replacing an old roof with a new covering, and repairing or replacing the timbers underneath where they have weakened." },
       { heading: "Roof repairs", text: "Replacing cracked tiles, loose or rusted sheets, and fixing the valleys and ridges where water gets in." },
       { heading: "Schools and public buildings", text: "Roofs for classroom blocks and school buildings, planned so work can continue around the classes in use." },
+      { heading: "Gutters and rainwater", text: "PVC gutters that carry rain from the roof to a water tank, with the connection made so the tank fills." },
     ],
     signs: [
       "Rain coming through to ceilings or walls",
@@ -150,6 +151,7 @@ export const services: Service[] = [
       { heading: "Levelling and cut and fill", text: "Bringing the ground to the levels on the drawings, with the right fall so rainwater runs away from the house." },
       { heading: "Foundations", text: "Excavating foundation trenches and pits to depth, ready for inspection before concrete is poured." },
       { heading: "Backfilling", text: "Refilling around foundations and walls in layers, compacted so the soil does not settle or wash out later." },
+      { heading: "Site setup", text: "Barricading the plot, setting up a site house for the works, and preparing the ground for foundations, including suspended floors." },
     ],
     signs: [
       "A site that is uneven, or water that stands after rain",
@@ -489,5 +491,106 @@ export const services: Service[] = [
     guides: ["solar-power-for-homes-and-schools", "solar-for-schools-kenya", "small-wind-turbines-kenya", "solar-water-heaters-kenya", "net-metering-kenya"],
     projects: [],
     message: "Hello Redbay Energy, I would like to talk about solar or wind power. The building is: ",
+  },
+  {
+    slug: "drawings",
+    name: "Architectural and structural drawings",
+    title: "Architectural and structural drawings",
+    seoTitle: "Architectural and Structural Drawings in Kenya",
+    seoDescription:
+      "Architectural and structural drawings by Redbay, an NCA-registered contractor, for building approval. An architect signs where required.",
+    intro:
+      "Every approved building starts with drawings. We prepare the floor plans, elevations and sections, and the structural drawings for the foundations, columns, beams, slabs and roof, in the form that approval submissions need.",
+    areas: [
+      { heading: "New house plans", text: "Architectural drawings for a new home, school or building, designed around your plot, budget and the way you will use the space." },
+      { heading: "Structural drawings", text: "The foundations, columns, beams, slabs and roof frame, designed to carry the loads on the building." },
+      { heading: "Approval submissions", text: "Drawings prepared for building approval, with the sets and details that the approving authority asks for." },
+      { heading: "Reviewing your own plan", text: "Checking a plan you already have for structure, layout and approvals before you build from it." },
+    ],
+    signs: [
+      "You have a plot but no drawings yet",
+      "You need drawings to submit for building approval",
+      "You have a plan from another source that needs structural design",
+      "You want to check a plan before you build from it",
+    ],
+    methods: [
+      { heading: "Architectural drawings", text: "Floor plans, elevations, sections and the site layout, showing how the building sits on the plot." },
+      { heading: "Structural drawings", text: "Foundation, column, beam, slab and roof details, with the sizes and reinforcement the structure needs." },
+      { heading: "Approval-ready sets", text: "A complete set of drawings in the form the approving authority asks for, so the submission is not sent back for missing details." },
+    ],
+    process: [
+      "We meet you, visit the plot and agree the brief, the size and the budget",
+      "You get a fixed quote for each set of drawings, with the work listed separately",
+      "We prepare the architectural drawings, then the structural design and drawings",
+      "Where the approving authority requires it, an architect signs the drawings",
+      "We help you through the approval submission and make any changes the authority asks for",
+    ],
+    faqs: [
+      {
+        q: "Do the drawings need an architect's signature?",
+        a: "Where the approving authority requires it, yes. We work with a registered architect for that, and we say so in your quote, so you know who signs and what it costs.",
+      },
+      {
+        q: "How much do drawings cost?",
+        a: "Each set is quoted separately, based on the size and complexity of the building. Drawings are priced as a fixed fee in your quote.",
+      },
+      {
+        q: "Can you draw a house from my own sketch or plan?",
+        a: "Yes. We can turn a sketch or plan into full drawings, and check it for structure and approvals before you build.",
+      },
+    ],
+    guides: ["building-approvals-kenya"],
+    projects: [],
+    message: "Hello Redbay Group, I need architectural or structural drawings. The house is: ",
+  },
+  {
+    slug: "septic-tanks",
+    name: "Septic tanks",
+    title: "Septic tanks for homes and schools",
+    seoTitle: "Septic Tank Construction in Kenya",
+    seoDescription:
+      "Septic tanks by Redbay, an NCA-registered contractor: built to drawing for homes and schools, with the house drains connected and tested before handover.",
+    intro:
+      "A septic tank takes the waste from a building safely away from the living areas. We size the tank for how the building will be used, build it to the drawing, and connect and test the drains before we hand over.",
+    areas: [
+      { heading: "Homes", text: "Septic tanks sized for the number of people in the house, built to the drawing." },
+      { heading: "Schools", text: "Tanks sized for the number of pupils and staff, with the drains from each block connected to them." },
+      { heading: "Replacing an old tank", text: "Replacing a tank that is full, cracked or no longer working, with a new tank built to today's needs." },
+    ],
+    signs: [
+      "A foul smell in the yard or around the house",
+      "Toilets or sinks that drain slowly or back up",
+      "A tank that is full, overflowing or cracked",
+      "A new house or school that needs a waste system",
+    ],
+    methods: [
+      { heading: "Concrete septic tanks", text: "Tanks built on site to the size and layout on your drawings, with the chambers and covers finished neatly." },
+      { heading: "Drain connections", text: "The drains from toilets, sinks and showers connected to the tank, with the falls set so waste flows to it." },
+      { heading: "Biodigester option", text: "Where a biodigester suits the site better, we explain the choice and what each option needs." },
+    ],
+    process: [
+      "We visit the site, check the drains and the position of the tank",
+      "You get an itemised quote covering excavation, the tank, pipework and connections",
+      "We excavate to the drawn level and build the tank",
+      "We connect the drains with the correct falls, and test the connections",
+      "We backfill, make the ground good and hand over",
+    ],
+    faqs: [
+      {
+        q: "Septic tank or biodigester?",
+        a: "Both have their place, and the right one depends on the site and how the building is used. Our guide compares them, and we advise on the site before you decide.",
+      },
+      {
+        q: "How big a tank do I need?",
+        a: "The size depends on how many people use the building. We size the tank from your drawings and the number of users.",
+      },
+      {
+        q: "Can you replace an old tank?",
+        a: "Yes. We check the old tank and the drains, then build a new tank and connect it, so the replacement works properly.",
+      },
+    ],
+    guides: ["septic-tank-or-biodigester"],
+    projects: [],
+    message: "Hello Redbay Group, I need a septic tank. The building is: ",
   },
 ];
