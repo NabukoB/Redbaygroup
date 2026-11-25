@@ -6,6 +6,7 @@ import { Badge, Breadcrumbs, CtaPanel, Footer, Nav, whatsappLink, wrap } from "@
 import { JsonLd } from "@/components/json-ld";
 import { Reveal } from "@/components/reveal";
 import { insights } from "@/lib/insights";
+import { topicOf } from "@/lib/knowledge";
 import { neighbours } from "@/lib/utils";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -29,6 +30,7 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
   if (!p) notFound();
   // The next four guides after this one, wrapping round, so every guide gets linked
   const others = neighbours(insights, insights.indexOf(p), 4);
+  const topic = topicOf(p.slug);
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -51,7 +53,7 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
         <JsonLd data={articleLd} />
         <article className="pb-20 pt-10 md:pt-14">
           <div className={wrap}>
-            <Breadcrumbs items={[{ name: "Insights", path: "/insights/" }, { name: p.title, path: `/insights/${p.slug}/` }]} />
+            <Breadcrumbs items={[{ name: "Knowledge Hub", path: "/insights/" }, ...(topic ? [{ name: topic.name, path: `/insights/topics/${topic.slug}/` }] : []), { name: p.title, path: `/insights/${p.slug}/` }]} />
             <Reveal className="mx-auto mt-12 max-w-3xl">
               <Badge>Guide</Badge>
               <h1 className="heading mt-5 text-[clamp(2.3rem,5vw,3.8rem)]">{p.title}</h1>
@@ -114,7 +116,23 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
                 </ul>
               </aside>
             ) : null}
-            <aside className={`mx-auto ${p.related?.length ? "mt-4" : "mt-16"} max-w-3xl rounded-3xl bg-mist p-8`}>
+            {topic && (
+              <aside className={`mx-auto ${p.related?.length ? "mt-4" : "mt-16"} max-w-3xl rounded-3xl border border-line p-8`}>
+                <h2 className="text-lg font-semibold">How Redbay can help</h2>
+                <ul className="mt-4 space-y-3">
+                  {topic.help.map((h) => (
+                    <li key={h.href}>
+                      <Link className="text-lg font-medium text-charcoal-deep underline-offset-4 hover:underline" href={h.href}>{h.label}</Link>
+                      <span className="block text-[15px] leading-relaxed text-slate">{h.text}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-5 text-sm text-slate">
+                  More in <Link className="font-medium text-charcoal-deep underline-offset-4 hover:underline" href={`/insights/topics/${topic.slug}/`}>{topic.name}</Link>, or <Link className="font-medium text-charcoal-deep underline-offset-4 hover:underline" href="/insights/">browse the whole Knowledge Hub</Link>.
+                </p>
+              </aside>
+            )}
+            <aside className="mx-auto mt-4 max-w-3xl rounded-3xl bg-mist p-8">
               <h2 className="text-lg font-semibold">More guides</h2>
               <ul className="mt-4 space-y-3">
                 {others.map((o) => (

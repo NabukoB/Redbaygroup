@@ -151,7 +151,7 @@ export function Footer() {
               <li><Link className="hover:text-charcoal-deep" href="/about/">About</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/projects/">Projects</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/designs/">Home designs</Link></li>
-              <li><Link className="hover:text-charcoal-deep" href="/insights/">Insights</Link></li>
+              <li><Link className="hover:text-charcoal-deep" href="/insights/">Knowledge Hub</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/perimeter-wall-calculator/">Perimeter wall calculator</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/roofing-sheets-calculator/">Roofing sheets calculator</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/house-cost-calculator/">House cost calculator</Link></li>

@@ -544,4 +544,74 @@ export const practicalInsights: Insight[] = [
       { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
     ],
   },
+  {
+    slug: "common-construction-mistakes-kenya",
+    title: "Common construction mistakes in Kenya to avoid",
+    description:
+      "The construction mistakes that cost Kenyan homeowners most: no drawings, vague quotations, unchecked contractors, ignored soil and late waterproofing.",
+    date: "2026-11-25",
+    sections: [
+      {
+        heading: "Mistakes are cheapest to fix before building starts",
+        body: [
+          "Most expensive building problems were decided early: a missing drawing, a vague quotation, a contractor nobody checked. A wall can be rebuilt, but the money and the months are gone. The mistakes below come up again and again, and each has a simple prevention.",
+        ],
+      },
+      {
+        heading: "Starting without proper drawings and approval",
+        body: [
+          "Building from a sketch leads to arguments about what was agreed, and to changes made halfway up the walls. Drawings settle the size, the structure and the layout before the money is spent. Most buildings also need approval before work starts, so ask what yours needs and get it first.",
+        ],
+      },
+      {
+        heading: "Choosing a contractor on the lowest price alone",
+        body: [
+          "A low price can mean a smaller scope, thinner materials or a builder who plans to ask for more later. Check that the contractor is registered with the National Construction Authority, ask to see finished work, and speak to past clients. Our guide on how to check a building contractor lists the questions to ask.",
+        ],
+      },
+      {
+        heading: "Accepting a vague quotation",
+        body: [
+          "A single lump sum with no breakdown makes comparison impossible. A bill of quantities lists each item with its quantity, with labour and materials shown separately. Ask every contractor to quote against the same list, so that the differences in price are real differences.",
+        ],
+      },
+      {
+        heading: "Ignoring the soil",
+        body: [
+          "The ground under the building decides the foundation. Black cotton soil swells when wet and shrinks when dry, and it cracks houses and walls that were built as if the ground were stable. Find out what the soil is before the foundation is designed, not after the first crack appears.",
+        ],
+      },
+      {
+        heading: "Leaving waterproofing until water appears",
+        body: [
+          "Waterproofing a flat roof, a bathroom or a tank during construction costs far less than breaking up finished work to repair a leak. Ask what waterproofing is in the plan and which method is used for each surface.",
+        ],
+      },
+      {
+        heading: "Buying materials without checking them",
+        body: [
+          "Thin sheets, short measures and unmarked products are sold alongside good ones. Check for the manufacturer's stamp and the standards mark, ask for the thickness in writing, and be careful with a price far below the rest of the market.",
+        ],
+      },
+      {
+        heading: "Paying without agreed stages",
+        body: [
+          "Paying a large amount upfront removes your leverage. Agree stages of work, such as foundation, walls, roof and finishes, and release each payment after you have seen the work for that stage. An independent inspection at key stages catches faults while they are cheap to fix.",
+        ],
+      },
+      {
+        heading: "Building everything at once without the money",
+        body: [
+          "A house that stops half-finished is worse than one built in planned phases. If the budget is tight, plan the stages from the start so that each completed phase protects the next. Our guide on building in phases shows how to split the work.",
+        ],
+      },
+    ],
+    related: [
+      { label: "How to check a building contractor", href: "/insights/how-to-check-a-building-contractor/" },
+      { label: "Does your building quotation include everything?", href: "/insights/does-your-quotation-include-everything/" },
+      { label: "Building on black cotton soil", href: "/insights/building-on-black-cotton-soil/" },
+      { label: "Types of iron sheets in Kenya", href: "/insights/types-of-iron-sheets-kenya/" },
+      { label: "Building your house in phases", href: "/insights/building-your-house-in-phases/" },
+    ],
+  },
 ];

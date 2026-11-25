@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { designs } from "@/lib/designs";
+import { topics } from "@/lib/knowledge";
 import { insights } from "@/lib/insights";
 import { locations } from "@/lib/locations";
 import { services } from "@/lib/services";
@@ -30,7 +31,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...projects.filter((p) => p.slug).map((p) => page(`/projects/${p.slug}/`, 0.7, projectData)),
     page("/designs/", 0.8, changed("app/designs/page.tsx", "lib/designs.ts")),
     ...designs.map((d) => page(`/designs/${d.slug}/`, 0.6, designData)),
-    page("/insights/", 0.6, changed("app/insights/page.tsx", "lib/insights.ts")),
+    page("/insights/", 0.8, changed("app/insights/page.tsx", "lib/insights.ts", "lib/knowledge.ts")),
+    ...topics.map((t) => page(`/insights/topics/${t.slug}/`, 0.7, changed("app/insights/topics/[topic]/page.tsx", "lib/knowledge.ts"))),
     ...insights.map((i) => page(`/insights/${i.slug}/`, 0.5, new Date(i.date), "yearly")),
     page("/perimeter-wall-calculator/", 0.9, changed("app/perimeter-wall-calculator/page.tsx", "lib/wall.ts")),
     page("/roofing-sheets-calculator/", 0.8, changed("app/roofing-sheets-calculator/page.tsx", "lib/roofing-calc.ts")),
