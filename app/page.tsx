@@ -8,8 +8,13 @@ import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { designs } from "@/lib/designs";
+import { insights } from "@/lib/insights";
 import { pageMeta } from "@/lib/seo";
 import { approach, companies, projects, site, type Division } from "@/lib/site";
+
+const featuredProjects = ["karen-perimeter-wall", "nanyuki-perimeter-wall", "kikuyu-perimeter-wall", "kamulu-roofing-shell", "kikuyu-house", "diani-maisonette", "lukenya-four-bedroom", "nakuru-interiors"];
+const featuredDesigns = ["colour-block-bungalow", "round-house", "stone-solar-cottage"];
+const featuredGuides = ["perimeter-wall-cost-kenya", "septic-tank-or-biodigester", "how-to-read-a-bill-of-quantities", "rainwater-harvesting-for-homes", "net-metering-kenya", "types-of-iron-sheets-kenya"];
 
 export const metadata = pageMeta({
   title: "Redbay Group | Building Contractors for Homes and Schools in Kenya",
@@ -191,6 +196,49 @@ function Designs() {
   );
 }
 
+function Explore() {
+  const pj = featuredProjects.map((slug) => projects.find((p) => "slug" in p && p.slug === slug)).filter(Boolean) as (typeof projects)[number][];
+  const ds = featuredDesigns.map((slug) => designs.find((d) => d.slug === slug)).filter(Boolean) as typeof designs;
+  const gd = featuredGuides.map((slug) => insights.find((i) => i.slug === slug)).filter(Boolean) as typeof insights;
+  const link = "text-charcoal underline-offset-4 hover:underline";
+  return (
+    <section id="explore" className="scroll-mt-16 border-t border-line py-20 md:py-24">
+      <div className={wrap}>
+        <SectionHead label="Explore more" title="Recent work, designs and guides." text="A closer look at what we have built, what we can build for you, and what to know before you start." />
+        <div className="mt-12 grid gap-10 md:grid-cols-3">
+          <div>
+            <h3 className="font-medium">Recent projects</h3>
+            <ul className="mt-4 space-y-2 text-sm">
+              {pj.map((p) => (
+                <li key={(p as { slug: string }).slug}>
+                  <Link className={link} href={`/projects/${(p as { slug: string }).slug}/`}>{p.name}, {p.place}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-medium">Home designs</h3>
+            <ul className="mt-4 space-y-2 text-sm">
+              {ds.map((d) => (
+                <li key={d.slug}><Link className={link} href={`/designs/${d.slug}/`}>{d.name}</Link></li>
+              ))}
+            </ul>
+            <p className="mt-4 text-sm"><Link className={link} href="/locations/">Where we build</Link> · <Link className={link} href="/contact/">Contact us</Link></p>
+          </div>
+          <div>
+            <h3 className="font-medium">Popular guides</h3>
+            <ul className="mt-4 space-y-2 text-sm">
+              {gd.map((g) => (
+                <li key={g.slug}><Link className={link} href={`/insights/${g.slug}/`}>{g.title}</Link></li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Approach() {
   return (
     <section id="approach" className="scroll-mt-16 py-24 md:py-32">
@@ -216,6 +264,7 @@ export default function Home() {
         <Companies />
         <Projects />
         <Designs />
+        <Explore />
         <Approach />
         <CtaPanel />
       </main>
