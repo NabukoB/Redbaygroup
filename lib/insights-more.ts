@@ -177,6 +177,95 @@ export const moreInsights: Insight[] = [
       { label: "Two-storey home with a stone-coated tile roof, Kamulu", href: "/projects/kamulu-roofing-shell/" },
       { label: "Bungalow with a grey stone-coated tile roof, Tala", href: "/projects/tala-bungalow-shell/" },
       { label: "Flat roofs: are they practical?", href: "/insights/flat-roofs-practical-questions/" },
+      { label: "Types of iron sheets in Kenya", href: "/insights/types-of-iron-sheets-kenya/" },
+    ],
+  },
+  {
+    slug: "types-of-iron-sheets-kenya",
+    title: "Types of iron sheets in Kenya: gauges and profiles",
+    description:
+      "Iron sheet types in Kenya explained: corrugated, box and tile profiles, what gauge means, coatings, and how to check sheets before you buy.",
+    date: "2026-11-25",
+    sections: [
+      {
+        heading: "Three things set one iron sheet apart from another",
+        body: [
+          "When someone says iron sheets, or mabati, they could mean many products. Three things tell them apart: the profile (the shape), the gauge (the thickness) and the coating (what protects the steel). Ask for all three in every quote, so that you compare like with like.",
+        ],
+      },
+      {
+        heading: "The three profiles",
+        body: [
+          "Corrugated sheets have the familiar wavy shape. One widely sold corrugated sheet from Mabati Rolling Mills has 11 ribs, 76.2 mm apart, and its manufacturer lists it for roofing and walling in homes.",
+          "Box profile sheets have flat-topped ribs with flat sections between them. One example, Maxcover, is 25 mm high and its maker positions it for homes and light commercial buildings, especially on tight budgets.",
+          "Tile profile sheets are pressed to look like clay tiles, and are usually pre-painted. One tile-profile sheet from the same maker can be used on roofs pitched from 15 degrees, with battens no more than 600 mm apart. Check the minimum pitch for the sheet you choose before the roof structure is built.",
+        ],
+        list: [
+          "Corrugated: the traditional look, and common for homes and walls",
+          "Box profile: flat-topped ribs, and a clean modern line",
+          "Tile profile: looks like roof tiles, at a lower weight and cost than real tiles",
+        ],
+      },
+      {
+        heading: "What gauge means",
+        body: [
+          "Gauge is the thickness of the steel. The gauge number runs backwards: a higher number means a thinner sheet. So 28 gauge is thicker than 30 gauge.",
+          "The exact thickness depends on the maker. Mabati Rolling Mills lists 30 gauge as 0.25 mm and 28 gauge as 0.32 mm on one box profile sheet, and offers a tile profile sheet in 0.32, 0.40, 0.50 and 0.60 mm. Ask the supplier for the thickness in millimetres, not only the gauge number.",
+          "Thicker sheets dent less, resist wind better and can span further between supports. They also cost more and weigh more, which the roof structure must carry. For long spans, ask your engineer or builder to specify the gauge.",
+        ],
+      },
+      {
+        heading: "Coatings: galvanised or aluminium-zinc",
+        body: [
+          "Steel rusts, so roofing steel carries a metal coating. Two kinds are sold in Kenya. Galvanised sheets are coated with zinc. Aluminium-zinc sheets are coated with an alloy of aluminium and zinc, for example 55% aluminium and 43% zinc on one corrugated sheet.",
+          "Each kind has its own Kenyan standard from the Kenya Bureau of Standards (KEBS): KS EAS 11:2019 for galvanised sheets, and KS EAS 410:2021 for aluminium-zinc sheets. A heavier coating protects longer, which is why the weight of the coating matters as much as the thickness of the steel.",
+        ],
+      },
+      {
+        heading: "Plain, painted and textured finishes",
+        body: [
+          "Sheets come plain or pre-painted at the factory. Factory paint is baked on, which is more durable than paint applied later. Finishes range from smooth to textured, and some makers also offer gloss. Colours such as maroon, tile red, brick red, dark green and charcoal are common.",
+          "A painted sheet costs more than a plain one. It also reflects more heat when the colour is light, and it looks finished without a coat of paint on site.",
+        ],
+      },
+      {
+        heading: "Cover width and lengths: how many sheets you need",
+        body: [
+          "A sheet is wider than the roof area it covers, because neighbouring sheets overlap. Suppliers quote the effective cover width, which is the width each sheet actually covers. One corrugated sheet is 865 mm wide but covers 762 mm, and one box profile sheet covers 1,015 mm.",
+          "Work out the number of sheets from the effective cover, not the full width. Order each length to suit the roof, so sheets run from ridge to eaves without a join where possible. Long sheets are harder to carry and fix, and one tile-profile maker recommends 6 m as the longest length for its thinnest sheet.",
+        ],
+        list: [
+          "Measure the roof run from ridge to eaves, and add the overhang",
+          "Divide the roof width by the effective cover width to count sheets",
+          "Order the right lengths, so you do not cut and waste sheets on site",
+          "Add ridge caps and flashings, which are sold separately",
+        ],
+      },
+      {
+        heading: "How to check sheets before you buy",
+        body: [
+          "In 2022 KEBS found roofing sheets on the market with a thinner coating than the standard requires, with widths below the standard, and without proper labels. You can protect yourself with a few checks.",
+        ],
+        list: [
+          "Look for the factory name, profile, gauge and date of manufacture stamped on the sheet. Missing details are a warning sign.",
+          "Look for the KEBS Diamond Mark or Standardization Mark on the product.",
+          "Check the mark by sending the code under the S-Mark by SMS to 20023, in the form SM#code. If the details do not match, report the product to KEBS on 1545.",
+          "Ask for the thickness in millimetres and the coating type in writing.",
+          "Be careful with prices far below the rest of the market. Thin steel and a light coating are how sheets are made cheaper.",
+        ],
+      },
+      {
+        heading: "Which one should you choose?",
+        body: [
+          "For most homes, a corrugated or box profile sheet in a sensible gauge is the practical choice, because makers position them for homes and light commercial buildings. Tile profile sheets suit owners who want the look of tiles at a lower weight. Stone-coated tiles are a separate and heavier-duty option, covered in our roofing guide.",
+          "Prices change often and depend on the gauge, the profile and the finish, so we do not list them here. Ask for a dated written quote from at least two suppliers, with the profile, gauge and coating on each line.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Roofing in Kenya: iron sheets, tiles or flat roof?", href: "/insights/roofing-options-kenya/" },
+      { label: "How to check a building contractor", href: "/insights/how-to-check-a-building-contractor/" },
+      { label: "Does your building quotation include everything?", href: "/insights/does-your-quotation-include-everything/" },
     ],
   },
   {

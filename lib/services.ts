@@ -183,7 +183,7 @@ export const services: Service[] = [
         a: "Send photos of the roof and the building on WhatsApp, with a rough size if you have it. For leaks we usually inspect first, then give a fixed quote.",
       },
     ],
-    guides: ["roofing-options-kenya", "flat-roofs-practical-questions"],
+    guides: ["roofing-options-kenya", "types-of-iron-sheets-kenya", "flat-roofs-practical-questions"],
     projects: ["kamulu-roofing-shell", "kibwezi-maisonette"],
     message: "Hello Redbay Group, I need roofing work. The roof is: ",
   },
