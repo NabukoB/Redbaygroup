@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/0tsrymytuvw7e.css","style"]
+:HL["/_next/static/chunks/2u-giu6d9z59u.css","style"]
 :HC["/",""]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"epoxy-floors-choose-for-your-home","s":["topics"]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"insights","h":131136,"c":"$Q2"}]]
-0:{"b":"6X8GLqIYcdR0N_RdOLt14","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"k53Bvm-6XbvK4ZeSGB3eA","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
