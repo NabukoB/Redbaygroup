@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { insights } from "@/lib/insights";
 import { pageMeta } from "@/lib/seo";
 import { services } from "@/lib/services";
+import { Gallery } from "@/components/gallery";
 import { projects, site } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -120,6 +121,17 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
             </div>
           </div>
         </section>
+
+        {s.gallery && (
+          <section className="py-24 md:py-28">
+            <div className={wrap}>
+              <SectionHead label="On site" title={s.gallery.title} text={s.gallery.text} />
+              <div className="mt-14">
+                <Gallery base={s.gallery.base} photos={s.gallery.photos} />
+              </div>
+            </div>
+          </section>
+        )}
 
         <section className="py-24 md:py-28">
           <div className={wrap}>

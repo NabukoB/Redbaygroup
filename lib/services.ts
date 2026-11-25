@@ -1,3 +1,4 @@
+import type { ProjectPhoto } from "./site";
 // Specialised services. Each one gets its own page at /services/<slug>/.
 // Methods are described in general terms; no prices or guarantees until Redbay confirms them.
 export type Service = {
@@ -14,6 +15,7 @@ export type Service = {
   faqs: { q: string; a: string }[];
   guides: string[]; // insight slugs
   projects: string[]; // project slugs that show related work
+  gallery?: { title: string; text: string; base: string; photos: ProjectPhoto[] }; // photos of this work
   message: string; // WhatsApp opening line
 };
 
@@ -128,6 +130,16 @@ export const services: Service[] = [
     ],
     guides: ["flat-roof-leaking-causes-and-fixes", "bathroom-waterproofing-before-tiling", "balcony-and-terrace-leaks", "water-tank-waterproofing", "basement-and-retaining-wall-waterproofing", "choosing-a-waterproofing-method", "damp-and-waterproofing", "flat-roofs-practical-questions"],
     projects: [], // add project slugs once there are photos of this work
+    gallery: {
+      title: "Torch-on membrane on a flat roof",
+      text: "A bituminous membrane laid on a flat roof: the rolls are set out and aligned along the roof before they are bonded, with the gas torch and cylinder ready beside them.",
+      base: "/services/waterproofing",
+      photos: [
+        { file: "membrane-roll-torch", alt: "Waterproofing worker with a gas torch beside a roll of bituminous membrane laid on a flat roof" },
+        { file: "roll-and-torch-close", alt: "Roll of torch-on bituminous membrane ready to be bonded to a flat roof, with a gas cylinder and torch" },
+        { file: "laying-membrane", alt: "Bituminous membrane being rolled out across a prepared flat roof beside the parapet wall" },
+      ],
+    },
     message: "Hello Redbay Group, I need waterproofing. The problem is: ",
   },
   {
