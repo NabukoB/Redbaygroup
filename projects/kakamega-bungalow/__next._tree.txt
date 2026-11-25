@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/31vcuryzt7xvg.css","style"]
+:HL["/_next/static/chunks/0tsrymytuvw7e.css","style"]
 :HC["/",""]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"kakamega-bungalow","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"projects","h":131136,"c":"$Q2"}]]
-0:{"b":"VbrpMT2xCYyq1mTMPVYmB","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"H4KJ516LFILeVHNOE7b9q","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
