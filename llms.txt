@@ -15,6 +15,8 @@
 - Quotes are itemised bills of quantities with one fixed price, quoted before VAT.
 - Perimeter walls: from KSh 14,000 per running metre for a wall 2.4 m high on a foundation 0.8 m deep, before VAT; gate priced separately.
 - [Perimeter wall cost calculator](https://redbaygroup.co.ke/perimeter-wall-calculator/): instant estimate from the boundary length.
+- [Roofing sheets calculator](https://redbaygroup.co.ke/roofing-sheets-calculator/): how many iron sheets a roof needs.
+- [House cost calculator](https://redbaygroup.co.ke/house-cost-calculator/): published Nairobi cost per square metre for a house.
 - [Bill of quantities service](https://redbaygroup.co.ke/bill-of-quantities-service/): itemised BoQ prepared from your drawings; fee quoted before starting.
 - [Get a quote](https://redbaygroup.co.ke/get-a-quote/): short form that opens WhatsApp with project details.
 
@@ -79,6 +81,7 @@
 - [Rainwater harvesting for homes and schools](https://redbaygroup.co.ke/insights/rainwater-harvesting-for-homes/): How to collect and store rainwater in Kenya: roofs, gutters, first-flush diverters, tank sizing and keeping stored water clean for homes and schools.
 - [Planning a kitchen that works: a Kenyan guide](https://redbaygroup.co.ke/insights/planning-a-kitchen/): Kitchen layouts, worktops, cabinets, ventilation, lighting and sockets: how to plan a practical kitchen for a Kenyan home before the walls are finished.
 - [Office renovation in Kenya: a planning guide](https://redbaygroup.co.ke/insights/office-renovation-guide/): How to plan an office fit-out in Kenya: layout, glass partitions, ceilings and lighting, power and data, working around staff, and the right order of works.
+- [Cost of building a house per square metre in Kenya](https://redbaygroup.co.ke/insights/cost-of-building-a-house-per-square-metre-kenya/): Published building costs per square metre in Kenya for bungalows and maisonettes, what they include, and why your own figure will differ.
 - [Net metering in Kenya: credit for your solar power](https://redbaygroup.co.ke/insights/net-metering-kenya/): How net metering works in Kenya under the 2024 rules: who qualifies, the 4 kW and 10 kW home limits, how credits work, and how to apply to Kenya Power.
 - [Small wind turbines for homes and schools in Kenya](https://redbaygroup.co.ke/insights/small-wind-turbines-kenya/): When a small wind turbine makes sense in Kenya, how vertical-axis turbines differ, why site and height matter, and how wind pairs with solar.
 - [Solar and wind hybrid systems explained](https://redbaygroup.co.ke/insights/solar-wind-hybrid-systems/): How a solar and wind hybrid system works, why it gives steadier power than solar alone, and what a home or school needs: panels, turbine, batteries, inverter.
