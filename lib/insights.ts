@@ -257,6 +257,7 @@ const baseInsights: Insight[] = [
       },
     ],
     related: [
+      { label: "Gypsum ceiling cost in Kenya", href: "/insights/gypsum-ceiling-cost-kenya/" },
       { label: "Tray ceilings and lighting in a Nakuru home", href: "/projects/nakuru-interiors/" },
       { label: "Office ceilings with LED lighting, Nairobi", href: "/projects/sacco-office-nairobi/" },
       { label: "Home interiors, Ukunda", href: "/projects/ukunda-interiors/" },

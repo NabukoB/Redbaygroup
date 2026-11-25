@@ -214,6 +214,7 @@ export const practicalInsights: Insight[] = [
       },
     ],
     related: [
+      { label: "Septic tank and biodigester cost in Kenya", href: "/insights/septic-tank-cost-kenya/" },
       { label: "Building approvals in Kenya", href: "/insights/building-approvals-kenya/" },
       { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
     ],
@@ -426,6 +427,121 @@ export const practicalInsights: Insight[] = [
       { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
       { label: "Does your building quotation include everything?", href: "/insights/does-your-quotation-include-everything/" },
       { label: "Building your house in phases", href: "/insights/building-your-house-in-phases/" },
+    ],
+  },
+  {
+    slug: "gypsum-ceiling-cost-kenya",
+    title: "Gypsum ceiling cost in Kenya per square metre",
+    description:
+      "Typical gypsum ceiling prices in Kenya per square metre, supplied and fixed, by design, what is left out, and how to price your own rooms.",
+    date: "2026-11-25",
+    sections: [
+      {
+        heading: "How gypsum ceilings are priced",
+        body: [
+          "Contractors usually quote a gypsum ceiling per square metre, supplied and installed, which means the boards, the metal framing and the labour together. Hardware shops sell the materials by the sheet or by the length instead. The figures below are typical market ranges for November 2026. Your own quote will vary with the design, the site and the supplier, so ask for it in writing.",
+        ],
+      },
+      {
+        heading: "Typical rates, supplied and installed",
+        body: [
+          "The more levels, curves and hidden lighting a ceiling has, the more it costs per square metre, because it takes more framing, more cutting and more skilled labour.",
+        ],
+        list: [
+          "Plain flat ceiling: about KSh 900 to 1,500 per m². Suits bedrooms and passages, and covers cracked or rough slabs.",
+          "Simple drop or single coffer: about KSh 1,500 to 2,200 per m². Suits master bedrooms and dining areas.",
+          "Bulkheads with an LED cove: about KSh 2,200 to 3,500 per m² and above. Suits living rooms with several levels, curves and concealed lighting.",
+        ],
+      },
+      {
+        heading: "What a quote usually leaves out",
+        body: [
+          "A standard quote covers fixing the boards, jointing and skimming. Painting, LED strips, downlights and electrical wiring are normally priced separately, unless the quote is a full package. Always ask which of these are in.",
+        ],
+      },
+      {
+        heading: "If you buy the materials yourself",
+        body: [
+          "A standard board is 4 ft by 8 ft, about 3 m² (2.97 m²). Typical shop prices per sheet are KSh 700 to 900 for a 9 mm standard board, KSh 1,700 to 2,000 for a 12.5 mm heavy-duty board, and KSh 2,200 to 2,800 for a moisture-resistant board. Use the moisture-resistant board in bathrooms and kitchens. Metal furring channels cost about KSh 350 to 500 for a 3 m length.",
+          "Labour alone, which means fixing, jointing and skimming, is typically KSh 300 to 600 per m² for plain ceilings and KSh 700 to 1,200 per m² for designed, multi-level ceilings. Buying the materials yourself saves money only if you can count them correctly. Too few sheets stops the job, and too many is waste.",
+        ],
+      },
+      {
+        heading: "Worked examples",
+        body: [
+          "A 20 m² bedroom with a plain flat ceiling at KSh 900 to 1,500 per m² comes to about KSh 18,000 to 30,000.",
+          "A 25 m² living room with bulkheads and an LED cove at KSh 2,200 to 3,500 per m² comes to about KSh 55,000 to 87,500, before the lights and wiring.",
+          "To price a whole house, measure the ceiling area of each room, pick the design for each room, and add the totals. Mixing plain ceilings in bedrooms with a designed ceiling in the living room is the usual way to keep the cost down.",
+        ],
+      },
+      {
+        heading: "Getting an exact price",
+        body: [
+          "Send the room sizes and the design you want. A bill of quantities lists the boards, framing, labour and finishing as separate lines, so that you can compare quotes like for like. Ask for the same breakdown from every contractor.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Gypsum ceilings: where they work", href: "/insights/gypsum-ceilings-where-they-work/" },
+      { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
+      { label: "Does your building quotation include everything?", href: "/insights/does-your-quotation-include-everything/" },
+    ],
+  },
+  {
+    slug: "septic-tank-cost-kenya",
+    title: "Septic tank and biodigester cost in Kenya",
+    description:
+      "Typical costs in Kenya for a concrete septic tank, a plastic tank and a biodigester, what each includes, and what pushes the price up.",
+    date: "2026-11-25",
+    sections: [
+      {
+        heading: "Three ways to handle waste off the sewer line",
+        body: [
+          "If your plot is not on a sewer line, you choose between a conventional concrete septic tank with a soak pit, a prefabricated plastic septic tank, or a biodigester. The figures below are typical market ranges for November 2026. Real quotes vary with the ground, the size of the household and the supplier.",
+        ],
+      },
+      {
+        heading: "Concrete septic tank and soak pit",
+        body: [
+          "A built concrete tank with a soak pit typically costs KSh 80,000 to 200,000 or more. That covers excavation, a concrete base, block or stone walls, waterproof plastering, a reinforced top slab with manhole covers and the soak pit next to it.",
+          "Rocky ground, black cotton soil and a high water table push the cost towards the top of the range, because the digging and the walls are harder. A tank also needs emptying by an exhauster truck every 2 to 5 years, typically at KSh 8,000 to 25,000 per trip.",
+        ],
+      },
+      {
+        heading: "Plastic septic tank",
+        body: [
+          "A 2,000-litre horizontal plastic tank is listed at about KSh 50,000 for the tank alone. Excavation, the sand or concrete bedding and the soak pit plumbing are extra, so the finished cost is higher than the price on the tank.",
+        ],
+      },
+      {
+        heading: "Biodigester",
+        body: [
+          "A biodigester uses bacteria to break down waste. It needs little space and rarely needs an exhauster. Typical installed prices, including the tank, excavation, piping, a small soakaway and the starter culture, are:",
+        ],
+        list: [
+          "1 m³, for 1 to 15 users, such as a 2 to 3 bedroom family home: about KSh 80,000 to 95,000",
+          "2 m³, for 15 to 30 users, such as a large villa or small block: about KSh 110,000 to 145,000",
+          "3 to 4 m³, for 30 to 100 users, such as flats or commercial premises: about KSh 160,000 to 250,000",
+        ],
+      },
+      {
+        heading: "How to compare them fairly",
+        body: [
+          "Compare the full cost, not only the first price. A concrete tank can look similar to a biodigester at the start, but it adds the cost of emptying every few years. A plastic tank looks cheap until the digging and the soak pit are added.",
+          "Ask each supplier what the quote covers: excavation, bedding, the soak pit, piping, covers and the finishing. Ask for the same breakdown from each one.",
+        ],
+      },
+      {
+        heading: "Choosing for your plot",
+        body: [
+          "Household size, soil, the water table and the space you have decide the choice more than the price does. Our guide on septic tank or biodigester walks through how to choose. For an exact price, send us the plot location and the number of people in the house.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Septic tank or biodigester: which suits your home?", href: "/insights/septic-tank-or-biodigester/" },
+      { label: "Building on black cotton soil", href: "/insights/building-on-black-cotton-soil/" },
+      { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
     ],
   },
 ];
