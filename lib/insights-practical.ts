@@ -367,4 +367,65 @@ export const practicalInsights: Insight[] = [
       { label: "Gypsum ceilings: where they work", href: "/insights/gypsum-ceilings-where-they-work/" },
     ],
   },
+  {
+    slug: "cost-of-building-a-house-per-square-metre-kenya",
+    title: "Cost of building a house per square metre in Kenya",
+    description:
+      "Published building costs per square metre in Kenya for bungalows and maisonettes, what they include, and why your own figure will differ.",
+    date: "2026-11-25",
+    sections: [
+      {
+        heading: "The published figures",
+        body: [
+          "The Institute of Quantity Surveyors of Kenya (IQSK) publishes building cost figures from recently completed projects. Construction Kenya reported them in October 2025. They are the best public starting point for a budget, and they are not a quote.",
+          "In Nairobi and Central, a standard bungalow came to KSh 48,750 per square metre, and a luxury maisonette to KSh 84,000. In the Coastal region, a bungalow came to KSh 50,840. In Western and Nyanza, a standard bungalow came to KSh 49,770 and a luxurious maisonette to KSh 87,250.",
+        ],
+        list: [
+          "Nairobi and Central: standard bungalow KSh 48,750 per m², luxury maisonette KSh 84,000",
+          "Coastal: bungalow KSh 50,840 per m²",
+          "Western and Nyanza: standard bungalow KSh 49,770 per m², luxurious maisonette KSh 87,250",
+        ],
+      },
+      {
+        heading: "How to use a figure per square metre",
+        body: [
+          "Multiply the floor area of the house by the rate. A 120 m² standard bungalow at KSh 48,750 gives about KSh 5.85 million. A 120 m² luxury maisonette at KSh 84,000 gives about KSh 10.08 million. That is a planning figure for the building only.",
+          "The published sources do not define what each tier contains. The same words, standard and luxury, can mean very different finishes. Treat the range as a guide to the scale of the budget, not to what your house will cost.",
+        ],
+      },
+      {
+        heading: "What is usually not in the figure",
+        body: [
+          "A cost per square metre covers the building. It normally leaves out the land, approvals and professional fees, the perimeter wall and gate, landscaping, and furniture. Ask whoever gives you a rate exactly what it covers.",
+        ],
+        list: [
+          "Land and the cost of buying it",
+          "Architectural and structural drawings, and approval fees",
+          "Perimeter wall, gate and landscaping",
+          "Septic tank or biodigester, and water storage if priced separately",
+          "Furniture, curtains and appliances",
+        ],
+      },
+      {
+        heading: "Why your own house will cost something different",
+        body: [
+          "Costs shift with the design, the finishes, the soil, the distance materials travel and the time of year. A house with a roof terrace, large windows or imported finishes costs more per square metre than a simple bungalow with a plain roof.",
+          "Black cotton soil needs a deeper or stronger foundation, which raises the cost of the substructure. A plot far from town adds transport. Material prices also move, so a figure from last year is already out of date.",
+        ],
+      },
+      {
+        heading: "How to get your real cost",
+        body: [
+          "The only way to know is to price your drawings. A bill of quantities lists every item with its quantity, with labour and materials shown separately, so that you and your builder agree on the same scope before work starts.",
+          "Use the published figure to decide whether a house is within reach. Use a bill of quantities to decide what to build and what to pay.",
+        ],
+      },
+    ],
+    related: [
+      { label: "House cost calculator", href: "/house-cost-calculator/" },
+      { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
+      { label: "Does your building quotation include everything?", href: "/insights/does-your-quotation-include-everything/" },
+      { label: "Building your house in phases", href: "/insights/building-your-house-in-phases/" },
+    ],
+  },
 ];

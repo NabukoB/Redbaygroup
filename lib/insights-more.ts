@@ -264,6 +264,7 @@ export const moreInsights: Insight[] = [
     ],
     related: [
       { label: "Roofing in Kenya: iron sheets, tiles or flat roof?", href: "/insights/roofing-options-kenya/" },
+      { label: "Roofing sheets calculator", href: "/roofing-sheets-calculator/" },
       { label: "How to check a building contractor", href: "/insights/how-to-check-a-building-contractor/" },
       { label: "Does your building quotation include everything?", href: "/insights/does-your-quotation-include-everything/" },
     ],

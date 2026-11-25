@@ -4,6 +4,8 @@ import { buildQuote, type QuoteAnswers } from "@/lib/quote";
 import { neighbours } from "@/lib/utils";
 import { detectSource, isSource } from "@/lib/visit-source";
 import { MAX_METRES, WALL_RATE, ksh, plots, wallEstimate } from "@/lib/wall";
+import { sheetEstimate } from "@/lib/roofing-calc";
+import { houseEstimate } from "@/lib/house-cost";
 
 const browser = "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130.0 Mobile Safari/537.36";
 const visit = (o: Partial<Parameters<typeof detectSource>[0]>) =>
@@ -113,5 +115,30 @@ describe("'more' links helper", () => {
   it("never includes the current item, even when the list is short", () => {
     expect(neighbours(["a", "b"], 0, 3)).toEqual(["b"]);
     expect(neighbours(["a"], 0, 3)).toEqual([]);
+  });
+});
+
+describe("roofing sheets calculator", () => {
+  it("rounds up the sheets across and doubles them for two slopes", () => {
+    expect(sheetEstimate("10", "4", "corrugated", 2)).toMatchObject({ perSide: 14, sheets: 28, area: 80 });
+    expect(sheetEstimate("10", "4", "box", 1)).toMatchObject({ perSide: 10, sheets: 10 });
+  });
+  it("treats blanks and nonsense as nothing", () => {
+    expect(sheetEstimate("", "4", "box", 2).sheets).toBe(0);
+    expect(sheetEstimate("abc", "-3", "box", 2)).toMatchObject({ sheets: 0, spare: 0 });
+  });
+  it("caps huge roofs and says so", () => {
+    expect(sheetEstimate("500", "4", "box", 1)).toMatchObject({ width: 200, tooBig: true });
+  });
+});
+
+describe("house cost calculator", () => {
+  it("multiplies area by the published rate", () => {
+    expect(houseEstimate("120", "standard").total).toBe(5_850_000);
+    expect(houseEstimate("120", "luxury").total).toBe(10_080_000);
+  });
+  it("handles blanks and caps large areas", () => {
+    expect(houseEstimate("", "standard").total).toBe(0);
+    expect(houseEstimate("9000", "luxury")).toMatchObject({ area: 2000, tooBig: true });
   });
 });
