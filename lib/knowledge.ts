@@ -168,6 +168,7 @@ export const topics: Topic[] = [
     help: [
       { label: "Project management", text: "We run the site for owners who cannot be there.", href: "/services/project-management/" },
       { label: "Site audits and inspection", text: "An independent report on work already done.", href: "/services/site-audits/" },
+      { label: "Contractor checklist", text: "10 questions to ask before you hire, with a printable PDF.", href: "/contractor-checklist/" },
       { label: "Building from abroad", text: "Managed builds and inspections for Kenyans living abroad.", href: "/build-in-kenya-from-abroad/" },
     ],
     message: "Hello Redbay Group, I read your guide on construction mistakes and would like help avoiding them on my project.",

@@ -358,6 +358,7 @@ const baseInsights: Insight[] = [
       },
     ],
     related: [
+      { label: "Free checklist: 10 questions to ask a contractor", href: "/contractor-checklist/" },
       { label: "Perimeter wall calculator", href: "/perimeter-wall-calculator/" },
       { label: "Perimeter wall cost per metre", href: "/insights/perimeter-wall-cost-kenya/" },
       { label: "Perimeter wall in Karen", href: "/projects/karen-perimeter-wall/" },

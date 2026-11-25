@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/perimeter-wall-calculator/", 0.9, changed("app/perimeter-wall-calculator/page.tsx", "lib/wall.ts")),
     page("/roofing-sheets-calculator/", 0.8, changed("app/roofing-sheets-calculator/page.tsx", "lib/roofing-calc.ts")),
     page("/build-in-kenya-from-abroad/", 0.8, changed("app/build-in-kenya-from-abroad/page.tsx")),
+    page("/contractor-checklist/", 0.8, changed("app/contractor-checklist/page.tsx", "lib/checklist.ts")),
     page("/house-cost-calculator/", 0.8, changed("app/house-cost-calculator/page.tsx", "lib/house-cost.ts")),
     page("/get-a-quote/", 0.9, changed("app/get-a-quote/page.tsx", "lib/quote.ts")),
     page("/services/", 0.8, changed("app/services/page.tsx", "lib/services.ts")),

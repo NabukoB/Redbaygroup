@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
 import { JsonLd } from "@/components/json-ld";
+import { ShareButtons } from "@/components/share-buttons";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
 
@@ -12,6 +13,7 @@ export const metadata = pageMeta({
   description:
     "Building a home in Kenya while living abroad: drawings, a priced bill of quantities, site supervision with photo updates and independent inspections.",
   path,
+  image: "build-in-kenya-from-abroad",
 });
 
 const worries = [
@@ -142,6 +144,12 @@ export default function AbroadPage() {
             </div>
           </div>
         </section>
+
+        <div className="pb-12">
+          <div className={wrap}>
+            <ShareButtons path="/build-in-kenya-from-abroad/" title="Build your home in Kenya from abroad" />
+          </div>
+        </div>
 
         <CtaPanel
           title="Planning a home back in Kenya?"

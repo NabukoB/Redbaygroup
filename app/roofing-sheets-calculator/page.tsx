@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
 import { JsonLd } from "@/components/json-ld";
+import { ShareButtons } from "@/components/share-buttons";
 import { RoofingCalculator } from "@/components/roofing-calculator";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -13,6 +14,7 @@ export const metadata = pageMeta({
   description:
     "Work out how many iron sheets your roof needs. Enter the roof width and length, pick corrugated or box profile, and get the sheet count.",
   path,
+  image: "roofing-sheets-calculator",
 });
 
 const included = [
@@ -105,6 +107,12 @@ export default function RoofingCalculatorPage() {
           </div>
         </section>
 
+
+        <div className="pb-12">
+          <div className={wrap}>
+            <ShareButtons path="/roofing-sheets-calculator/" title="Roofing sheets calculator: how many iron sheets does your roof need?" />
+          </div>
+        </div>
 
         <CtaPanel
           title="Ready for a roofing quote?"

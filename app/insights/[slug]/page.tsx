@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Fragment } from "react";
 import { Badge, Breadcrumbs, CtaPanel, Footer, Nav, whatsappLink, wrap } from "@/components/chrome";
 import { JsonLd } from "@/components/json-ld";
+import { ShareButtons } from "@/components/share-buttons";
 import { Reveal } from "@/components/reveal";
 import { insights } from "@/lib/insights";
 import { topicOf } from "@/lib/knowledge";
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: PageProps<"/insights/[slug]">
   const { slug } = await params;
   const p = insights.find((x) => x.slug === slug);
   if (!p) return {};
-  return pageMeta({ title: p.title, description: p.description, path: `/insights/${p.slug}/`, type: "article" });
+  return pageMeta({ title: p.title, description: p.description, path: `/insights/${p.slug}/`, type: "article", image: `g-${p.slug}` });
 }
 
 export default async function InsightPage({ params }: PageProps<"/insights/[slug]">) {
@@ -40,7 +41,7 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
     datePublished: p.date,
     dateModified: p.date,
     mainEntityOfPage: `${site.url}/insights/${p.slug}/`,
-    image: `${site.url}/og.png`,
+    image: `${site.url}/share/g-${p.slug}.png`,
     author: { "@id": `${site.url}/#organization` },
     publisher: { "@id": `${site.url}/#organization` },
     inLanguage: "en-KE",
@@ -101,6 +102,9 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
                 </Reveal>
                 </Fragment>
               ))}
+            </div>
+            <div className="mx-auto mt-12 max-w-3xl border-t border-line pt-8">
+              <ShareButtons path={`/insights/${p.slug}/`} title={p.title} />
             </div>
             {p.related?.length ? (
               <aside className="mx-auto mt-16 max-w-3xl rounded-3xl bg-charcoal-deep p-8 text-white">

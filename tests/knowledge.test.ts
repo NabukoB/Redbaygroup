@@ -1,4 +1,6 @@
 // The Knowledge Hub: every guide sits in exactly one topic, and every link on a topic points somewhere real.
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { insights } from "@/lib/insights";
 import { topics } from "@/lib/knowledge";
@@ -7,7 +9,7 @@ import { companies } from "@/lib/site";
 
 const known = new Set([
   "/", "/projects/", "/designs/", "/services/", "/get-a-quote/", "/bill-of-quantities-service/",
-  "/house-cost-calculator/", "/build-in-kenya-from-abroad/", "/perimeter-wall-calculator/", "/roofing-sheets-calculator/",
+  "/house-cost-calculator/", "/build-in-kenya-from-abroad/", "/contractor-checklist/", "/perimeter-wall-calculator/", "/roofing-sheets-calculator/",
   ...services.map((s) => `/services/${s.slug}/`),
   ...companies.map((c) => `/companies/${c.slug}/`),
 ]);
@@ -30,5 +32,13 @@ describe("knowledge hub", () => {
   });
   it("only links to pages that exist", () => {
     for (const t of topics) for (const h of t.help) expect(known.has(h.href), `${t.slug}: ${h.href}`).toBe(true);
+  });
+  it("has a share image for every guide, topic and page that names one", () => {
+    const names = [
+      "hub", "contractor-checklist", "roofing-sheets-calculator", "house-cost-calculator", "perimeter-wall-calculator", "build-in-kenya-from-abroad",
+      ...topics.map((t) => `t-${t.slug}`),
+      ...insights.map((i) => `g-${i.slug}`),
+    ];
+    for (const n of names) expect(existsSync(join(process.cwd(), "public", "share", `${n}.png`)), `run scripts/make-share-cards.sh: missing ${n}`).toBe(true);
   });
 });

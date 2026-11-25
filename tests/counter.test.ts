@@ -105,3 +105,26 @@ describe("private stats page", () => {
     expect(res.headers.get("x-robots-tag")).toContain("noindex");
   });
 });
+
+describe("counter records where visitors are and their device", () => {
+  it("records the time zone and device once per arrival", async () => {
+    await hit({ e: "view", p: "/", s: "direct", l: "1", z: "Europe/London" });
+    await hit({ e: "view", p: "/projects/", s: "direct", z: "Europe/London" }); // later page: not counted
+    await hit({ e: "view", p: "/", s: "direct", l: "1", z: "Africa/Nairobi" });
+    const day = Object.values(read("place.json") ?? {})[0] as { tz: Record<string, number>; dev: Record<string, number> };
+    expect(day.tz).toEqual({ "Europe/London": 1, "Africa/Nairobi": 1 });
+    expect(day.dev).toEqual({ mobile: 2 });
+  });
+  it("stores nonsense time zones as Unknown", async () => {
+    await hit({ e: "view", p: "/", s: "direct", l: "1", z: "<script>alert(1)</script>" });
+    const day = Object.values(read("place.json") ?? {})[0] as { tz: Record<string, number> };
+    expect(day.tz).toEqual({ Unknown: 1 });
+  });
+  it("shows visitors abroad on the stats page", async () => {
+    await hit({ e: "view", p: "/", s: "direct", l: "1", z: "Europe/London" });
+    await hit({ e: "view", p: "/", s: "direct", l: "1", z: "Africa/Nairobi" });
+    const html = await (await fetch(`${url}/${stats}`)).text();
+    expect(html).toContain("United Kingdom");
+    expect(html).toMatch(/Visitors outside Kenya: <b>1<\/b> of 2/);
+  });
+});

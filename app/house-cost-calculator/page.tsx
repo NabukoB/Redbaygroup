@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
 import { JsonLd } from "@/components/json-ld";
+import { ShareButtons } from "@/components/share-buttons";
 import { HouseCalculator } from "@/components/house-calculator";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -13,6 +14,7 @@ export const metadata = pageMeta({
   description:
     "Estimate what a house costs to build in Kenya per square metre, using published Nairobi figures for a standard bungalow and a luxury maisonette.",
   path,
+  image: "house-cost-calculator",
 });
 
 const included = [
@@ -105,6 +107,12 @@ export default function HouseCalculatorPage() {
           </div>
         </section>
 
+
+        <div className="pb-12">
+          <div className={wrap}>
+            <ShareButtons path="/house-cost-calculator/" title="House cost calculator for Kenya" />
+          </div>
+        </div>
 
         <CtaPanel
           title="Want the real number?"

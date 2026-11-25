@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps<"/insights/topics/[
   const { topic } = await params;
   const t = topics.find((x) => x.slug === topic);
   if (!t) return {};
-  return pageMeta({ title: t.seoTitle, description: t.seoDescription, path: `/insights/topics/${t.slug}/` });
+  return pageMeta({ title: t.seoTitle, description: t.seoDescription, path: `/insights/topics/${t.slug}/`, image: `t-${t.slug}` });
 }
 
 export default async function TopicPage({ params }: PageProps<"/insights/topics/[topic]">) {

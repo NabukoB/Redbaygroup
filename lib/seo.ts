@@ -9,15 +9,18 @@ export function pageMeta({
   path,
   absoluteTitle = false,
   type = "website",
+  image,
 }: {
   title: string;
   description: string;
   path: string;
   absoluteTitle?: boolean;
   type?: "website" | "article";
+  image?: string; // a share picture under /share/, for example "g-my-guide"
 }): Metadata {
   const url = `${site.url}${path}`;
   const shareTitle = absoluteTitle ? title : `${title} | ${site.name}`;
+  const picture = image ? `${site.url}/share/${image}.png` : `${site.url}/og.png`;
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
@@ -29,13 +32,13 @@ export function pageMeta({
       description,
       siteName: site.name,
       locale: "en_KE",
-      images: [{ url: `${site.url}/og.png`, width: 1200, height: 630, alt: `${site.name}: ${site.tagline}` }],
+      images: [{ url: picture, width: 1200, height: 630, alt: image ? shareTitle : `${site.name}: ${site.tagline}` }],
     },
     twitter: {
       card: "summary_large_image",
       title: shareTitle,
       description,
-      images: [`${site.url}/og.png`],
+      images: [picture],
     },
   };
 }

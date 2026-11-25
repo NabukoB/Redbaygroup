@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
 import { JsonLd } from "@/components/json-ld";
+import { ShareButtons } from "@/components/share-buttons";
 import { ProjectCard } from "@/components/project-card";
 import { WallCalculator } from "@/components/wall-calculator";
 import { pageMeta } from "@/lib/seo";
@@ -14,6 +15,7 @@ export const metadata = pageMeta({
   description:
     "Work out what a perimeter wall costs in Kenya. Enter your boundary length for an instant estimate at KSh 14,000 per metre for a 2.4 m wall.",
   path,
+  image: "perimeter-wall-calculator",
 });
 
 const included = [
@@ -120,6 +122,12 @@ export default function WallCalculatorPage() {
             </ul>
           </div>
         </section>
+
+        <div className="pb-12">
+          <div className={wrap}>
+            <ShareButtons path="/perimeter-wall-calculator/" title="Perimeter wall cost calculator for Kenya" />
+          </div>
+        </div>
 
         <CtaPanel
           title="Ready for an exact price?"

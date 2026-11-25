@@ -37,6 +37,18 @@ function update_json($file, $change) {
   fclose($fh);
 }
 
+// Rough place and device of each arrival: the browser's time zone (for example Europe/London) and the kind of device. Nothing personal.
+if ($e === 'view' && $landing) {
+  $z = $_POST['z'] ?? '';
+  if (!preg_match('#^[A-Za-z]+(/[A-Za-z_+-]+){1,2}$#', $z) || strlen($z) > 40) { $z = 'Unknown'; }
+  $dev = preg_match('/ipad|tablet/', $ua) ? 'tablet' : (preg_match('/mobi|android|iphone/', $ua) ? 'mobile' : 'desktop');
+  update_json($dir . '/place.json', function ($data) use ($day, $z, $dev) {
+    if (isset($data[$day]['tz'][$z]) || count($data[$day]['tz'] ?? []) < 60) { $data[$day]['tz'][$z] = ($data[$day]['tz'][$z] ?? 0) + 1; }
+    $data[$day]['dev'][$dev] = ($data[$day]['dev'][$dev] ?? 0) + 1;
+    return $data;
+  });
+}
+
 update_json($dir . '/counts.json', function ($data) use ($day, $p, $e) {
   $data[$day][$p][$e] = ($data[$day][$p][$e] ?? 0) + 1;
   return $data;

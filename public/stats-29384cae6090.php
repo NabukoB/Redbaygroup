@@ -28,6 +28,20 @@ foreach ($srcData as $day => $byS) {
     foreach (($c['pages'] ?? []) as $p => $n) { $src[$s]['pages'][$p] = ($src[$s]['pages'][$p] ?? 0) + (int)$n; }
   }
 }
+// Where visitors are and what they use (recorded from 25 Nov 2026), from the browser time zone
+$placeData = json_decode(@file_get_contents(__DIR__ . '/_stats/place.json') ?: '[]', true) ?: [];
+$known = ['Africa/Nairobi' => 'Kenya', 'Europe/London' => 'United Kingdom', 'America/New_York' => 'USA', 'America/Chicago' => 'USA', 'America/Denver' => 'USA', 'America/Los_Angeles' => 'USA', 'America/Phoenix' => 'USA', 'America/Anchorage' => 'USA', 'America/Toronto' => 'Canada', 'America/Vancouver' => 'Canada', 'America/Edmonton' => 'Canada', 'America/Winnipeg' => 'Canada', 'Africa/Johannesburg' => 'South Africa', 'Africa/Kampala' => 'Uganda', 'Africa/Dar_es_Salaam' => 'Tanzania', 'Africa/Lagos' => 'Nigeria', 'Asia/Dubai' => 'United Arab Emirates', 'Asia/Qatar' => 'Qatar', 'Asia/Riyadh' => 'Saudi Arabia', 'Europe/Berlin' => 'Germany', 'Europe/Paris' => 'France', 'Europe/Dublin' => 'Ireland', 'Europe/Amsterdam' => 'Netherlands', 'Europe/Stockholm' => 'Sweden', 'Asia/Kolkata' => 'India', 'Asia/Singapore' => 'Singapore'];
+$place = []; $dev = []; $placeTotal = 0;
+foreach ($placeData as $day => $c) {
+  if ($day < $from) continue;
+  foreach (($c['tz'] ?? []) as $z => $n) {
+    $label = $known[$z] ?? (strpos($z, 'Australia/') === 0 ? 'Australia' : ($z === 'Unknown' ? 'Unknown' : 'Other (' . $z . ')'));
+    $place[$label] = ($place[$label] ?? 0) + (int)$n; $placeTotal += (int)$n;
+  }
+  foreach (($c['dev'] ?? []) as $d => $n) { $dev[$d] = ($dev[$d] ?? 0) + (int)$n; }
+}
+arsort($place); arsort($dev);
+$abroad = $placeTotal - ($place['Kenya'] ?? 0) - ($place['Unknown'] ?? 0);
 uasort($src, fn($a, $b) => ($b['visit'] ?? 0) <=> ($a['visit'] ?? 0));
 uasort($pages, fn($a, $b) => (($b['whatsapp'] ?? 0) + ($b['call'] ?? 0)) <=> (($a['whatsapp'] ?? 0) + ($a['call'] ?? 0)) ?: ($b['view'] ?? 0) <=> ($a['view'] ?? 0));
 krsort($byDay);
@@ -43,6 +57,12 @@ $h = fn($s) => htmlspecialchars((string)$s, ENT_QUOTES);
 <?php foreach ($src as $s => $c): $pg = $c['pages'] ?? []; arsort($pg); $top = array_slice($pg, 0, 5, true); ?><tr><td><b><?= $h($names[$s] ?? $s) ?></b><?php if ($top): ?><br><span style="color:#6b6e72;font-size:13px">Landed on: <?php $i = 0; foreach ($top as $p => $n): ?><?= $i++ ? ', ' : '' ?><?= $h($p) ?> (<?= (int)$n ?>)<?php endforeach; ?></span><?php endif; ?></td><td class="n"><?= (int)($c['visit'] ?? 0) ?></td><td class="n"><?= (int)($c['whatsapp'] ?? 0) ?></td><td class="n"><?= (int)($c['call'] ?? 0) ?></td></tr><?php endforeach; ?>
 </table><?php endif; ?>
 <p style="color:#6b6e72;font-size:14px;margin-top:-20px">A visit is one person arriving on the site; it may cover several pages. WhatsApp chats don't say where a link came from, so add <b>?src=wa</b> to links you share there (for example redbaygroup.co.ke/projects/?src=wa).</p>
+<h2>Where visitors are, and what they use</h2>
+<?php if (!$place): ?><p>No data yet. Recording started on 25 Nov 2026.</p><?php else: ?>
+<p style="color:#6b6e72;font-size:14px">Based on each visitor's browser time zone, so it is a good guide, not exact. Visitors outside Kenya: <b><?= $abroad ?></b> of <?= $placeTotal ?> visits.</p>
+<table><tr><th>Place</th><th class="n">Visits</th></tr><?php foreach ($place as $l => $n): ?><tr><td><?= $h($l) ?></td><td class="n"><?= (int)$n ?></td></tr><?php endforeach; ?></table>
+<table><tr><th>Device</th><th class="n">Visits</th></tr><?php foreach ($dev as $d => $n): ?><tr><td><?= $h(ucfirst($d)) ?></td><td class="n"><?= (int)$n ?></td></tr><?php endforeach; ?></table>
+<?php endif; ?>
 <h2>By page</h2><table><tr><th>Page</th><th class="n">Views</th><th class="n">WhatsApp</th><th class="n">Calls</th></tr>
 <?php foreach ($pages as $p => $c): ?><tr><td><a href="<?= $h($p) ?>"><?= $h($p) ?></a></td><td class="n"><?= (int)($c['view'] ?? 0) ?></td><td class="n"><?= (int)($c['whatsapp'] ?? 0) ?></td><td class="n"><?= (int)($c['call'] ?? 0) ?></td></tr><?php endforeach; ?>
 </table><h2>By day</h2><table><tr><th>Day</th><th class="n">Views</th><th class="n">WhatsApp</th><th class="n">Calls</th></tr>

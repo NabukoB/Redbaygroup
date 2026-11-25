@@ -11,6 +11,7 @@ export const metadata = pageMeta({
   description:
     "The Redbay Construction Knowledge Hub: plain-English guides on building costs, roofing, waterproofing, foundations, materials, designs and finishes in Kenya.",
   path: "/insights/",
+  image: "hub",
 });
 
 export default function InsightsPage() {

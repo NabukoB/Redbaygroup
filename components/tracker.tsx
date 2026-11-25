@@ -36,7 +36,14 @@ export const send = (event: "view" | "whatsapp" | "call", path: string) => {
   try {
     const { src, landing } = source();
     const body = new URLSearchParams({ e: event, p: path, s: src });
-    if (landing) body.set("l", "1");
+    if (landing) {
+      body.set("l", "1");
+      try {
+        body.set("z", Intl.DateTimeFormat().resolvedOptions().timeZone || ""); // a rough place (for example Europe/London), not an address
+      } catch {
+        /* optional */
+      }
+    }
     if (!navigator.sendBeacon?.("/hit.php", body)) fetch("/hit.php", { method: "POST", body, keepalive: true }).catch(() => {});
   } catch {
     /* counting must never break the page */
