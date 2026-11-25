@@ -614,4 +614,80 @@ export const practicalInsights: Insight[] = [
       { label: "Building your house in phases", href: "/insights/building-your-house-in-phases/" },
     ],
   },
+  {
+    slug: "build-a-house-in-kenya-from-abroad-safely",
+    title: "Building in Kenya from abroad: avoid being cheated",
+    description:
+      "How Kenyans abroad can build safely back home: check the land, get drawings and a priced BoQ, pay by stage and use independent inspections.",
+    date: "2026-11-25",
+    sections: [
+      {
+        heading: "Why building from abroad is risky",
+        body: [
+          "When you cannot visit the site, you rely on what other people tell you. That is where most problems start: work reported as done that is not, costs that rise without explanation, and payments made before the work is checked. Every step below is there to replace trust with something you can see or read.",
+        ],
+      },
+      {
+        heading: "Step 1: Check the land before anything else",
+        body: [
+          "Before you pay for drawings or materials, make sure the plot is really yours. Ask an advocate you choose yourself to carry out an official search and confirm the owner and any restrictions. Do not rely on a seller's documents or on a relative's word alone.",
+        ],
+      },
+      {
+        heading: "Step 2: Get proper drawings and approval",
+        body: [
+          "Drawings fix the size, layout and structure on paper, so you and the builder agree on the same house. Most buildings also need approval before work starts. Our guide on building approvals explains what to expect.",
+        ],
+      },
+      {
+        heading: "Step 3: Insist on a priced bill of quantities",
+        body: [
+          "A bill of quantities lists every item with its quantity, with labour and materials shown separately. It lets you compare quotations fairly and see exactly what each extra costs. Be careful with a single lump sum and no breakdown.",
+        ],
+      },
+      {
+        heading: "Step 4: Choose and check the contractor",
+        body: [
+          "Do not choose on price alone, and do not hire someone because they are a friend of a friend. Check that the contractor is registered with the National Construction Authority, ask to see finished work, and speak to past clients. Our guide on how to check a building contractor lists the questions.",
+        ],
+      },
+      {
+        heading: "Step 5: Pay by stage, not upfront",
+        body: [
+          "Agree stages of work, such as foundation, slab, walls, roof and finishes. Release each payment after the work for that stage has been checked. Paying a large amount first removes your power to fix problems.",
+        ],
+      },
+      {
+        heading: "Step 6: Get someone independent to check and report",
+        body: [
+          "Photos from the builder show what the builder wants you to see. An independent person who measures the work and compares it with the drawings and the bill of quantities gives you a report you can act on. Ask for a written report with photos before each major payment.",
+        ],
+        list: [
+          "Foundation, before it is covered",
+          "Slab and reinforcement, before concrete is poured",
+          "Walls and roof structure",
+          "Waterproofing, before it is hidden by finishes",
+          "Final handover, with a list of items to fix",
+        ],
+      },
+      {
+        heading: "Step 7: Keep records",
+        body: [
+          "Keep the signed quotation, the bill of quantities, the drawings, the approvals, every payment record and every written update in one folder you can reach from abroad. Disagreements are much easier to settle with paper behind you.",
+        ],
+      },
+      {
+        heading: "Getting help from someone on the ground",
+        body: [
+          "If you cannot be there, hire someone whose job is to be your eyes on site: a project manager who supervises, controls the budget and sends regular written updates with photos. We provide this, and we can also inspect work built by another contractor. See our page for Kenyans abroad.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Building from abroad with Redbay", href: "/build-in-kenya-from-abroad/" },
+      { label: "How to check a building contractor", href: "/insights/how-to-check-a-building-contractor/" },
+      { label: "Do you need building approval in Kenya?", href: "/insights/building-approvals-kenya/" },
+      { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
+    ],
+  },
 ];

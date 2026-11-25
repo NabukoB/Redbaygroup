@@ -162,12 +162,13 @@ export const topics: Topic[] = [
       "Most building problems start with a decision made before the first block is laid. These guides cover the mistakes that cost homeowners the most, and what to do instead.",
     guides: [
       "common-construction-mistakes-kenya",
+      "build-a-house-in-kenya-from-abroad-safely",
       "how-to-check-a-building-contractor",
     ],
     help: [
       { label: "Project management", text: "We run the site for owners who cannot be there.", href: "/services/project-management/" },
       { label: "Site audits and inspection", text: "An independent report on work already done.", href: "/services/site-audits/" },
-      { label: "Bill of quantities service", text: "One agreed scope and price before work starts.", href: "/bill-of-quantities-service/" },
+      { label: "Building from abroad", text: "Managed builds and inspections for Kenyans living abroad.", href: "/build-in-kenya-from-abroad/" },
     ],
     message: "Hello Redbay Group, I read your guide on construction mistakes and would like help avoiding them on my project.",
   },

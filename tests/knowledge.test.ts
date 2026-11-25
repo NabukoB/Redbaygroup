@@ -7,7 +7,7 @@ import { companies } from "@/lib/site";
 
 const known = new Set([
   "/", "/projects/", "/designs/", "/services/", "/get-a-quote/", "/bill-of-quantities-service/",
-  "/house-cost-calculator/", "/perimeter-wall-calculator/", "/roofing-sheets-calculator/",
+  "/house-cost-calculator/", "/build-in-kenya-from-abroad/", "/perimeter-wall-calculator/", "/roofing-sheets-calculator/",
   ...services.map((s) => `/services/${s.slug}/`),
   ...companies.map((c) => `/companies/${c.slug}/`),
 ]);

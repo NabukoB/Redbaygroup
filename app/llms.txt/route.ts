@@ -31,6 +31,7 @@ export function GET() {
     "- Perimeter walls: from KSh 14,000 per running metre for a wall 2.4 m high on a foundation 0.8 m deep, before VAT; gate priced separately.",
     `- [Perimeter wall cost calculator](${u("/perimeter-wall-calculator/")}): instant estimate from the boundary length.`,
     `- [Construction Knowledge Hub](${u("/insights/")}): guides by topic, from building costs to roofing, materials and finishes.`,
+    `- [Build in Kenya from abroad](${u("/build-in-kenya-from-abroad/")}): drawings, BoQ, managed build and inspections for Kenyans living abroad.`,
     `- [Roofing sheets calculator](${u("/roofing-sheets-calculator/")}): how many iron sheets a roof needs.`,
     `- [House cost calculator](${u("/house-cost-calculator/")}): published Nairobi cost per square metre for a house.`,
     `- [Bill of quantities service](${u("/bill-of-quantities-service/")}): itemised BoQ prepared from your drawings; fee quoted before starting.`,
