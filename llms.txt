@@ -16,6 +16,7 @@
 - Perimeter walls: from KSh 14,000 per running metre for a wall 2.4 m high on a foundation 0.8 m deep, before VAT; gate priced separately.
 - [Perimeter wall cost calculator](https://redbaygroup.co.ke/perimeter-wall-calculator/): instant estimate from the boundary length.
 - [Construction Knowledge Hub](https://redbaygroup.co.ke/insights/): guides by topic, from building costs to roofing, materials and finishes.
+- [Building materials calculator](https://redbaygroup.co.ke/building-materials-calculator/): how many blocks, bags of cement, sand and ballast a job needs.
 - [Solar and wind hybrid systems](https://redbaygroup.co.ke/hybrid-solar-wind-systems/): check whether wind makes sense at your site; design and installation by Redbay Energy.
 - [Build in Kenya from abroad](https://redbaygroup.co.ke/build-in-kenya-from-abroad/): drawings, BoQ, managed build and inspections for Kenyans living abroad.
 - [Contractor checklist](https://redbaygroup.co.ke/contractor-checklist/): 10 questions to ask before hiring a building contractor, with a PDF.
@@ -90,6 +91,9 @@
 - [Septic tank and biodigester cost in Kenya](https://redbaygroup.co.ke/insights/septic-tank-cost-kenya/): Typical costs in Kenya for a concrete septic tank, a plastic tank and a biodigester, what each includes, and what pushes the price up.
 - [Common construction mistakes in Kenya to avoid](https://redbaygroup.co.ke/insights/common-construction-mistakes-kenya/): The construction mistakes that cost Kenyan homeowners most: no drawings, vague quotations, unchecked contractors, ignored soil and late waterproofing.
 - [Building in Kenya from abroad: avoid being cheated](https://redbaygroup.co.ke/insights/build-a-house-in-kenya-from-abroad-safely/): How Kenyans abroad can build safely back home: check the land, get drawings and a priced BoQ, pay by stage and use independent inspections.
+- [How many blocks and bags of cement for a house?](https://redbaygroup.co.ke/insights/how-many-blocks-and-bags-of-cement-for-a-house/): How to work out how many blocks, bags of cement, sand and ballast a house needs, with the simple formulas builders use and what to add for waste.
+- [Cabro paving cost in Kenya: what changes the price](https://redbaygroup.co.ke/insights/cabro-paving-cost-kenya/): What cabro paving costs in Kenya depends on area, base preparation, block type and drainage. How to compare quotations per square metre and avoid failures.
+- [Adding a floor to an existing house in Kenya](https://redbaygroup.co.ke/insights/adding-a-floor-to-an-existing-house-kenya/): Can your house take another floor? What an engineer checks first, the usual problems, the approvals you need and how to protect the house during the work.
 - [Net metering in Kenya: credit for your solar power](https://redbaygroup.co.ke/insights/net-metering-kenya/): How net metering works in Kenya under the 2024 rules: who qualifies, the 4 kW and 10 kW home limits, how credits work, and how to apply to Kenya Power.
 - [Small wind turbines for homes and schools in Kenya](https://redbaygroup.co.ke/insights/small-wind-turbines-kenya/): When a small wind turbine makes sense in Kenya, how vertical-axis turbines differ, why site and height matter, and how wind pairs with solar.
 - [Solar and wind hybrid systems explained](https://redbaygroup.co.ke/insights/solar-wind-hybrid-systems/): How a solar and wind hybrid system works, why it gives steadier power than solar alone, and what a home or school needs: panels, turbine, batteries, inverter.
