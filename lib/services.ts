@@ -196,7 +196,7 @@ export const services: Service[] = [
       },
     ],
     guides: ["roofing-options-kenya", "types-of-iron-sheets-kenya", "flat-roofs-practical-questions"],
-    projects: ["kamulu-roofing-shell", "kibwezi-maisonette"],
+    projects: ["kericho-roofing", "kamulu-roofing-shell", "kibwezi-maisonette"],
     message: "Hello Redbay Group, I need roofing work. The roof is: ",
   },
   {

@@ -317,6 +317,29 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Two-storey home",
+    place: "Kericho",
+    division: "Homes",
+    note: "Roofing",
+    slug: "kericho-roofing",
+    summary:
+      "Steel roof structure and red stone-coated tile roofing for a two-storey stone and block home in Kericho, with hips, gables and a rounded corner bay.",
+    scope: [
+      "Steel roof trusses over a hipped and gabled roof",
+      "Painted steel purlins and roof battens",
+      "Red stone-coated roofing tiles, laid in stages",
+      "Grey flashings and trims at gables and eaves",
+    ],
+    photos: [
+      { file: "finished-roof", alt: "Two-storey stone and block home in Kericho with a finished red tile roof and grey gable trims" },
+      { file: "steel-trusses", alt: "Steel roof trusses fixed over the walls of a two-storey home in Kericho, with a roofer on the scaffold" },
+      { file: "purlins-front", alt: "Green-painted steel purlins laid across the roof trusses of the Kericho home behind a stone boundary wall" },
+      { file: "purlins-corner", alt: "Rounded corner bay of the Kericho home with the steel roof structure and purlins in place" },
+      { file: "tiling-in-progress", alt: "Red roofing tiles being laid on the Kericho home, with battens fixed on the lower roof slopes" },
+      { file: "gable-tiles", alt: "Gable ends and tiled roof of the Kericho home, with roofing tiles stacked ready to lay" },
+    ],
+  },
+  {
     name: "Bungalow",
     place: "Tala, Kangundo",
     division: "Homes",
