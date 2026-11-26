@@ -3,7 +3,7 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { insights } from "@/lib/insights";
-import { topics } from "@/lib/knowledge";
+import { guideHelp, topics } from "@/lib/knowledge";
 import { services } from "@/lib/services";
 import { companies } from "@/lib/site";
 
@@ -32,6 +32,16 @@ describe("knowledge hub", () => {
   });
   it("only links to pages that exist", () => {
     for (const t of topics) for (const h of t.help) expect(known.has(h.href), `${t.slug}: ${h.href}`).toBe(true);
+  });
+  it("sends each per-guide help list to real guides and real pages", () => {
+    for (const [slug, list] of Object.entries(guideHelp)) {
+      expect(insights.some((i) => i.slug === slug), slug).toBe(true);
+      expect(list.length, slug).toBeGreaterThanOrEqual(2);
+      for (const h of list) expect(known.has(h.href), `${slug}: ${h.href}`).toBe(true);
+    }
+  });
+  it("links to the site setup service from the wall pages", () => {
+    for (const s of ["perimeter-wall-cost-kenya", "perimeter-walls-what-to-know"]) expect(guideHelp[s]!.some((h) => h.href === "/services/site-setup/"), s).toBe(true);
   });
   it("has a share image for every guide, topic and page that names one", () => {
     const names = [

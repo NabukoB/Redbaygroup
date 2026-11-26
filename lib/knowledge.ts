@@ -199,4 +199,35 @@ export const topics: Topic[] = [
   },
 ];
 
+type Help = Topic["help"][number];
+
+const boq: Help = { label: "Bill of quantities service", text: "An itemised BoQ from your drawings, with labour and materials listed separately.", href: "/bill-of-quantities-service/" };
+const quote: Help = { label: "Get a quote", text: "A short form that opens WhatsApp with your project details.", href: "/get-a-quote/" };
+const siteSetup: Help = { label: "Site setup", text: "Site house, toilet, CCTV and a barricade or perimeter wall, so the plot is secure before building starts.", href: "/services/site-setup/" };
+const wallCalc: Help = { label: "Perimeter wall calculator", text: "An instant estimate from your boundary length.", href: "/perimeter-wall-calculator/" };
+const pm: Help = { label: "Project management", text: "Redbay runs the site, the schedule and the payments stage by stage.", href: "/services/project-management/" };
+const audits: Help = { label: "Site audits and inspections", text: "An independent check of work in progress or a finished building.", href: "/services/site-audits/" };
+const checklist: Help = { label: "Contractor checklist (PDF)", text: "A one-page list of what to check before you sign with any contractor.", href: "/contractor-checklist/" };
+const interiors: Help = { label: "Redbay Interiors", text: "Ceilings, partitions, cabinets and finishes, priced and installed.", href: "/companies/interiors/" };
+const houseCalc: Help = { label: "House cost calculator", text: "A quick published-guide estimate from your floor area.", href: "/house-cost-calculator/" };
+
+// Guides whose best next step differs from their topic's default list.
+export const guideHelp: Record<string, Help[]> = {
+  "perimeter-wall-cost-kenya": [wallCalc, siteSetup, boq],
+  "perimeter-walls-what-to-know": [wallCalc, siteSetup, quote],
+  "septic-tank-cost-kenya": [boq, quote],
+  "septic-tank-or-biodigester": [boq, quote],
+  "gypsum-ceiling-cost-kenya": [interiors, quote],
+  "gypsum-ceilings-where-they-work": [interiors, quote],
+  "how-to-read-a-bill-of-quantities": [boq, checklist],
+  "does-your-quotation-include-everything": [boq, checklist, audits],
+  "how-to-check-a-building-contractor": [checklist, boq, audits],
+  "building-your-house-in-phases": [pm, boq],
+  "cost-of-building-a-house-per-square-metre-kenya": [houseCalc, boq, pm],
+  "types-of-iron-sheets-kenya": [{ label: "Roofing sheets calculator", text: "How many sheets your roof needs, from its width and length.", href: "/roofing-sheets-calculator/" }, { label: "Roofing service", text: "Redbay supplies and fixes roofs in sheets, tiles and flat roofs.", href: "/services/roofing/" }],
+  "build-a-house-in-kenya-from-abroad-safely": [{ label: "Building from abroad", text: "How Redbay builds for clients who live overseas.", href: "/build-in-kenya-from-abroad/" }, pm, audits],
+};
+
+export const helpFor = (guideSlug: string): Help[] => guideHelp[guideSlug] ?? topicOf(guideSlug)?.help ?? [];
+
 export const topicOf = (guideSlug: string) => topics.find((t) => t.guides.includes(guideSlug));

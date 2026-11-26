@@ -55,6 +55,31 @@ const baseInsights: Insight[] = [
           "Is the contractor licensed with the NCA, and is the work insured?",
         ],
       },
+      {
+        heading: "Compare quotations line by line",
+        body: [
+          "Put the quotations side by side and go through them section by section, not total against total. Mark where one has an item that the other leaves out. Ask each contractor to price the missing items so both quotes cover the same work. Then compare the totals.",
+        ],
+      },
+      {
+        heading: "Items people forget",
+        body: ["These often fall between quotes and turn up later as extras:"],
+        list: [
+          "Water and power on site during construction",
+          "Skip hire or removal of rubble and excavated soil",
+          "Curing concrete and protecting finished work",
+          "Waterproofing for bathrooms, balconies and flat roofs",
+          "Gutters, downpipes and drainage around the house",
+          "Fittings such as locks, taps, switches and sockets",
+          "Approvals, inspections and testing",
+        ],
+      },
+      {
+        heading: "Allowances and provisional sums",
+        body: [
+          "Some items cannot be priced exactly until a choice is made, such as tiles or light fittings. Contractors then include an allowance. Ask what the allowance covers and what it buys, because an allowance set too low is a cheap way to win a job. Know in advance who pays if your choice costs more.",
+        ],
+      },
     ],
     related: [
       { label: "Get a BoQ prepared for your drawings", href: "/bill-of-quantities-service/" },
@@ -176,6 +201,29 @@ const baseInsights: Insight[] = [
           "A good contractor can price the whole house and split the quote into phases. You then know the full cost from day one, and each phase has a clear scope and budget.",
         ],
       },
+      {
+        heading: "Pay for the structure first, not the extras",
+        body: [
+          "Put early money into the parts that cannot be changed cheaply later: the foundation, columns, slab, walls and roof. Fittings, paint and finishes can wait, and prices can be compared when you are ready. A house that is structurally complete and roofed is protected, even if the rooms inside are plain for a while.",
+        ],
+      },
+      {
+        heading: "Services you should plan now",
+        body: ["It is much cheaper to lay these during the build than to break walls and floors later:"],
+        list: [
+          "Pipes, conduits and drainage routes through the slab and walls",
+          "The septic tank, soak pit or sewer connection and its route",
+          "The water tank position and its supply",
+          "Space and routes for solar, if you plan to add it",
+          "Conduit for electrical points, even if the fittings come later",
+        ],
+      },
+      {
+        heading: "Keep a phase file",
+        body: [
+          "At the end of each phase, keep a folder with the approved drawings, the quotation for that phase, receipts, dated site photos and notes on anything that changed. When you restart, a new builder can see exactly what is behind the walls. It also helps if you later need an inspection or a valuation.",
+        ],
+      },
     ],
   },
   {
@@ -255,6 +303,39 @@ const baseInsights: Insight[] = [
           "Paint with a good-quality emulsion once the joints are dry",
         ],
       },
+      {
+        heading: "Moisture-resistant is not waterproof",
+        body: [
+          "Moisture-resistant board is made to cope with steam and humid air in bathrooms and kitchens. It is not made to sit in water. A leaking pipe or roof will still damage it, so the rule about fixing leaks first applies to every type of board.",
+        ],
+      },
+      {
+        heading: "Check these before the ceiling is closed",
+        body: ["Once the boards are up, every problem above them becomes expensive to reach. Before the installer closes the ceiling, make sure:"],
+        list: [
+          "The roof has been through at least one proper rain with no leaks",
+          "Water and drainage pipes above the ceiling have been tested for leaks",
+          "All wiring, light points and extractor ducts are in place and tested",
+          "Any lights that will be recessed have their positions marked on the plan",
+          "Access panels are placed where valves, junction boxes and tank connections sit",
+        ],
+      },
+      {
+        heading: "Cracks along the joints",
+        body: [
+          "Thin cracks along the joints between boards are the most common complaint. They come from movement in the frame or roof, and from joints that were not taped and filled properly. Ask the installer how the joints will be taped and filled, and how many coats of filler they apply. Leave the finished ceiling to dry fully before painting.",
+        ],
+      },
+      {
+        heading: "Questions to ask your installer",
+        body: ["Ask these before you agree on a price, and write the answers into the quotation:"],
+        list: [
+          "Which type of board will you use in each room, and from which supplier?",
+          "What is the frame made of, and how far apart are the supports?",
+          "Does the price include joint tape, filler, paint and the access panels?",
+          "Who repairs a ceiling that fails because of a defect in the installation, and for how long?",
+        ],
+      },
     ],
     related: [
       { label: "Gypsum ceiling cost in Kenya", href: "/insights/gypsum-ceiling-cost-kenya/" },
@@ -305,6 +386,35 @@ const baseInsights: Insight[] = [
           "Payment stages tied to finished work, not to dates",
           "The timeline, and what happens if it slips",
           "Who buys which materials",
+        ],
+      },
+      {
+        heading: "Questions to ask past clients",
+        body: ["When you call a past client, ask about the things that go wrong on most sites:"],
+        list: [
+          "Did the work finish on the date promised? If not, how late, and why?",
+          "Did the final cost match the quotation? What was added, and was it explained?",
+          "Was the contractor easy to reach during the work, and did they come when they said they would?",
+          "Were there defects after handover, and how quickly were they fixed?",
+          "Would you hire them again?",
+        ],
+      },
+      {
+        heading: "Warning signs",
+        body: ["Be careful when a contractor:"],
+        list: [
+          "Asks for a large payment upfront before buying any materials or starting any work",
+          "Cannot show an NCA certificate, or shows one in a different name",
+          "Gives a lump-sum price with no breakdown and will not explain it",
+          "Pushes you to sign quickly, or says the price is only valid today",
+          "Has no address, no past sites you can visit and no one you can call",
+          "Does not want the agreement written down",
+        ],
+      },
+      {
+        heading: "Stay involved while the work is going on",
+        body: [
+          "Checking the contractor does not end when you sign. Visit the site regularly or send someone you trust. Ask for dated photos at each stage, especially of work that will be covered, such as foundations, steel and pipes. Keep copies of the drawings, the agreement, every payment and every change you agree to. If you live far from the site, an independent inspection before each payment is a sensible way to make sure you pay only for finished work.",
         ],
       },
     ],

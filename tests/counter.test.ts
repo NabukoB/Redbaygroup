@@ -4,6 +4,7 @@ import { copyFileSync, existsSync, mkdtempSync, readFileSync, rmSync } from "nod
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from "vitest";
+import { ownVisitsIgnored } from "@/lib/own-visits";
 
 const PORT = 3191;
 const url = `http://127.0.0.1:${PORT}`;
@@ -126,5 +127,18 @@ describe("counter records where visitors are and their device", () => {
     const html = await (await fetch(`${url}/${stats}`)).text();
     expect(html).toContain("United Kingdom");
     expect(html).toMatch(/Visitors outside Kenya: <b>1<\/b> of 2/);
+  });
+});
+
+describe("own-visits switch", () => {
+  it("stops counting with ?notrack=1 and starts again with ?notrack=0", () => {
+    expect(ownVisitsIgnored("?notrack=1", null)).toBe(true);
+    expect(ownVisitsIgnored("?notrack=0", "1")).toBe(false);
+  });
+  it("keeps the remembered choice on later pages", () => {
+    expect(ownVisitsIgnored("", "1")).toBe(true);
+    expect(ownVisitsIgnored("?src=fb", "1")).toBe(true);
+    expect(ownVisitsIgnored("", null)).toBe(false);
+    expect(ownVisitsIgnored("?notrack=maybe", null)).toBe(false);
   });
 });

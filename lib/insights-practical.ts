@@ -163,6 +163,39 @@ export const practicalInsights: Insight[] = [
           "Proper roof overhangs, gutters and downpipes",
         ],
       },
+      {
+        heading: "A simple way to tell them apart",
+        body: ["You can learn a lot before calling anyone. Watch the wall for a week or two and note:"],
+        list: [
+          "Does it get worse after rain, and only on walls facing the weather? That points to water getting in from outside.",
+          "Is it only at the bottom of the wall, with a white salty edge or crumbling plaster? That points to rising damp.",
+          "Is it worse on cool mornings, in corners, behind wardrobes and near windows, with black mould? That points to condensation.",
+          "Does it appear below a bathroom, kitchen or tank, whatever the weather? Suspect a leaking pipe or a failed floor waterproofing.",
+        ],
+      },
+      {
+        heading: "A foil test you can do yourself",
+        body: [
+          "Tape a square of kitchen foil or plastic sheet firmly to the damp patch, sealing all four edges, and leave it for two days. If drops form on the outside of the foil, the moisture is coming from the room air, which means condensation. If the wall behind the foil is wet or darker, the moisture is coming through the wall. It is not a laboratory test, but it saves many people from paying to treat the wrong problem.",
+        ],
+      },
+      {
+        heading: "Mistakes that make damp worse",
+        body: ["These are common, and each one hides the problem for a few months before it returns:"],
+        list: [
+          "Painting over damp walls, even with a thick waterproof paint",
+          "Plastering or tiling over a wall that is still wet",
+          "Fixing the inside of the wall when water is entering from outside",
+          "Raising the ground or paving against the wall so water collects at its foot",
+          "Blocking air vents to keep a room warm",
+        ],
+      },
+      {
+        heading: "When to call a professional",
+        body: [
+          "Call someone when the damp keeps coming back after you have fixed the obvious causes, when it is on an upper floor or under a flat roof, when plaster is falling off, or when you cannot find where the water enters. A site inspection that finds the source is worth more than a quick treatment. Let the person write down what they found and what they recommend, so you can compare any quotes that follow.",
+        ],
+      },
     ],
     related: [
       { label: "Redbay waterproofing service", href: "/services/waterproofing/" },

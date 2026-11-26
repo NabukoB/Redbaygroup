@@ -53,6 +53,35 @@ export const moreInsights: Insight[] = [
           "Send us the length of your boundary, the height you want, the site location and a few photos of the plot. If you have a survey map, include it. We measure on site and give you one fixed price per running metre, with what is included written down. For a quick figure first, use our perimeter wall calculator.",
         ],
       },
+      {
+        heading: "Confirm your boundary before you build",
+        body: [
+          "A wall is hard to move once it stands, so be sure of the line first. Check that the boundary beacons are in place and match your title documents. If they are missing, have a licensed surveyor re-establish them. It also helps to tell your neighbours before work starts, so there are no arguments halfway through. Ask your county office whether a wall of your height needs approval or has any rules about how close it can be to the road.",
+        ],
+      },
+      {
+        heading: "Slopes, drainage and gates",
+        body: [
+          "On a sloping plot, rain runs along the wall and can undermine the footing. A good builder plans where water will go and leaves proper openings so the wall is not holding back a stream. Think about the gate early: its position decides where the columns go and where the footing steps, and it is cheaper to plan than to change.",
+        ],
+      },
+      {
+        heading: "Build the wall first, or build it last?",
+        body: [
+          "Many owners build the wall first. It secures the plot, gives a safe place to store materials and keeps the work area private. If you are not ready to build the permanent wall, a temporary barricade with a site house and CCTV does the same job for the building period. We set these up together under our site setup service.",
+        ],
+      },
+      {
+        heading: "Questions to ask any wall quotation",
+        body: ["Put these to every builder and compare the answers:"],
+        list: [
+          "How deep is the foundation, and is there a concrete footing?",
+          "What is the spacing and size of the columns, and what steel goes in them?",
+          "Which block or stone is used, and is there a ring beam on top?",
+          "Does the price include plaster, paint and the gate?",
+          "Who buys and delivers the materials?",
+        ],
+      },
     ],
     related: [
       { label: "Perimeter wall calculator: get an instant estimate", href: "/perimeter-wall-calculator/" },

@@ -49,6 +49,7 @@ $h = fn($s) => htmlspecialchars((string)$s, ENT_QUOTES);
 ?><!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Redbay site counts</title>
 <style>body{font-family:system-ui,sans-serif;margin:0;padding:24px 16px;color:#1d1f21;background:#fff;max-width:900px;margin:auto}h1{font-size:24px}table{width:100%;border-collapse:collapse;margin:12px 0 32px;font-size:15px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid #e6e6e3}td.n,th.n{text-align:right}.k{display:flex;gap:12px;flex-wrap:wrap}.k div{background:#f4f4f2;border-radius:14px;padding:14px 18px;min-width:120px}.k b{display:block;font-size:28px}a{color:#1d1f21}</style></head><body>
 <h1>Website counts, last <?= $days ?> days</h1>
+<p style="color:#6b6e72;font-size:14px">Don't want your own visits counted? Open any page of the site once on each of your devices with <b>?notrack=1</b> on the end (for example redbaygroup.co.ke/?notrack=1). That browser stops counting. Use <b>?notrack=0</b> to switch it back on. Past visits stay in the totals.</p>
 <p><a href="?days=7">7 days</a> · <a href="?days=30">30 days</a> · <a href="?days=90">90 days</a> · <a href="?days=365">1 year</a></p>
 <div class="k"><div><b><?= $tot['view'] ?></b>Page views</div><div><b><?= $tot['whatsapp'] ?></b>WhatsApp taps</div><div><b><?= $tot['call'] ?></b>Call taps</div></div>
 <h2>Where visitors came from</h2>

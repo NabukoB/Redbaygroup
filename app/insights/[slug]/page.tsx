@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/json-ld";
 import { ShareButtons } from "@/components/share-buttons";
 import { Reveal } from "@/components/reveal";
 import { insights } from "@/lib/insights";
-import { topicOf } from "@/lib/knowledge";
+import { helpFor, topicOf } from "@/lib/knowledge";
 import { neighbours } from "@/lib/utils";
 import { pageMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -124,7 +124,7 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
               <aside className={`mx-auto ${p.related?.length ? "mt-4" : "mt-16"} max-w-3xl rounded-3xl border border-line p-8`}>
                 <h2 className="text-lg font-semibold">How Redbay can help</h2>
                 <ul className="mt-4 space-y-3">
-                  {topic.help.map((h) => (
+                  {helpFor(p.slug).map((h) => (
                     <li key={h.href}>
                       <Link className="text-lg font-medium text-charcoal-deep underline-offset-4 hover:underline" href={h.href}>{h.label}</Link>
                       <span className="block text-[15px] leading-relaxed text-slate">{h.text}</span>

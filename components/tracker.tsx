@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import { NOTRACK_KEY, ownVisitsIgnored } from "@/lib/own-visits";
 import { detectSource, isSource, type Source } from "@/lib/visit-source";
 
 // Counts page views and WhatsApp/phone taps on our own server (hit.php).
@@ -32,8 +33,27 @@ const source = (): { src: Source; landing: boolean } => {
   return { src: memo, landing: true };
 };
 
+// True when this browser has been switched off with ?notrack=1. Also remembers the choice.
+const ignored = (): boolean => {
+  let stored: string | null = null;
+  try {
+    stored = localStorage.getItem(NOTRACK_KEY);
+  } catch {
+    /* storage can be blocked */
+  }
+  const off = ownVisitsIgnored(location.search, stored);
+  try {
+    if (off) localStorage.setItem(NOTRACK_KEY, "1");
+    else localStorage.removeItem(NOTRACK_KEY);
+  } catch {
+    /* fine without it */
+  }
+  return off;
+};
+
 export const send = (event: "view" | "whatsapp" | "call", path: string) => {
   try {
+    if (ignored()) return;
     const { src, landing } = source();
     const body = new URLSearchParams({ e: event, p: path, s: src });
     if (landing) {

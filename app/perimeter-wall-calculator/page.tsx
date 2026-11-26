@@ -93,6 +93,12 @@ export default function WallCalculatorPage() {
               >
                 What changes the price <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
               </Link>
+              <Link
+                href="/services/site-setup/"
+                className="mt-4 flex items-center gap-1.5 text-lg font-medium text-charcoal-deep underline-offset-4 hover:underline"
+              >
+                Setting up a site before you build? Site setup <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
             </div>
             <div className="space-y-3">
               {faqs.map((f, i) => (
