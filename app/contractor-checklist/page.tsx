@@ -49,6 +49,18 @@ export default function ChecklistPage() {
             >
               <Download className="h-4 w-4" aria-hidden="true" /> Download the PDF
             </a>
+            <p className="mt-4 text-[15px] text-slate">
+              Prefer WhatsApp?{" "}
+              <a
+                className="font-medium text-charcoal-deep underline underline-offset-4 hover:text-red"
+                href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hello Redbay Group, please send me the contractor checklist. I am planning a project in:")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ask us to send it to you
+              </a>
+              , and tell us about your project.
+            </p>
           </div>
         </PageHero>
 

@@ -125,6 +125,15 @@ export default async function CompanyPage({ params }: PageProps<"/companies/[slu
             </div>
           </section>
         )}
+        {c.slug === "schools" && (
+          <section className="border-t border-line py-16">
+            <div className={`${wrap} text-center`}>
+              <Link href="/capability-statement/" className="inline-flex items-center gap-1.5 text-lg font-medium text-charcoal-deep underline underline-offset-4 hover:text-red">
+                Procurement team? See our capability statement <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </div>
+          </section>
+        )}
         {c.slug === "energy" && (
           <section className="border-t border-line py-16">
             <div className={`${wrap} text-center`}>

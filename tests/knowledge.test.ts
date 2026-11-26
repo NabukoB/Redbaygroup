@@ -9,7 +9,7 @@ import { companies } from "@/lib/site";
 
 const known = new Set([
   "/", "/projects/", "/designs/", "/services/", "/get-a-quote/", "/bill-of-quantities-service/",
-  "/house-cost-calculator/", "/build-in-kenya-from-abroad/", "/hybrid-solar-wind-systems/", "/building-materials-calculator/", "/contractor-checklist/", "/perimeter-wall-calculator/", "/roofing-sheets-calculator/",
+  "/house-cost-calculator/", "/build-in-kenya-from-abroad/", "/hybrid-solar-wind-systems/", "/building-materials-calculator/", "/capability-statement/", "/contractor-checklist/", "/perimeter-wall-calculator/", "/roofing-sheets-calculator/",
   ...services.map((s) => `/services/${s.slug}/`),
   ...companies.map((c) => `/companies/${c.slug}/`),
 ]);
@@ -45,7 +45,7 @@ describe("knowledge hub", () => {
   });
   it("has a share image for every guide, topic and page that names one", () => {
     const names = [
-      "hub", "contractor-checklist", "roofing-sheets-calculator", "house-cost-calculator", "perimeter-wall-calculator", "build-in-kenya-from-abroad", "hybrid-solar-wind-systems", "building-materials-calculator",
+      "hub", "contractor-checklist", "roofing-sheets-calculator", "house-cost-calculator", "perimeter-wall-calculator", "build-in-kenya-from-abroad", "hybrid-solar-wind-systems", "building-materials-calculator", "capability-statement",
       ...topics.map((t) => `t-${t.slug}`),
       ...insights.map((i) => `g-${i.slug}`),
     ];
