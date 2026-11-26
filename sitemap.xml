@@ -535,6 +535,12 @@
 <priority>0.8</priority>
 </url>
 <url>
+<loc>https://redbaygroup.co.ke/capability-statement/</loc>
+<lastmod>2026-11-26T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
 <loc>https://redbaygroup.co.ke/building-materials-calculator/</loc>
 <lastmod>2026-11-26T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
@@ -554,7 +560,7 @@
 </url>
 <url>
 <loc>https://redbaygroup.co.ke/contractor-checklist/</loc>
-<lastmod>2026-11-25T00:00:00.000Z</lastmod>
+<lastmod>2026-11-26T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
