@@ -723,4 +723,203 @@ export const practicalInsights: Insight[] = [
       { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
     ],
   },
+  {
+    slug: "how-many-blocks-and-bags-of-cement-for-a-house",
+    title: "How many blocks and bags of cement for a house?",
+    description:
+      "How to work out how many blocks, bags of cement, sand and ballast a house needs, with the simple formulas builders use and what to add for waste.",
+    date: "2026-11-26",
+    sections: [
+      {
+        heading: "Start with the wall area",
+        body: [
+          "Measure the total length of all walls, multiply by their height, then subtract the area of doors and windows. This gives the net wall area in square metres. Do each floor separately and add them up.",
+          "A standard 400 × 200 mm block covers 0.08 square metres of wall, so you need about 12.5 blocks for every square metre. Add about 5% for breakage and cutting.",
+        ],
+      },
+      {
+        heading: "A worked example for blocks",
+        body: [
+          "Take 40 metres of wall, 3 metres high, with 6 square metres of doors and windows. The net area is 40 × 3 − 6 = 114 square metres. Multiply by 12.5 to get 1,425 blocks, then add 5% for spares: about 1,497 blocks. Whether the walls are 150 mm or 225 mm thick changes the mortar and the weight, but not the number of blocks on the face.",
+          "Machine-cut stone comes in different sizes from different quarries. Ask your supplier for the face size, divide 1 by that area in square metres, and use that figure instead of 12.5.",
+        ],
+      },
+      {
+        heading: "Concrete: cement, sand and ballast",
+        body: [
+          "Concrete is made from cement, sand and ballast (crushed stone) in a ratio called the mix. First work out the volume of concrete in cubic metres: length × width × depth for a slab, footing or beam. The dry materials take up about 1.54 times the wet volume, so multiply the volume by 1.54, then split it by the mix.",
+          "For 5 cubic metres of a 1 : 2 : 4 mix, with 5% for waste: 5 × 1.54 × 1.05 = 8.1 cubic metres of dry materials. Cement is one seventh of that, which weighs about 1,660 kg, or 34 bags of 50 kg. Sand is two sevenths, about 2.3 cubic metres, and ballast four sevenths, about 4.6 cubic metres.",
+        ],
+      },
+      {
+        heading: "Which mix goes where",
+        body: ["These are common uses, but your structural drawings state the mix for each part, and you should follow them:"],
+        list: [
+          "1 : 1.5 : 3 for columns, beams and suspended slabs, which carry the load",
+          "1 : 2 : 4 for ground slabs and general concrete work",
+          "1 : 3 : 6 for blinding under footings and for mass fill",
+        ],
+      },
+      {
+        heading: "What these figures leave out",
+        body: ["The formulas above cover blocks and concrete only. A full list of materials also needs:"],
+        list: [
+          "Mortar for laying blocks, and plaster and screed for finishes",
+          "Reinforcement steel, which comes from the structural drawings",
+          "Formwork, binding wire, damp-proof membrane and curing materials",
+          "Water and delivery to the site",
+        ],
+      },
+      {
+        heading: "Use the numbers, then get a bill of quantities",
+        body: [
+          "These figures are good for planning and for checking if a quotation is reasonable. They are not a substitute for a bill of quantities, which measures every item from your drawings and shows labour and materials separately. You can try our building materials calculator for the quick version, and send us your drawings for the full one.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Building materials calculator", href: "/building-materials-calculator/" },
+      { label: "How to read a bill of quantities", href: "/insights/how-to-read-a-bill-of-quantities/" },
+      { label: "Get a bill of quantities prepared", href: "/bill-of-quantities-service/" },
+    ],
+  },
+  {
+    slug: "cabro-paving-cost-kenya",
+    title: "Cabro paving cost in Kenya: what changes the price",
+    description:
+      "What cabro paving costs in Kenya depends on area, base preparation, block type and drainage. How to compare quotations per square metre and avoid failures.",
+    date: "2026-11-26",
+    sections: [
+      {
+        heading: "Cabro is priced per square metre",
+        body: [
+          "Cabro paving is priced by the area covered, in square metres. Measure the length and width of each area, add them up, and multiply by the rate. The rate changes with the points below, so two quotations are only comparable when they cover the same work.",
+        ],
+      },
+      {
+        heading: "What a proper job includes",
+        body: ["The blocks are the visible part. Most of the work, and most of the reasons pavements fail, are underneath:"],
+        list: [
+          "Excavating to the right depth and removing soft or loose soil",
+          "A compacted base of murram or hardcore, built up in layers",
+          "A levelled bed of sand for the blocks to sit on",
+          "Edge restraints, such as kerbs or a concrete edge, so the blocks cannot spread",
+          "Laying the blocks in a pattern, cutting them at the edges",
+          "Compacting the surface and sweeping fine sand into the joints",
+          "Falls and drains, so rainwater runs off and does not collect",
+        ],
+      },
+      {
+        heading: "What changes the price",
+        body: [
+          "The main reasons two driveways of the same size cost different amounts:",
+        ],
+        list: [
+          "Block thickness: thicker blocks are used where heavy vehicles drive, and thinner ones for walkways and light use",
+          "Block quality and colour, and the pattern you choose",
+          "The ground: soft soil or a slope needs a deeper, stronger base",
+          "How much material must be filled or removed to reach the right level",
+          "Edging, kerbs and drainage channels",
+          "Access: how far materials and the compactor machine must travel to reach the site",
+        ],
+      },
+      {
+        heading: "Where corners are cut",
+        body: [
+          "Cheap paving usually skimps on the base. A thin or poorly compacted base, no edge restraint and no falls for water are why blocks sink, tilt, open up at the joints and hold puddles after a few rainy seasons. You can only see it later, so ask what is under the blocks before you compare prices.",
+        ],
+      },
+      {
+        heading: "Questions for every quotation",
+        body: ["Put these to each installer and write down the answers:"],
+        list: [
+          "What thickness of block will you use, and for what traffic?",
+          "How deep is the base, what material is it, and how is it compacted?",
+          "Is there an edge restraint, and does the price include it?",
+          "How will rainwater drain from the area?",
+          "Is the price per square metre for the finished surface, including the sand and the joints?",
+        ],
+      },
+      {
+        heading: "How to get an accurate price",
+        body: [
+          "Send us the area to be paved, the purpose (walkway, parking or driveway) and a few photos of the site. We measure on site and give you a price per square metre, with what is included written down. We have laid cabro driveways on our home projects, such as the family maisonette in Baraka Estate, Nanyuki.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Family maisonette with a cabro driveway, Nanyuki", href: "/projects/nanyuki-baraka-home/" },
+      { label: "Does your quotation include everything?", href: "/insights/does-your-quotation-include-everything/" },
+      { label: "Get a bill of quantities prepared", href: "/bill-of-quantities-service/" },
+    ],
+  },
+  {
+    slug: "adding-a-floor-to-an-existing-house-kenya",
+    title: "Adding a floor to an existing house in Kenya",
+    description:
+      "Can your house take another floor? What an engineer checks first, the usual problems, the approvals you need and how to protect the house during the work.",
+    date: "2026-11-26",
+    sections: [
+      {
+        heading: "The first question: was it built for it?",
+        body: [
+          "A new floor adds a lot of weight. The foundation, columns and walls must carry it, and many houses were designed for one storey only. The answer depends on how your house was built, so find out before you plan a layout or ask for prices.",
+          "A house built as a frame of concrete columns and beams is usually easier to extend than one where the walls carry the load. Either way, it needs checking by a structural engineer.",
+        ],
+      },
+      {
+        heading: "Signs of trouble",
+        body: ["These do not always rule out an extra floor, but they must be looked at first:"],
+        list: [
+          "Cracks in walls, columns or the floor, especially wide or growing ones",
+          "Sagging beams or slabs, or doors that no longer close properly",
+          "Dampness at the base of the walls, or crumbling concrete",
+          "No drawings, so nobody knows how deep the foundation is or what steel is in the columns",
+          "Soil that moves, such as black cotton, with the house already showing movement",
+        ],
+      },
+      {
+        heading: "What an engineer checks",
+        body: [
+          "The engineer looks at the building, the soil and the available drawings. Where nothing is recorded, they open up samples: a trial pit beside the foundation, and small openings in columns and beams to see the concrete and the steel. They then calculate the loads and tell you which of these applies:",
+        ],
+        list: [
+          "The structure can carry the extra floor as it is",
+          "It can, after strengthening the foundation, columns or beams",
+          "It can carry a lighter extra floor only, built with lighter materials",
+          "It cannot, and the better option is a new building or an extension to the side",
+        ],
+      },
+      {
+        heading: "Drawings and approval",
+        body: [
+          "An extra storey changes the building, so it needs proper architectural and structural drawings, and approval from your county before you build. Ask the county planning office what they need for your plot. Our guide on building approvals explains the usual steps.",
+        ],
+      },
+      {
+        heading: "Protecting the house during the work",
+        body: ["The rooms below stay exposed while the new floor goes up. Plan for it:"],
+        list: [
+          "Decide where the staircase will go early, as it affects the layout of both floors",
+          "Make sure the existing roof slab is protected or waterproofed so rain cannot enter while the slab is open",
+          "Extend plumbing, drainage and electrical routes with care, so they can be reached later",
+          "Decide whether the family will live in the house during the work, because dust, noise and safety all affect that choice",
+          "Keep the new walls and roof waterproofed as soon as they are done",
+        ],
+      },
+      {
+        heading: "What drives the cost",
+        body: [
+          "The main costs are any strengthening, the new floor and walls, the roof, the staircase and the finishes. Strengthening can change the budget a lot, which is why the engineer's assessment should come before any quotation. Ask each builder to price against the engineer's drawings, with labour and materials shown separately.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Cracks in walls: when to worry", href: "/insights/cracks-in-walls-when-to-worry/" },
+      { label: "Building your house in phases", href: "/insights/building-your-house-in-phases/" },
+      { label: "Do you need building approval in Kenya?", href: "/insights/building-approvals-kenya/" },
+      { label: "Architectural and structural drawings", href: "/services/drawings/" },
+      { label: "Site audits and inspections", href: "/services/site-audits/" },
+    ],
+  },
 ];

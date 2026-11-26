@@ -30,6 +30,8 @@ export const topics: Topic[] = [
       "gypsum-ceiling-cost-kenya",
       "septic-tank-cost-kenya",
       "building-your-house-in-phases",
+      "how-many-blocks-and-bags-of-cement-for-a-house",
+      "cabro-paving-cost-kenya",
     ],
     help: [
       { label: "Bill of quantities service", text: "An itemised BoQ from your drawings, with labour and materials listed separately.", href: "/bill-of-quantities-service/" },
@@ -78,6 +80,7 @@ export const topics: Topic[] = [
       "building-on-black-cotton-soil",
       "cracks-in-walls-when-to-worry",
       "perimeter-walls-what-to-know",
+      "adding-a-floor-to-an-existing-house-kenya",
     ],
     help: [
       { label: "Architectural and structural drawings", text: "Foundation and structural drawings for approval and for building.", href: "/services/drawings/" },
@@ -211,6 +214,8 @@ const audits: Help = { label: "Site audits and inspections", text: "An independe
 const checklist: Help = { label: "Contractor checklist (PDF)", text: "A one-page list of what to check before you sign with any contractor.", href: "/contractor-checklist/" };
 const interiors: Help = { label: "Redbay Interiors", text: "Ceilings, partitions, cabinets and finishes, priced and installed.", href: "/companies/interiors/" };
 const hybrid: Help = { label: "Does wind make sense at your site?", text: "A five-question check, then a site assessment by Redbay Energy.", href: "/hybrid-solar-wind-systems/" };
+const drawings: Help = { label: "Architectural and structural drawings", text: "Drawings for approval and for building, prepared by Redbay.", href: "/services/drawings/" };
+const materialsCalc: Help = { label: "Building materials calculator", text: "Quick quantities of blocks, cement, sand and ballast.", href: "/building-materials-calculator/" };
 const houseCalc: Help = { label: "House cost calculator", text: "A quick published-guide estimate from your floor area.", href: "/house-cost-calculator/" };
 
 // Guides whose best next step differs from their topic's default list.
@@ -229,6 +234,9 @@ export const guideHelp: Record<string, Help[]> = {
   "types-of-iron-sheets-kenya": [{ label: "Roofing sheets calculator", text: "How many sheets your roof needs, from its width and length.", href: "/roofing-sheets-calculator/" }, { label: "Roofing service", text: "Redbay supplies and fixes roofs in sheets, tiles and flat roofs.", href: "/services/roofing/" }],
   "solar-wind-hybrid-systems": [hybrid, { label: "Redbay Energy", text: "Solar and wind systems for homes and schools.", href: "/companies/energy/" }],
   "small-wind-turbines-kenya": [hybrid, { label: "Redbay Energy", text: "Solar and wind systems for homes and schools.", href: "/companies/energy/" }],
+  "how-many-blocks-and-bags-of-cement-for-a-house": [materialsCalc, boq, quote],
+  "cabro-paving-cost-kenya": [boq, quote],
+  "adding-a-floor-to-an-existing-house-kenya": [audits, drawings, quote],
   "build-a-house-in-kenya-from-abroad-safely": [{ label: "Building from abroad", text: "How Redbay builds for clients who live overseas.", href: "/build-in-kenya-from-abroad/" }, pm, audits],
 };
 

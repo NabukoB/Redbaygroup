@@ -159,3 +159,17 @@ describe("hybrid check", () => {
     expect(hybridVerdict({ ...base, mount: "roof" }).notes.join(" ")).toMatch(/roof/);
   });
 });
+
+import { blockEstimate, concreteEstimate } from "@/lib/materials-calc";
+
+describe("materials calculator", () => {
+  it("counts blocks from wall area less openings, with 5% spare", () => {
+    expect(blockEstimate("40", "3", "6")).toEqual({ area: 114, net: 1425, blocks: 1497 });
+    expect(blockEstimate("0", "3", "0").blocks).toBe(0);
+    expect(blockEstimate("2", "2", "100").blocks).toBe(0);
+  });
+  it("works out cement, sand and ballast for a mix", () => {
+    expect(concreteEstimate("5", "1:2:4")).toEqual({ volume: 5, bags: 34, sand: 2.31, ballast: 4.62 });
+    expect(concreteEstimate("0", "1:2:4").bags).toBe(0);
+  });
+});

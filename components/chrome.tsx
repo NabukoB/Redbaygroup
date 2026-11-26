@@ -157,6 +157,7 @@ export function Footer() {
               <li><Link className="hover:text-charcoal-deep" href="/build-in-kenya-from-abroad/">Build from abroad</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/contractor-checklist/">Contractor checklist</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/roofing-sheets-calculator/">Roofing sheets calculator</Link></li>
+              <li><Link className="hover:text-charcoal-deep" href="/building-materials-calculator/">Building materials calculator</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/house-cost-calculator/">House cost calculator</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/services/">Specialised services</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/bill-of-quantities-service/">BoQ service</Link></li>

@@ -7,6 +7,7 @@ const cards = [
   { file: "roofing-sheets-calculator", kicker: "Calculator", title: "How many iron sheets does your roof need?" },
   { file: "house-cost-calculator", kicker: "Calculator", title: "What does it cost to build your house?" },
   { file: "perimeter-wall-calculator", kicker: "Calculator", title: "What will your perimeter wall cost?" },
+  { file: "building-materials-calculator", kicker: "Calculator", title: "How many blocks and bags of cement do you need?" },
   { file: "hybrid-solar-wind-systems", kicker: "Redbay Energy", title: "Does wind make sense at your site?" },
   { file: "build-in-kenya-from-abroad", kicker: "Kenyans abroad", title: "Build your home in Kenya, from wherever you live" },
   { file: "contractor-checklist", kicker: "Free checklist", title: "10 questions to ask before you hire a contractor" },
