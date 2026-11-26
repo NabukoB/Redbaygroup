@@ -192,6 +192,7 @@ export const topics: Topic[] = [
       "rainwater-harvesting-for-homes",
     ],
     help: [
+      { label: "Does wind make sense at your site?", text: "A five-question check, then a site assessment by Redbay Energy.", href: "/hybrid-solar-wind-systems/" },
       { label: "Redbay Energy", text: "Solar and wind systems for homes and schools.", href: "/companies/energy/" },
       { label: "Get a quote", text: "A short form that opens WhatsApp with your project details.", href: "/get-a-quote/" },
     ],
@@ -209,6 +210,7 @@ const pm: Help = { label: "Project management", text: "Redbay runs the site, the
 const audits: Help = { label: "Site audits and inspections", text: "An independent check of work in progress or a finished building.", href: "/services/site-audits/" };
 const checklist: Help = { label: "Contractor checklist (PDF)", text: "A one-page list of what to check before you sign with any contractor.", href: "/contractor-checklist/" };
 const interiors: Help = { label: "Redbay Interiors", text: "Ceilings, partitions, cabinets and finishes, priced and installed.", href: "/companies/interiors/" };
+const hybrid: Help = { label: "Does wind make sense at your site?", text: "A five-question check, then a site assessment by Redbay Energy.", href: "/hybrid-solar-wind-systems/" };
 const houseCalc: Help = { label: "House cost calculator", text: "A quick published-guide estimate from your floor area.", href: "/house-cost-calculator/" };
 
 // Guides whose best next step differs from their topic's default list.
@@ -225,6 +227,8 @@ export const guideHelp: Record<string, Help[]> = {
   "building-your-house-in-phases": [pm, boq],
   "cost-of-building-a-house-per-square-metre-kenya": [houseCalc, boq, pm],
   "types-of-iron-sheets-kenya": [{ label: "Roofing sheets calculator", text: "How many sheets your roof needs, from its width and length.", href: "/roofing-sheets-calculator/" }, { label: "Roofing service", text: "Redbay supplies and fixes roofs in sheets, tiles and flat roofs.", href: "/services/roofing/" }],
+  "solar-wind-hybrid-systems": [hybrid, { label: "Redbay Energy", text: "Solar and wind systems for homes and schools.", href: "/companies/energy/" }],
+  "small-wind-turbines-kenya": [hybrid, { label: "Redbay Energy", text: "Solar and wind systems for homes and schools.", href: "/companies/energy/" }],
   "build-a-house-in-kenya-from-abroad-safely": [{ label: "Building from abroad", text: "How Redbay builds for clients who live overseas.", href: "/build-in-kenya-from-abroad/" }, pm, audits],
 };
 

@@ -142,3 +142,20 @@ describe("house cost calculator", () => {
     expect(houseEstimate("9000", "luxury")).toMatchObject({ area: 2000, tooBig: true });
   });
 });
+
+import { hybridVerdict } from "@/lib/hybrid-check";
+
+describe("hybrid check", () => {
+  const base = { wind: "windy", surroundings: "open", mount: "mast", grid: "none", night: true } as const;
+  it("sends sheltered or surrounded sites to solar", () => {
+    expect(hybridVerdict({ ...base, wind: "sheltered" }).verdict).toBe("solar-only");
+    expect(hybridVerdict({ ...base, surroundings: "surrounded" }).verdict).toBe("solar-only");
+  });
+  it("asks for wind readings when the wind is unknown", () => {
+    expect(hybridVerdict({ ...base, wind: "unknown" }).verdict).toBe("measure-first");
+  });
+  it("recommends an assessment for an open, windy site, and warns about roofs", () => {
+    expect(hybridVerdict(base).verdict).toBe("worth-assessing");
+    expect(hybridVerdict({ ...base, mount: "roof" }).notes.join(" ")).toMatch(/roof/);
+  });
+});

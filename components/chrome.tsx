@@ -153,6 +153,7 @@ export function Footer() {
               <li><Link className="hover:text-charcoal-deep" href="/designs/">Home designs</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/insights/">Knowledge Hub</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/perimeter-wall-calculator/">Perimeter wall calculator</Link></li>
+              <li><Link className="hover:text-charcoal-deep" href="/hybrid-solar-wind-systems/">Solar and wind hybrids</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/build-in-kenya-from-abroad/">Build from abroad</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/contractor-checklist/">Contractor checklist</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/roofing-sheets-calculator/">Roofing sheets calculator</Link></li>

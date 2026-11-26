@@ -125,6 +125,15 @@ export default async function CompanyPage({ params }: PageProps<"/companies/[slu
             </div>
           </section>
         )}
+        {c.slug === "energy" && (
+          <section className="border-t border-line py-16">
+            <div className={`${wrap} text-center`}>
+              <Link href="/hybrid-solar-wind-systems/" className="inline-flex items-center gap-1.5 text-lg font-medium text-charcoal-deep underline underline-offset-4 hover:text-red">
+                Does wind make sense at your site? Try the hybrid system check <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </div>
+          </section>
+        )}
         <StepsSection />
         <OtherCompanies current={c.slug} />
         <CtaPanel message={`Hello Redbay Group, I would like to talk about a ${c.division.toLowerCase()} project.`} />

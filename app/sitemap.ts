@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...insights.map((i) => page(`/insights/${i.slug}/`, 0.5, new Date(i.date), "yearly")),
     page("/perimeter-wall-calculator/", 0.9, changed("app/perimeter-wall-calculator/page.tsx", "lib/wall.ts")),
     page("/roofing-sheets-calculator/", 0.8, changed("app/roofing-sheets-calculator/page.tsx", "lib/roofing-calc.ts")),
+    page("/hybrid-solar-wind-systems/", 0.8, changed("app/hybrid-solar-wind-systems/page.tsx")),
     page("/build-in-kenya-from-abroad/", 0.8, changed("app/build-in-kenya-from-abroad/page.tsx")),
     page("/contractor-checklist/", 0.8, changed("app/contractor-checklist/page.tsx", "lib/checklist.ts")),
     page("/house-cost-calculator/", 0.8, changed("app/house-cost-calculator/page.tsx", "lib/house-cost.ts")),
