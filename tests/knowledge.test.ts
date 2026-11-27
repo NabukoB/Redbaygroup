@@ -9,7 +9,7 @@ import { companies } from "@/lib/site";
 
 const known = new Set([
   "/", "/projects/", "/designs/", "/services/", "/get-a-quote/", "/bill-of-quantities-service/",
-  "/house-cost-calculator/", "/build-in-kenya-from-abroad/", "/hybrid-solar-wind-systems/", "/building-materials-calculator/", "/capability-statement/", "/contractor-checklist/", "/perimeter-wall-calculator/", "/roofing-sheets-calculator/",
+  "/house-cost-calculator/", "/build-in-kenya-from-abroad/", "/hybrid-solar-wind-systems/", "/building-materials-calculator/", "/capability-statement/", "/privacy/", "/contractor-checklist/", "/perimeter-wall-calculator/", "/roofing-sheets-calculator/",
   ...services.map((s) => `/services/${s.slug}/`),
   ...companies.map((c) => `/companies/${c.slug}/`),
 ]);

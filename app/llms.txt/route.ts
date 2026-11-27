@@ -1,5 +1,6 @@
 // llms.txt: a plain-text guide to the site for AI assistants and agents (llmstxt.org).
 // Built from the same data as the pages, so it updates with every new project or guide.
+import { WALL_RATE, ksh } from "@/lib/wall";
 import { designs } from "@/lib/designs";
 import { insights } from "@/lib/insights";
 import { locations } from "@/lib/locations";
@@ -28,7 +29,7 @@ export function GET() {
     "## Pricing",
     "",
     "- Quotes are itemised bills of quantities with one fixed price, quoted before VAT.",
-    "- Perimeter walls: from KSh 14,000 per running metre for a wall 2.4 m high on a foundation 0.8 m deep, before VAT; gate priced separately.",
+    `- Perimeter walls: from ${ksh(WALL_RATE)} per running metre for a wall 2.4 m high on a foundation 0.8 m deep, before VAT; gate priced separately.`,
     `- [Perimeter wall cost calculator](${u("/perimeter-wall-calculator/")}): instant estimate from the boundary length.`,
     `- [Construction Knowledge Hub](${u("/insights/")}): guides by topic, from building costs to roofing, materials and finishes.`,
     `- [Capability statement](${u("/capability-statement/")}): registration, insurance, process and selected work for institutions, with a one-page PDF.`,

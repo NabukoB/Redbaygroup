@@ -1,3 +1,5 @@
+import { WALL_RATE, ksh } from "./wall";
+
 // More homeowner guides (November 2026). Facts on rules are kept general and were checked against
 // NCA, EBK and Ministry of Education sources; no prices or local statistics without a source.
 import type { Insight } from "./insights";
@@ -7,14 +9,14 @@ export const moreInsights: Insight[] = [
     slug: "perimeter-wall-cost-kenya",
     title: "Perimeter wall cost in Kenya: what you pay per metre",
     description:
-      "Perimeter wall cost in Kenya: from KSh 14,000 per running metre for a 2.4 m wall on a 0.8 m deep foundation, and what changes the price.",
+      `Perimeter wall cost in Kenya: from ${ksh(WALL_RATE)} per running metre for a 2.4 m wall on a 0.8 m deep foundation, and what changes the price.`,
     date: "2026-11-04",
     sections: [
       {
         heading: "Walls are priced per running metre",
         body: [
           "A perimeter wall is usually priced by its length along the boundary, called the running metre. Measure your boundary, multiply by the rate, and add the gate and any extras.",
-          "Redbay builds standard perimeter walls from KSh 14,000 per running metre. That rate is for a wall 2.4 metres high on a foundation 0.8 metres deep. For example, a 100-metre boundary would come to about KSh 1.4 million before the gate. We confirm the exact rate after seeing the site.",
+          `Redbay builds standard perimeter walls from ${ksh(WALL_RATE)} per running metre. That rate is for a wall 2.4 metres high on a foundation 0.8 metres deep. For example, a 100-metre boundary would come to about KSh 1.4 million before the gate. We confirm the exact rate after seeing the site.`,
         ],
       },
       {

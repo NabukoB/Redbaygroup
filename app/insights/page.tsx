@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CtaPanel, Footer, Nav, PageHero, wrap } from "@/components/chrome";
+import { FreeTools } from "@/components/free-tools";
 import { Reveal } from "@/components/reveal";
 import { insights } from "@/lib/insights";
 import { topics } from "@/lib/knowledge";
@@ -43,6 +44,7 @@ export default function InsightsPage() {
             </ul>
           </div>
         </section>
+        <FreeTools heading="Plan with a calculator" />
         {topics.map((t) => {
           const guides = t.guides.map((s) => insights.find((i) => i.slug === s)!).filter(Boolean);
           return (

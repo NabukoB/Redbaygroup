@@ -1,3 +1,5 @@
+import { WALL_RATE, ksh } from "./wall";
+
 export const site = {
   name: "Redbay Group",
   legal: "Redbay Construction Ltd",
@@ -724,7 +726,7 @@ export const faqs = [
   },
   {
     q: "How much does a perimeter wall cost?",
-    a: "From KSh 14,000 per running metre for a wall 2.4 metres high on a foundation 0.8 metres deep, before VAT. The gate is priced separately. Our perimeter wall calculator gives an instant estimate, and we confirm the exact rate after seeing the site.",
+    a: `From ${ksh(WALL_RATE)} per running metre for a wall 2.4 metres high on a foundation 0.8 metres deep, before VAT. The gate is priced separately. Our perimeter wall calculator gives an instant estimate, and we confirm the exact rate after seeing the site.`,
   },
   {
     q: "What should I send to get a quote?",

@@ -1,3 +1,4 @@
+import { FreeTools } from "@/components/free-tools";
 import Link from "next/link";
 import { ArrowUpRight, House, School, Sofa, Sun, type LucideIcon } from "lucide-react";
 import { BuildScene } from "@/components/build-scene";
@@ -12,7 +13,7 @@ import { insights } from "@/lib/insights";
 import { pageMeta } from "@/lib/seo";
 import { approach, companies, projects, site, type Division } from "@/lib/site";
 
-const featuredProjects = ["karen-perimeter-wall", "nanyuki-perimeter-wall", "kikuyu-perimeter-wall", "kamulu-roofing-shell", "kikuyu-house", "diani-maisonette", "lukenya-four-bedroom", "nakuru-interiors"];
+const featuredProjects = ["karen-perimeter-wall", "nanyuki-perimeter-wall", "kericho-roofing", "kamulu-roofing-shell", "kikuyu-house", "diani-maisonette", "lukenya-four-bedroom", "nakuru-interiors"];
 const featuredDesigns = ["colour-block-bungalow", "round-house", "stone-solar-cottage"];
 const featuredGuides = ["perimeter-wall-cost-kenya", "septic-tank-or-biodigester", "how-to-read-a-bill-of-quantities", "rainwater-harvesting-for-homes", "net-metering-kenya", "types-of-iron-sheets-kenya"];
 
@@ -264,6 +265,7 @@ export default function Home() {
         <Companies />
         <Projects />
         <Designs />
+        <FreeTools />
         <Explore />
         <Approach />
         <CtaPanel />

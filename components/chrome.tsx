@@ -205,6 +205,7 @@ export function Footer() {
       </div>
       <div className="border-t border-line">
         <p className={`${wrap} pb-24 pt-6 text-sm text-slate md:pb-6`}>
+          <Link className="mr-3 underline underline-offset-4 hover:text-charcoal-deep" href="/privacy/">Privacy</Link>
           © {site.name}. {site.legal} is an {site.nca} licensed contractor registered with the National Construction Authority.
         </p>
       </div>

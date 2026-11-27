@@ -173,3 +173,21 @@ describe("materials calculator", () => {
     expect(concreteEstimate("0", "1:2:4").bags).toBe(0);
   });
 });
+
+import { readdirSync, readFileSync, statSync } from "node:fs";
+import { join } from "node:path";
+
+describe("one source for the wall rate", () => {
+  it("never types the rate into pages or guides", () => {
+    const hits: string[] = [];
+    const walk = (dir: string) => {
+      for (const f of readdirSync(dir)) {
+        const p = join(dir, f);
+        if (statSync(p).isDirectory()) walk(p);
+        else if (/\.(ts|tsx)$/.test(f) && !p.endsWith("lib/wall.ts") && readFileSync(p, "utf8").includes("14,000")) hits.push(p);
+      }
+    };
+    for (const d of ["app", "lib", "components"]) walk(d);
+    expect(hits).toEqual([]);
+  });
+});

@@ -1,3 +1,4 @@
+import { WALL_RATE, ksh } from "@/lib/wall";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CtaPanel, Footer, Nav, PageHero, SectionHead, wrap } from "@/components/chrome";
@@ -13,7 +14,7 @@ const path = "/perimeter-wall-calculator/";
 export const metadata = pageMeta({
   title: "Perimeter Wall Cost Calculator Kenya",
   description:
-    "Work out what a perimeter wall costs in Kenya. Enter your boundary length for an instant estimate at KSh 14,000 per metre for a 2.4 m wall.",
+    `Work out what a perimeter wall costs in Kenya. Enter your boundary length for an instant estimate at ${ksh(WALL_RATE)} per metre for a 2.4 m wall.`,
   path,
   image: "perimeter-wall-calculator",
 });
@@ -30,7 +31,7 @@ const included = [
 const faqs = [
   {
     q: "How much does a perimeter wall cost per metre in Kenya?",
-    a: "Redbay builds standard perimeter walls from KSh 14,000 per running metre, for a wall 2.4 metres high on a foundation 0.8 metres deep, before VAT. We confirm the exact rate after seeing the site.",
+    a: `Redbay builds standard perimeter walls from ${ksh(WALL_RATE)} per running metre, for a wall 2.4 metres high on a foundation 0.8 metres deep, before VAT. We confirm the exact rate after seeing the site.`,
   },
   {
     q: "How long is the boundary of a 50 by 100 plot?",
@@ -78,7 +79,7 @@ export default function WallCalculatorPage() {
         <section className="border-t border-line py-24 md:py-28">
           <div className={`${wrap} grid gap-12 lg:grid-cols-2`}>
             <div>
-              <SectionHead label="The rate" title="What KSh 14,000 per metre includes" center={false} />
+              <SectionHead label="The rate" title={`What ${ksh(WALL_RATE)} per metre includes`} center={false} />
               <ul className="mt-10 space-y-3">
                 {included.map((x) => (
                   <li key={x} className="flex gap-3 text-lg leading-relaxed text-charcoal">
