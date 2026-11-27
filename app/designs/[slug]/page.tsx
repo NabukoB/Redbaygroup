@@ -68,6 +68,11 @@ export default async function DesignPage({ params }: PageProps<"/designs/[slug]"
                 <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate md:text-xl">{d.summary}</p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Button asChild>
+                    <a href={whatsappLink(`Hello Redbay Group, I would like to buy the ${d.name} design. Please tell me what is included and the price.`)} target="_blank" rel="noopener noreferrer">
+                      Buy this design on WhatsApp
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline">
                     <a href={whatsappLink(`Hello Redbay Group, I like the ${d.name} design and would like to talk about building it.`)} target="_blank" rel="noopener noreferrer">
                       Build this home
                     </a>
