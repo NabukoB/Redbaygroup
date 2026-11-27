@@ -1,7 +1,7 @@
-:HL["/_next/static/chunks/1ws6kz8xr4i-k.css","style"]
+:HL["/_next/static/chunks/3mxfz5dzdsiim.css","style"]
 :HC["/",""]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"topic","t":"d","k":"common-construction-mistakes","s":[]},"h":65632,"c":"$Q4"}]]
 2:[["children",{"s":"topics","h":131168,"c":"$Q3"}]]
 1:[["children",{"s":"insights","h":131136,"c":"$Q2"}]]
-0:{"b":"goRws_lFuhaiIQTYElHW6","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"yxIDr5exNjwJGiEje8t9R","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
