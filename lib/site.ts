@@ -23,7 +23,7 @@ export const site = {
 };
 
 // Towns where Redbay has built (from the project list)
-export const areas = ["Nairobi", "Kikuyu", "Isinya", "Lukenya", "Tala", "Kibwezi", "Nanyuki", "Nyahururu", "Nakuru", "Kakamega", "Diani", "Ukunda"];
+export const areas = ["Nairobi", "Karen", "Kamulu", "Kikuyu", "Isinya", "Lukenya", "Tala", "Kibwezi", "Nanyuki", "Nyahururu", "Oljororok", "Nakuru", "Kericho", "Kakamega", "Diani", "Ukunda"];
 
 export type Division = "Homes" | "Schools" | "Interiors" | "Energy";
 

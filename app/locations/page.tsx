@@ -9,7 +9,7 @@ import { projects } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Areas We Serve: Building Contractor Across Kenya",
   description:
-    "Redbay builds homes, schools and interiors in Nairobi, Kiambu, Machakos, Kajiado, Diani and the coast, Nanyuki and Nyahururu. See our work in each area.",
+    "Redbay builds homes, schools and interiors in Nairobi, Kiambu, Machakos, Kajiado, the coast, Nanyuki, Nakuru and Kericho. See our work in each area.",
   path: "/locations/",
 });
 

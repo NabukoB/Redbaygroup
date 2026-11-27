@@ -25,9 +25,9 @@ export const locations: Location[] = [
     seoDescription:
       "NCA-registered building contractor based in Ruaraka, Nairobi. Homes, maisonettes, perimeter walls and finishes across Nairobi, Kiambu and Machakos.",
     intro:
-      "We are based in Ruaraka, Nairobi, and build homes, boundary walls and finishes across the city and the counties around it, from Kikuyu to Kamulu, Lukenya and Tala.",
-    counties: ["Nairobi", "Kiambu", "Machakos"],
-    towns: ["Ruaraka", "Karen", "Kamulu", "Ruai", "Kikuyu", "Lukenya", "Tala", "Kangundo", "Athi River", "Syokimau", "Juja", "Ruiru"],
+      "We are based in Ruaraka, Nairobi, and build homes, boundary walls and finishes across the city and the counties around it, from Kikuyu to Kamulu, Lukenya and Tala, and as far as Kibwezi in Makueni.",
+    counties: ["Nairobi", "Kiambu", "Machakos", "Makueni"],
+    towns: ["Ruaraka", "Karen", "Kamulu", "Ruai", "Kikuyu", "Lukenya", "Tala", "Kangundo", "Kibwezi", "Athi River", "Syokimau", "Juja", "Ruiru"],
     local: [
       {
         heading: "Small plots, building up",
@@ -46,7 +46,7 @@ export const locations: Location[] = [
         text: "Nairobi City County, Kiambu and Machakos each run their own building approval process. Your architect submits the drawings to the county where the plot sits, and the project is then registered with the NCA before work starts.",
       },
     ],
-    projects: ["kamulu-roofing-shell", "tala-bungalow-shell", "karen-perimeter-wall", "cyber1-office-interiors", "sacco-office-nairobi", "lukenya-four-bedroom", "kikuyu-house", "kikuyu-perimeter-wall"],
+    projects: ["kamulu-roofing-shell", "tala-bungalow-shell", "karen-perimeter-wall", "cyber1-office-interiors", "sacco-office-nairobi", "lukenya-four-bedroom", "kibwezi-maisonette", "kikuyu-house", "kikuyu-perimeter-wall"],
     guides: ["building-approvals-kenya", "perimeter-wall-cost-kenya", "maisonette-or-bungalow", "machine-cut-stone-vs-blocks"],
     faqs: [
       {
@@ -271,6 +271,53 @@ export const locations: Location[] = [
       },
     ],
     message: "Hello Redbay Group, I would like a quote for a project in Kakamega.",
+  },
+  {
+    slug: "rift-valley",
+    name: "Nakuru and Kericho",
+    title: "Building contractor in Nakuru and Kericho",
+    seoTitle: "Building Contractor in Nakuru & Kericho",
+    seoDescription:
+      "Redbay builds and finishes homes in Nakuru and Kericho: steel roof structures, tile roofing and interiors. See our work and ask for an itemised quote.",
+    intro:
+      "We have roofed a two-storey home in Kericho and fitted out a home interior in Nakuru. We take on homes, roofing and interiors in the Rift Valley and the highlands, working from Nairobi.",
+    counties: ["Nakuru", "Kericho"],
+    towns: ["Nakuru", "Kericho", "Molo", "Njoro", "Londiani", "Litein"],
+    local: [
+      {
+        heading: "Rain most of the year in Kericho",
+        text: "Kericho is wet and cool for much of the year. Roofs need the right pitch, properly lapped sheets or tiles, sound flashings at gables and eaves, and gutters sized for heavy rain.",
+      },
+      {
+        heading: "Roof structure first",
+        text: "A hipped and gabled roof is only as good as its frame. Steel trusses and purlins should be fixed to the design, painted against rust and checked before any tiles go on.",
+      },
+      {
+        heading: "Interiors in a working home",
+        text: "Feature walls, ceilings, lighting and fitted kitchens are best planned together, so the electrical points, ceiling bulkheads and cabinets line up before the finishes start.",
+      },
+      {
+        heading: "Approvals sit with the county",
+        text: "Nakuru and Kericho counties each run their own building approvals. Your architect submits the drawings to the county where the plot sits, and the project is then registered with the NCA before work starts.",
+      },
+    ],
+    projects: ["kericho-roofing", "nakuru-interiors"],
+    guides: ["building-approvals-kenya", "types-of-iron-sheets-kenya", "gypsum-ceilings-where-they-work", "build-a-house-in-kenya-from-abroad-safely"],
+    faqs: [
+      {
+        q: "Have you worked in Kericho and Nakuru?",
+        a: "Yes. In Kericho we built the steel roof structure and red stone-coated tile roof for a two-storey home. In Nakuru we did the interior finishes for a home, including a feature TV wall, tray ceiling and fitted kitchen.",
+      },
+      {
+        q: "Can you build the whole house there, or only roofing and finishes?",
+        a: "Either. Send us your plot location and drawings and we will give you an itemised quote for the whole build or for the stage you need.",
+      },
+      {
+        q: "Do you work from my architect's drawings?",
+        a: "Yes. We build to the approved drawings and work with your architect and engineer during construction.",
+      },
+    ],
+    message: "Hello Redbay Group, I would like a quote for a project in Nakuru or Kericho.",
   },
 ];
 
