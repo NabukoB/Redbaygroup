@@ -31,7 +31,7 @@ const included = [
 const faqs = [
   {
     q: "How much does a perimeter wall cost per metre in Kenya?",
-    a: `Redbay builds standard perimeter walls from ${ksh(WALL_RATE)} per running metre, for a wall 2.4 metres high on a foundation 0.8 metres deep, before VAT. We confirm the exact rate after seeing the site.`,
+    a: `Redbay builds standard perimeter walls from ${ksh(WALL_RATE)} per running metre, for a wall 2.4 metres high on a foundation 0.8 metres deep. No VAT is added. We confirm the exact rate after seeing the site.`,
   },
   {
     q: "How long is the boundary of a 50 by 100 plot?",

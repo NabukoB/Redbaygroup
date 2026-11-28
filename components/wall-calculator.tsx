@@ -51,7 +51,7 @@ export function WallCalculator() {
         <p className="text-sm text-white/60">Estimated perimeter wall cost</p>
         <p className="mt-1 text-[clamp(2.4rem,7vw,3.6rem)] font-semibold leading-none tracking-tight">{ksh(total)}</p>
         <p className="mt-3 text-[15px] leading-relaxed text-white/65">
-          {m} m × {ksh(WALL_RATE)} per metre, for a perimeter wall 2.4 m high on a 0.8 m deep foundation. Before VAT. The gate is priced separately.
+          {m} m × {ksh(WALL_RATE)} per metre, for a perimeter wall 2.4 m high on a 0.8 m deep foundation. No VAT is added. The gate is priced separately.
         </p>
       </div>
 

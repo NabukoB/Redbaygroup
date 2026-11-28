@@ -125,6 +125,31 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
           </div>
         </section>
 
+        <section className="pb-20">
+          <div className={wrap}>
+            <div className="rounded-3xl bg-mist p-8 md:p-10">
+              <h2 className="text-lg font-semibold">Planning something similar?</h2>
+              <p className="mt-3 max-w-3xl leading-relaxed text-slate">
+                {p.division === "Interiors"
+                  ? "Every finish starts with a site visit, so we measure the real space before we quote. You get one clear price, with labour and materials shown separately."
+                  : "Every job starts with an itemised bill of quantities, then one fixed quote with labour and materials shown separately. You can also have us supervise your own contractor, or inspect work already built, before you pay the next stage."}
+              </p>
+              <ul className="mt-5 grid gap-3 md:grid-cols-2">
+                {(p.division === "Interiors"
+                  ? [["/book-a-site-visit/", "Book a site visit"], ["/get-a-quote/", "Get a quote"], ["/services/", "All our services"], ["/projects/", "More projects"]] as string[][]
+                  : [["/get-a-quote/", "Get a quote"], ["/book-a-site-visit/", "Book a site visit"], ["/site-supervision/", "Site supervision for your build"], ["/building-inspection/", "Building inspection before you pay"], ["/designs/", "Browse home designs"], ["/insights/", "Read our building guides"]] as string[][]
+                ).map(([href, label]) => (
+                  <li key={href}>
+                    <Link href={href as string} className="inline-flex items-center gap-1.5 font-medium text-charcoal-deep underline-offset-4 hover:underline">
+                      {label} <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="bg-mist py-20 md:py-24">
           <div className={wrap}>
             <div className="flex flex-wrap items-end justify-between gap-4">

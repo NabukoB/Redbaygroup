@@ -135,6 +135,20 @@ export default async function DesignPage({ params }: PageProps<"/designs/[slug]"
           </section>
         )}
 
+        <section className="pb-16">
+          <div className={wrap}>
+            <p className="max-w-3xl leading-relaxed text-slate">
+              Building from a design? We can{" "}
+              <Link href="/site-supervision/" className="font-medium text-charcoal-deep underline underline-offset-4">supervise the build</Link>
+              , check finished stages with a{" "}
+              <Link href="/building-inspection/" className="font-medium text-charcoal-deep underline underline-offset-4">building inspection</Link>
+              , or{" "}
+              <Link href="/book-a-site-visit/" className="font-medium text-charcoal-deep underline underline-offset-4">visit your plot</Link>
+              {" "}before you start.
+            </p>
+          </div>
+        </section>
+
         <section className="bg-mist py-20 md:py-24">
           <div className={wrap}>
             <h2 className="heading text-center text-[clamp(2rem,4vw,3rem)]">More designs</h2>
