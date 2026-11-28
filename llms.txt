@@ -24,7 +24,10 @@
 - [Roofing sheets calculator](https://redbaygroup.co.ke/roofing-sheets-calculator/): how many iron sheets a roof needs.
 - [House cost calculator](https://redbaygroup.co.ke/house-cost-calculator/): published Nairobi cost per square metre for a house.
 - [Bill of quantities service](https://redbaygroup.co.ke/bill-of-quantities-service/): itemised BoQ prepared from your drawings; fee quoted before starting.
-- [Get a quote](https://redbaygroup.co.ke/get-a-quote/): short form that opens WhatsApp with project details.
+- [Site supervision](https://redbaygroup.co.ke/site-supervision/): stage inspections, materials and payment checks, and photo reports for people building with their own fundi or contractor.
+- [Building inspection](https://redbaygroup.co.ke/building-inspection/): written defects report for a house or build, with priorities and rough repair costs. Not a structural certificate.
+- [Book a site visit](https://redbaygroup.co.ke/book-a-site-visit/): request a visit for a quote, supervision or inspection, by WhatsApp or enquiry form.
+- [Get a quote](https://redbaygroup.co.ke/get-a-quote/): short form that opens WhatsApp with project details, or sends an enquiry.
 
 ## Specialised services
 
