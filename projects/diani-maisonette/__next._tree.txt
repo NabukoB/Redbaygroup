@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/0kl750_agqyxy.css","style"]
+:HL["/_next/static/chunks/08mx7zlgkfguz.css","style"]
 :HC["/",""]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"diani-maisonette","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"projects","h":131136,"c":"$Q2"}]]
-0:{"b":"di3OWlgsbxzgwrEnByaGD","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
+0:{"b":"MrswiVSpy6PdE9NXEqJmI","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
