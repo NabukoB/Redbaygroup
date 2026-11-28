@@ -12,8 +12,8 @@
 
 ## Pricing
 
-- Quotes are itemised bills of quantities with one fixed price, quoted before VAT.
-- Perimeter walls: from KSh 14,000 per running metre for a wall 2.4 m high on a foundation 0.8 m deep, before VAT; gate priced separately.
+- Quotes are itemised bills of quantities with one fixed price, quoted with no VAT added (Redbay is not VAT-registered).
+- Perimeter walls: from KSh 14,000 per running metre for a wall 2.4 m high on a foundation 0.8 m deep; no VAT added; gate priced separately.
 - [Perimeter wall cost calculator](https://redbaygroup.co.ke/perimeter-wall-calculator/): instant estimate from the boundary length.
 - [Construction Knowledge Hub](https://redbaygroup.co.ke/insights/): guides by topic, from building costs to roofing, materials and finishes.
 - [Capability statement](https://redbaygroup.co.ke/capability-statement/): registration, insurance, process and selected work for institutions, with a one-page PDF.
@@ -143,11 +143,11 @@ Yes. We hold Contractor’s All Risk insurance on our projects.
 
 ### How do you price a project?
 
-We measure the work into an itemised bill of quantities, then give you one fixed quotation with the scope, timeline and payment stages written down. Prices are quoted before VAT.
+We measure the work into an itemised bill of quantities, then give you one fixed quotation with the scope, timeline and payment stages written down. Redbay is not VAT-registered, so no VAT is added to our prices.
 
 ### How much does a perimeter wall cost?
 
-From KSh 14,000 per running metre for a wall 2.4 metres high on a foundation 0.8 metres deep, before VAT. The gate is priced separately. Our perimeter wall calculator gives an instant estimate, and we confirm the exact rate after seeing the site.
+From KSh 14,000 per running metre for a wall 2.4 metres high on a foundation 0.8 metres deep. No VAT is added. The gate is priced separately. Our perimeter wall calculator gives an instant estimate, and we confirm the exact rate after seeing the site.
 
 ### What should I send to get a quote?
 
