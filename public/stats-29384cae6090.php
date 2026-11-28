@@ -64,6 +64,10 @@ $h = fn($s) => htmlspecialchars((string)$s, ENT_QUOTES);
 <table><tr><th>Place</th><th class="n">Visits</th></tr><?php foreach ($place as $l => $n): ?><tr><td><?= $h($l) ?></td><td class="n"><?= (int)$n ?></td></tr><?php endforeach; ?></table>
 <table><tr><th>Device</th><th class="n">Visits</th></tr><?php foreach ($dev as $d => $n): ?><tr><td><?= $h(ucfirst($d)) ?></td><td class="n"><?= (int)$n ?></td></tr><?php endforeach; ?></table>
 <?php endif; ?>
+<?php
+$inq = @json_decode(@file_get_contents(__DIR__ . '/_stats/inquiries.json'), true);
+if (is_array($inq) && count($inq)) { echo '<h2>Enquiries from the form (latest first)</h2><table><tr><th>When</th><th>Project</th><th>Site</th><th>Contact</th><th>Details</th></tr>'; foreach (array_slice(array_reverse($inq), 0, 30) as $r) { echo '<tr><td>' . htmlspecialchars($r['when'] ?? '') . '</td><td>' . htmlspecialchars($r['type'] ?? '') . '</td><td>' . htmlspecialchars($r['location'] ?? '') . '</td><td>' . htmlspecialchars(trim(($r['name'] ?? '') . ' ' . ($r['phone'] ?? '') . ' ' . ($r['email'] ?? ''))) . '</td><td>' . htmlspecialchars(mb_substr($r['details'] ?? '', 0, 200)) . '</td></tr>'; } echo '</table>'; }
+?>
 <h2>By page</h2><table><tr><th>Page</th><th class="n">Views</th><th class="n">WhatsApp</th><th class="n">Calls</th></tr>
 <?php foreach ($pages as $p => $c): ?><tr><td><a href="<?= $h($p) ?>"><?= $h($p) ?></a></td><td class="n"><?= (int)($c['view'] ?? 0) ?></td><td class="n"><?= (int)($c['whatsapp'] ?? 0) ?></td><td class="n"><?= (int)($c['call'] ?? 0) ?></td></tr><?php endforeach; ?>
 </table><h2>By day</h2><table><tr><th>Day</th><th class="n">Views</th><th class="n">WhatsApp</th><th class="n">Calls</th></tr>

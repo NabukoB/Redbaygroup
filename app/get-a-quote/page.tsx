@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Get a Building Quote in Kenya",
   description:
-    "Request a fixed building quote from Redbay Group: homes, perimeter walls, schools, interiors and offices. Answer five questions and send them on WhatsApp.",
+    "Request a fixed building quote from Redbay Group: homes, perimeter walls, schools, interiors and offices. Send your answers on WhatsApp or as an enquiry.",
   path: "/get-a-quote/",
 });
 
@@ -27,7 +27,7 @@ export default function GetAQuotePage() {
           crumbs={[{ name: "Get a quote", path: "/get-a-quote/" }]}
           label="Get a quote"
           title="Tell us about your project."
-          intro="Answer a few quick questions. They open in WhatsApp, ready to send, so we can reply with the right advice and price."
+          intro="Answer a few quick questions. Send them on WhatsApp, ready to go, or as an enquiry if you prefer a call or email back."
         />
         <section className="pb-20">
           <div className={`${wrap} grid gap-10 lg:grid-cols-12`}>

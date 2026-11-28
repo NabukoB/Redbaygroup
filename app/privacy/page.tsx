@@ -26,6 +26,7 @@ const sections = [
     heading: "When you message or call us",
     body: [
       "If you contact us through WhatsApp, a call or email, we receive your phone number or email and whatever you write. We use it to reply, to prepare quotations and bills of quantities, and to run your project if you hire us. Tools on this site, such as the calculators, only prefill a WhatsApp message. Nothing is sent until you press send in WhatsApp.",
+      "If you use the enquiry button on the quote form, we receive what you typed, including your name, phone number and email if you give them. It is emailed to our office and kept on our hosting so we can reply and prepare your quote. You can ask us to delete it at any time.",
       "We do not sell your details.",
     ],
   },
