@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
 import { Badge, Breadcrumbs, CtaPanel, Footer, Nav, whatsappLink, wrap } from "@/components/chrome";
+import { GuideImage } from "@/components/guide-image";
 import { JsonLd } from "@/components/json-ld";
 import { ShareButtons } from "@/components/share-buttons";
 import { Reveal } from "@/components/reveal";
@@ -63,7 +64,10 @@ export default async function InsightPage({ params }: PageProps<"/insights/[slug
                 By {site.name} · <time dateTime={p.date}>{new Date(p.date).toLocaleDateString("en-KE", { day: "numeric", month: "long", year: "numeric" })}</time>
               </p>
             </Reveal>
-            <div className="mx-auto mt-14 max-w-3xl space-y-12 border-t border-line pt-12">
+            <div className="mx-auto mt-10 max-w-3xl">
+              <GuideImage slug={p.slug} size="hero" priority />
+            </div>
+            <div className="mx-auto mt-12 max-w-3xl space-y-12 border-t border-line pt-12">
               {p.sections.map((s, i) => (
                 <Fragment key={s.heading}>
                 {i === 2 && (

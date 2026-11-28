@@ -158,3 +158,22 @@ describe("things we promised never to publish", () => {
     for (const n of quoted) expect(n).toBe(14000);
   });
 });
+
+import { existsSync as fileExists } from "node:fs";
+import { join as joinPath } from "node:path";
+import { guideImages, guidePhotoSrc } from "@/lib/guide-images";
+import { insights as allGuides } from "@/lib/insights";
+
+describe("guide pictures", () => {
+  it("gives every guide a picture, and no picture belongs to a missing guide", () => {
+    expect(allGuides.filter((g) => !guideImages[g.slug]).map((g) => g.slug)).toEqual([]);
+    expect(Object.keys(guideImages).filter((s) => !allGuides.some((g) => g.slug === s))).toEqual([]);
+  });
+  it("only points at photo files that exist, with real alt text", () => {
+    for (const [slug, img] of Object.entries(guideImages)) {
+      if (img.kind !== "photo") continue;
+      expect(img.alt.length, slug).toBeGreaterThan(15);
+      for (const w of [800, 1600] as const) expect(fileExists(joinPath(process.cwd(), "public", guidePhotoSrc(img, w))), `${slug} ${w}`).toBe(true);
+    }
+  });
+});

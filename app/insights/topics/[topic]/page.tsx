@@ -1,3 +1,4 @@
+import { GuideImage } from "@/components/guide-image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -54,16 +55,18 @@ export default async function TopicPage({ params }: PageProps<"/insights/topics/
             <ul className="grid gap-4 md:grid-cols-3">
               {guides.map((p) => (
                 <li key={p.slug} className="h-full">
-                  <Link href={`/insights/${p.slug}/`} className="group flex h-full flex-col justify-between rounded-3xl bg-mist p-8 transition-colors hover:bg-[#ebebe9]">
-                    <div>
-                      <span className="text-sm text-slate">Guide</span>
-                      <h2 className="heading mt-6 text-2xl">{p.title}</h2>
-                      <p className="mt-3 text-[15px] leading-relaxed text-slate">{p.description}</p>
+                  <Link href={`/insights/${p.slug}/`} className="group flex h-full flex-col overflow-hidden rounded-3xl bg-mist transition-colors hover:bg-[#ebebe9]">
+                    <GuideImage slug={p.slug} size="card" />
+                    <div className="flex flex-1 flex-col justify-between p-8">
+                      <div>
+                        <h2 className="heading text-2xl">{p.title}</h2>
+                        <p className="mt-3 text-[15px] leading-relaxed text-slate">{p.description}</p>
+                      </div>
+                      <span className="mt-10 inline-flex items-center gap-1.5 font-medium text-charcoal-deep">
+                        Read the guide
+                        <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+                      </span>
                     </div>
-                    <span className="mt-10 inline-flex items-center gap-1.5 font-medium text-charcoal-deep">
-                      Read the guide
-                      <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
-                    </span>
                   </Link>
                 </li>
               ))}
