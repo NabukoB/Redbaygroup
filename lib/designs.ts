@@ -293,4 +293,52 @@ export const designs: Design[] = [
       "Wide view of the bungalow showing the timber-clad wings and courtyard",
     ]),
   },
+  {
+    slug: "ensuite-maisonette-roof-terrace",
+    name: "Ensuite Maisonette with Roof Terrace",
+    style: "Two-storey family home",
+    summary:
+      "A two-storey maisonette with four ensuite bedrooms, open living, dining and kitchen downstairs, a study upstairs and a rooftop terrace.",
+    source: "inspiration",
+    features: [
+      "Four bedrooms, every one ensuite",
+      "Open-plan living room, dining and kitchen on the ground floor",
+      "Ground-floor bedroom, suited to guests or elderly family",
+      "Study on the first floor",
+      "Rooftop terrace, with a hybrid roof of flat roof sections and a terrace level",
+      "White render with a yellow band, slatted-pattern parapet panels and a dark brick-effect feature wall",
+      "Tall vertical window lighting the stairs, stone-clad plinth and a covered veranda with columns",
+      "First-floor balcony with glass-and-black-framed doors, and parking beside the house",
+    ],
+    floors: [
+      {
+        heading: "Ground floor",
+        rooms: [
+          "Living room open to the dining area",
+          "Dining area open to the kitchen",
+          "Laundry room",
+          "One ensuite bedroom",
+          "Covered veranda at the front",
+        ],
+      },
+      {
+        heading: "First floor",
+        rooms: [
+          "Master bedroom, ensuite",
+          "Bedroom 1, ensuite",
+          "Bedroom 2, ensuite",
+          "Study",
+          "Balcony",
+        ],
+      },
+      {
+        heading: "Roof",
+        rooms: ["Rooftop terrace", "Hybrid roof: flat roof sections with the terrace level"],
+      },
+    ],
+    photos: shots([
+      "Corner view of a two-storey maisonette with a yellow band, slatted parapet panels, a brick-effect feature wall, tall stair window and covered veranda",
+      "Front view of the maisonette with a first-floor balcony, large black-framed glazing, covered veranda and a car parked beside the house",
+    ]),
+  },
 ];
