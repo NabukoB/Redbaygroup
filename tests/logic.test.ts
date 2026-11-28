@@ -1,6 +1,7 @@
 // Small pieces of logic: visitor sources, the wall calculator, the quote form and helpers.
 import { describe, expect, it } from "vitest";
 import { buildQuote, type QuoteAnswers } from "@/lib/quote";
+import { buildVisit } from "@/lib/site-visit";
 import { neighbours } from "@/lib/utils";
 import { detectSource, isSource } from "@/lib/visit-source";
 import { MAX_METRES, WALL_RATE, ksh, plots, wallEstimate } from "@/lib/wall";
@@ -189,5 +190,22 @@ describe("one source for the wall rate", () => {
     };
     for (const d of ["app", "lib", "components"]) walk(d);
     expect(hits).toEqual([]);
+  });
+});
+
+describe("site visit form message", () => {
+  it("needs a reason and a place", () => {
+    expect(buildVisit({ purpose: "", location: "Kikuyu", date: "", time: "", notes: "", name: "" }).ok).toBe(false);
+    expect(buildVisit({ purpose: "Site visit for a quote", location: " ", date: "", time: "", notes: "", name: "" }).ok).toBe(false);
+  });
+  it("writes the answers out for WhatsApp and for the enquiry", () => {
+    const r = buildVisit({ purpose: "Building inspection or defects check", location: "Kitengela", date: "2026-12-05", time: "Morning", notes: "Cracks in the gable wall", name: "Wanjiru" });
+    expect(r.ok).toBe(true);
+    if (r.ok) {
+      expect(r.message).toContain("Reason: Building inspection or defects check");
+      expect(r.message).toContain("Site location: Kitengela");
+      expect(r.message).toContain("Name: Wanjiru");
+      expect(r.details).toBe("Preferred date: 2026-12-05\nPreferred time: Morning\nNotes: Cracks in the gable wall");
+    }
   });
 });

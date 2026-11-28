@@ -163,6 +163,7 @@ export function Footer() {
               <li><Link className="hover:text-charcoal-deep" href="/services/">Specialised services</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/bill-of-quantities-service/">BoQ service</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/get-a-quote/">Get a quote</Link></li>
+              <li><Link className="hover:text-charcoal-deep" href="/book-a-site-visit/">Book a site visit</Link></li>
               <li><Link className="hover:text-charcoal-deep" href="/contact/">Contact</Link></li>
             </ul>
           </div>

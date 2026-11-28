@@ -17,10 +17,23 @@ const boq = {
   text: "An itemised bill of quantities measured from your drawings, so you know the real cost before you build.",
 };
 
+const extra = [
+  {
+    href: "/site-supervision/",
+    name: "Site supervision",
+    text: "Building with your own fundi or contractor? We check the work, materials and payments at each stage and send you photo reports.",
+  },
+  {
+    href: "/building-inspection/",
+    name: "Building inspection and defects report",
+    text: "Cracks, leaks or buying a house? A written report of what is wrong, what to fix first and rough repair costs.",
+  },
+];
+
 export default function ServicesPage() {
   const all = services.map((s) => ({ href: `/services/${s.slug}/`, name: s.name, text: s.intro }));
   // Drawings first, then cost estimation, then the rest
-  const cards = [...all.slice(0, 1), boq, ...all.slice(1)];
+  const cards = [...all.slice(0, 1), boq, ...extra, ...all.slice(1)];
   return (
     <>
       <Nav />
