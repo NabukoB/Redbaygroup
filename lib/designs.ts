@@ -339,6 +339,9 @@ export const designs: Design[] = [
     photos: shots([
       "Corner view of a two-storey maisonette with a yellow band, slatted parapet panels, a brick-effect feature wall, tall stair window and covered veranda",
       "Front view of the maisonette with a first-floor balcony, large black-framed glazing, covered veranda and a car parked beside the house",
+      "The maisonette at dusk from the corner, with warm lights on in the windows, balcony and covered veranda",
+      "Front view of the maisonette at dusk with the veranda and first-floor balcony lit",
+      "High view of the maisonette showing the flat roof levels and the rooftop terrace with outdoor seating",
     ]),
   },
 ];
